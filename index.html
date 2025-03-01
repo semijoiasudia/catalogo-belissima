@@ -384,7 +384,7 @@
                 console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
             } catch (error) {
                 console.error("Erro ao carregar descrições:", error);
-                alert(`Erro ao carregar descrições: ${error.message}`);
+                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar descrições. Verifique o console.</p>';
             }
         }
 
@@ -397,6 +397,10 @@
                 console.log('Dados das categorias recebidos:', data);
                 const tabs = document.getElementById('tabs');
                 tabs.innerHTML = '';
+
+                if (!data || !Array.isArray(data)) {
+                    throw new Error('Resposta da API inválida');
+                }
 
                 data.forEach(item => {
                     if (item.type === 'dir') {
@@ -430,14 +434,12 @@
                         scrollToActiveTab();
                     } else {
                         console.error('Categoria padrão "Brincos" não encontrada.');
-                        alert('Categoria padrão "Brincos" não encontrada. Verifique o repositório GitHub.');
+                        tabs.innerHTML = '<p>Categoria padrão "Brincos" não encontrada.</p>';
                     }
                 }
-
-                console.log('Categorias carregadas com sucesso:', data.filter(item => item.type === 'dir').map(item => item.name));
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
-                alert(`Erro ao carregar categorias: ${error.message}`);
+                document.getElementById('tabs').innerHTML = '<p>Erro ao carregar categorias. Verifique o console.</p>';
             }
         }
 
@@ -463,12 +465,17 @@
                 if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
                 allFiles = await response.json();
                 console.log('Arquivos recebidos:', allFiles);
+
+                if (!allFiles || !Array.isArray(allFiles)) {
+                    throw new Error('Resposta da API inválida');
+                }
+
                 allFiles.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
                         const { banho } = descricoes[codigo] || { banho: '' };
                         if (banho) {
-                            banhosNaCategoria.add tube);
+                            banhosNaCategoria.add(banho);
                         }
                     }
                 });
@@ -478,7 +485,7 @@
                 console.log('Imagens carregadas com sucesso para:', folderName);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
-                alert(`Erro ao carregar imagens da categoria ${folderName}: ${error.message}`);
+                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar imagens. Verifique o console.</p>';
             }
         }
 
@@ -524,6 +531,11 @@
             const end = start + itemsPerPage;
             const paginatedFiles = filteredFiles.slice(start, end);
             console.log('Itens a exibir:', paginatedFiles.length);
+
+            if (paginatedFiles.length === 0) {
+                gallery.innerHTML = '<p>Nenhuma imagem encontrada para esta categoria.</p>';
+                return;
+            }
 
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
@@ -681,7 +693,7 @@
                 document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
             } catch (error) {
                 console.error("Erro ao carregar rodapé:", error);
-                alert(`Erro ao carregar rodapé: ${error.message}`);
+                document.getElementById("rodape").innerHTML = '<p>Erro ao carregar rodapé.</p>';
             }
         }
 
@@ -704,10 +716,15 @@
 
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
-            await loadDescriptions();
-            await loadCategories();
-            loadRodape();
-            console.log('Carregamento da página concluído');
+            try {
+                await loadDescriptions();
+                await loadCategories();
+                await loadRodape();
+                console.log('Carregamento da página concluído');
+            } catch (error) {
+                console.error('Erro no carregamento inicial:', error);
+                document.body.innerHTML += '<p>Erro ao iniciar o catálogo. Verifique o console.</p>';
+            }
         };
     </script>
 </body>
