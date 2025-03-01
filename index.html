@@ -14,7 +14,7 @@
         }
         .title {
             margin: 20px 0;
-            font-size: 28px;
+            font-size: 20px;
             color: #333;
             font-weight: bold;
         }
@@ -43,8 +43,8 @@
             cursor: pointer;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #e6e6fa, #d8bfd8); /* Lilás claro */
-            color: #333; /* Mudei para cinza escuro para melhor contraste */
+            background: linear-gradient(135deg, #8a2be2, #7b1fa2); /* Roxo médio */
+            color: white; /* Volta ao branco para contraste com roxo */
             font-weight: bold;
             transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
             white-space: nowrap;
@@ -53,10 +53,10 @@
         }
         .tab:hover {
             transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(230, 230, 250, 0.5); /* Sombra baseada em #e6e6fa */
+            box-shadow: 0px 4px 8px rgba(138, 43, 226, 0.5); /* Sombra baseada em #8a2be2 */
         }
         .tab.active {
-            background: linear-gradient(135deg, #d8bfd8, #c9a0dc); /* Lilás para roxo claro */
+            background: linear-gradient(135deg, #7b1fa2, #6a0dad); /* Roxo mais escuro */
             font-weight: bold;
         }
         .tabs-container::-webkit-scrollbar {
@@ -67,11 +67,11 @@
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb {
-            background: #e6e6fa; /* Lilás claro na barra de rolagem */
+            background: #8a2be2; /* Roxo no scroll */
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #d8bfd8; /* Lilás suave no hover da barra */
+            background: #7b1fa2; /* Roxo mais escuro no hover do scroll */
         }
         .subcategories {
             display: flex;
@@ -118,7 +118,7 @@
             transition: border-color 0.3s;
         }
         .filter-container select:hover {
-            border-color: #d8bfd8; /* Lilás suave */
+            border-color: #8a2be2; /* Roxo para combinar */
         }
         .gallery {
             display: grid;
