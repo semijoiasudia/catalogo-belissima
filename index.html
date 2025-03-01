@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata - Semijoias e Acessórios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .modal-open {
+            overflow: hidden;
+        }
+        .tabs-container {
+            width: 100%;
+            max-width: 1000px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            margin: 0 auto 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tabs {
+            display: inline-flex;
+            gap: 5px;
+        }
+        .tab {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #d4af37, #b8860b);
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+            white-space: nowrap;
+            min-width: 120px;
+            text-align: center;
+        }
+        .tab:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(212, 175, 55, 0.5);
+        }
+        .tab.active {
+            background: linear-gradient(135deg, #b8860b, #8b6914);
+            font-weight: bold;
+        }
+        .tabs-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .tabs-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb:hover {
+            background: #b8860b;
+        }
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .subcategories button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .subcategories button:hover {
+            background-color: #5a6268;
+        }
+        .subcategories button.active {
+            background-color: #5a6268;
+            font-weight: bold;
+        }
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-container label {
+            font-size: 14px;
+            color: #333;
+        }
+        .filter-container select {
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        .filter-container select:hover {
+            border-color: #b8860b;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery .item {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            white-space: normal;
+        }
+        .gallery .preco {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+        }
+        .gallery .codigo {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            position: relative;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: hidden;
+        }
+        .capture-area {
+            position: relative;
+        }
+        .modal img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 8px;
+        }
+        .modal-codigo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+        }
+        .close:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        .modal-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        .modal-info .descricao {
+            font-size: 16px;
+        }
+        .modal-info .preco {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .save-btn, .request-btn {
+            margin: 10px 0;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .save-btn {
+            background-color: #007bff;
+        }
+        .request-btn {
+            background-color: #28a745;
+        }
+        .save-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .request-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        .rodape {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ddd;
+        }
+        .rodape-text {
+            margin: 0;
+            padding: 5px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .pagination button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #5a6268;
+        }
+        .pagination button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .fale-conosco-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-bottom: 0;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+        }
+        .fale-conosco-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
+    <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
+    <div class="tabs-container">
+        <div class="tabs" id="tabs"></div>
+    </div>
+    <div class="subcategories" id="subcategories" style="display: none;"></div>
+    <div class="filter-container">
+        <label for="sortFilter">Ordenar por: </label>
+        <select id="sortFilter" onchange="applySort()">
+            <option value="newest" selected>Mais Novos</option>
+            <option value="oldest">Mais Antigos</option>
+            <option value="highestPrice">Maior Preço</option>
+            <option value="lowestPrice">Menor Preço</option>
+        </select>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <div class="pagination" id="pagination"></div>
+    
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div class="capture-area" id="captureArea">
+                <div class="modal-codigo" id="modalCodigo"></div>
+                <img id="modalImg">
+            </div>
+            <div class="modal-info" id="modalInfo"></div>
+            <button class="save-btn" onclick="saveImage()">
+                <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
+                Salvar Imagem
+            </button>
+            <button class="request-btn" onclick="requestItem()">
+                <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
+                Solicitar este Item
+            </button>
+        </div>
+    </div>
+    <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">            
+        <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
+        Fale Conosco
+    </a>
+    <div id="rodape" class="rodape"></div>
+
+    <script>
+        const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
+        const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
+        let descricoes = {};
+        let currentFolder = '';
+        const itemsPerPage = 20;
+        let currentPage = 1;
+        let allFiles = [];
+        let currentBanho = 'todos';
+        let currentSort = 'newest';
+
+        const PHONE_NUMBER = '5534997622408';
+
+        function formatarPreco(preco) {
+            if (!preco) return "Preço não disponível";
+            const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Preço não disponível";
+            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
+        }
+
+        function getNumericPrice(preco) {
+            if (!preco || preco === "Preço não disponível") return 0;
+            return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+        }
+
+        async function loadDescriptions() {
+            try {
+                const response = await fetch(descricoesUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const lines = text.split('\n');
+                lines.forEach(line => {
+                    const [codigo, descricao, preco, banho] = line.split(';');
+                    if (codigo && descricao && preco && banho) {
+                        let normalizedBanho = banho.trim().toLowerCase();
+                        if (normalizedBanho.includes('2 banhos')) {
+                            normalizedBanho = '2 banhos';
+                        }
+                        descricoes[codigo.trim()] = {
+                            descricao: descricao.trim(),
+                            preco: formatarPreco(preco.trim()),
+                            banho: normalizedBanho
+                        };
+                    }
+                });
+                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
+            } catch (error) {
+                console.error("Erro ao carregar descrições:", error);
+                alert(`Erro ao carregar descrições: ${error.message}`);
+            }
+        }
+
+        async function loadCategories() {
+            console.log('Iniciando loadCategories');
+            try {
+                const response = await fetch(repoUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const data = await response.json();
+                console.log('Dados das categorias recebidos:', data);
+                const tabs = document.getElementById('tabs');
+                tabs.innerHTML = '';
+
+                data.forEach(item => {
+                    if (item.type === 'dir') {
+                        const tab = document.createElement('button');
+                        tab.className = 'tab';
+                        tab.textContent = item.name;
+                        tab.onclick = () => {
+                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                            tab.classList.add('active');
+                            loadImages(item.name);
+                            scrollToActiveTab();
+                        };
+                        tabs.appendChild(tab);
+                    }
+                });
+
+                const initialCategory = getQueryParam('categoria') || 'Brincos';
+                const initialTab = findTabByText(initialCategory);
+                if (initialTab) {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    initialTab.classList.add('active');
+                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
+                    loadImages(initialTab.textContent.trim());
+                    scrollToActiveTab();
+                } else {
+                    const defaultTab = findTabByText('Brincos');
+                    if (defaultTab) {
+                        defaultTab.classList.add('active');
+                        console.log('Carregando categoria padrão: Brincos');
+                        loadImages('Brincos');
+                        scrollToActiveTab();
+                    } else {
+                        console.error('Categoria padrão "Brincos" não encontrada.');
+                        alert('Categoria padrão "Brincos" não encontrada. Verifique o repositório GitHub.');
+                    }
+                }
+
+                console.log('Categorias carregadas com sucesso:', data.filter(item => item.type === 'dir').map(item => item.name));
+            } catch (error) {
+                console.error("Erro ao carregar categorias:", error);
+                alert(`Erro ao carregar categorias: ${error.message}`);
+            }
+        }
+
+        function findTabByText(categoryName) {
+            const tabs = document.querySelectorAll('.tab');
+            for (let tab of tabs) {
+                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return tab;
+                }
+            }
+            return null;
+        }
+
+        async function loadImages(folderName) {
+            console.log('Iniciando loadImages para:', folderName);
+            currentFolder = folderName;
+            const banhosNaCategoria = new Set();
+            currentPage = 1;
+            currentBanho = 'todos';
+
+            try {
+                const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
+                if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
+                allFiles = await response.json();
+                console.log('Arquivos recebidos:', allFiles);
+                allFiles.forEach(file => {
+                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
+                        const codigo = file.name.split('.')[0];
+                        const { banho } = descricoes[codigo] || { banho: '' };
+                        if (banho) {
+                            banhosNaCategoria.add(banho);
+                        }
+                    }
+                });
+
+                displayPage(currentPage, banhosNaCategoria);
+                criarBotoesSubcategorias(banhosNaCategoria);
+                console.log('Imagens carregadas com sucesso para:', folderName);
+            } catch (error) {
+                console.error("Erro ao carregar imagens:", error);
+                alert(`Erro ao carregar imagens da categoria ${folderName}: ${error.message}`);
+            }
+        }
+
+        function getFilteredFiles() {
+            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
+            let filtered = allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
+                return currentBanho === 'todos' || banho === currentBanho;
+            });
+
+            filtered.sort((a, b) => {
+                const codigoA = a.name.split('.')[0];
+                const codigoB = b.name.split('.')[0];
+                const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
+                const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
+
+                switch (currentSort) {
+                    case 'newest':
+                        return codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'oldest':
+                        return codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                    case 'highestPrice':
+                        return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'lowestPrice':
+                        return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    default:
+                        return 0;
+                }
+            });
+
+            console.log('Arquivos filtrados e ordenados:', filtered.length);
+            return filtered;
+        }
+
+        function displayPage(page, banhosNaCategoria) {
+            console.log('Exibindo página:', page);
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            const filteredFiles = getFilteredFiles();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedFiles = filteredFiles.slice(start, end);
+            console.log('Itens a exibir:', paginatedFiles.length);
+
+            paginatedFiles.forEach(file => {
+                const codigo = file.name.split('.')[0];
+                const { descricao, preco, banho } = descricoes[codigo] || { 
+                    descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                    preco: "Preço não disponível",
+                    banho: ""
+                };
+
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.dataset.banho = banho || 'todos';
+
+                const img = document.createElement('img');
+                img.src = file.download_url;
+                img.alt = descricao || 'Imagem do produto';
+                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
+                img.onclick = () => showModal(file.download_url, codigo);
+                
+                const codigoElement = document.createElement('div');
+                codigoElement.className = 'codigo';
+                codigoElement.textContent = `COD: ${codigo}`;
+
+                const desc = document.createElement('div');
+                desc.className = 'description';
+                desc.textContent = descricao;
+
+                const precoElement = document.createElement('div');
+                precoElement.className = 'preco';
+                precoElement.textContent = preco;
+
+                item.append(img, codigoElement, desc, precoElement);
+                gallery.appendChild(item);
+            });
+
+            updatePagination();
+        }
+
+        function updatePagination() {
+            const filteredFiles = getFilteredFiles();
+            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            prevButton.disabled = currentPage === 1;
+            paginationDiv.appendChild(prevButton);
+
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Próxima';
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            nextButton.disabled = currentPage === totalPages;
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function applySort() {
+            currentSort = document.getElementById('sortFilter').value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+            console.log('Ordenação aplicada:', currentSort);
+        }
+
+        function criarBotoesSubcategorias(banhosNaCategoria) {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = '';
+
+            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
+            if (!botaoTodosExistente) {
+                const botaoTodos = document.createElement('button');
+                botaoTodos.textContent = 'Todos';
+                botaoTodos.dataset.banho = 'todos';
+                botaoTodos.onclick = () => filterByBanho('todos');
+                subcategoriesDiv.appendChild(botaoTodos);
+            }
+
+            banhosNaCategoria.forEach(banho => {
+                if (banho && banho !== '') {
+                    const botaoBanho = document.createElement('button');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
+                }
+            });
+
+            subcategoriesDiv.style.display = 'flex';
+        }
+
+        function filterByBanho(banho) {
+            currentBanho = banho;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+        }
+
+        function showModal(src, codigo) {
+            const { descricao, preco } = descricoes[codigo] || { 
+                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                preco: "Preço não disponível"
+            };
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${descricao}</div>
+                <div class="preco">${preco}</div>
+            `;
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        function saveImage() {
+            html2canvas(document.querySelector("#captureArea"), {
+                useCORS: true,
+                allowTaint: true,
+                scale: 2
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(error => {
+                console.error("Erro ao salvar imagem:", error);
+            });
+        }
+
+        function requestItem() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function setupFaleConoscoButton() {
+            const faleConoscoBtn = document.getElementById('faleConoscoBtn');
+            faleConoscoBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá, gostaria de falar com vocês!')}`;
+        }
+
+        async function loadRodape() {
+            try {
+                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/rodape.txt");
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const formattedText = text.replace(/\n/g, '<br>');
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
+            } catch (error) {
+                console.error("Erro ao carregar rodapé:", error);
+                alert(`Erro ao carregar rodapé: ${error.message}`);
+            }
+        }
+
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        function scrollToActiveTab() {
+            const activeTab = document.querySelector('.tab.active');
+            if (activeTab) {
+                const tabRect = activeTab.getBoundingClientRect();
+                const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
+                const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
+                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
+
+                activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
+            }
+        }
+
+        window.onload = async () => {
+            console.log('Iniciando carregamento da página');
+            await loadDescriptions();
+            await loadCategories();
+            loadRodape();
+            setupFaleConoscoButton();
+            console.log('Carregamento da página concluído');
+        };
+    </script>
+</body>
+</html>
