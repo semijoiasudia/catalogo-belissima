@@ -1,1 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belíssima Mulher Semijoias</title>
+    <meta property="og:title" content="Belíssima Mulher - Semijoias">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .title {
+            margin: 20px 0;
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .modal-open {
+            overflow: hidden;
+        }
+        .tabs-container {
+            width: 100%;
+            max-width: 1000px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            margin: 0 auto 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tabs {
+            display: inline-flex;
+            gap: 5px;
+        }
+        .tab {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #a89fb0; /* Cor exata da logo, sem gradiente */
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+            white-space: nowrap;
+            min-width: 120px;
+            text-align: center;
+        }
+        .tab:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(168, 159, 176, 0.3); /* Sombra leve baseada em #a89fb0 */
+        }
+        .tab.active {
+            background: #b0a7b8; /* Variação mínima mais clara para ativo */
+            font-weight: bold;
+        }
+        .tabs-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .tabs-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb {
+            background: #a89fb0; /* Cor da logo */
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb:hover {
+            background: #b0a7b8; /* Variação sutil no hover */
+        }
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .subcategories button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .subcategories button:hover {
+            background-color: #5a6268;
+        }
+        .subcategories button.active {
+            background-color: #5a6268;
+            font-weight: bold;
+        }
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-container label {
+            font-size: 14px;
+            color: #333;
+        }
+        .filter-container select {
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        .filter-container select:hover {
+            border-color: #a89fb0; /* Combinando com a logo */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery .item {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            white-space: normal;
+        }
+        .gallery .preco {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+        }
+        .gallery .parcela {
+            margin-top: 2px;
+            font-size: 14px;
+            color: #666;
+        }
+        .gallery .codigo {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            position: relative;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: hidden;
+        }
+        .capture-area {
+            position: relative;
+        }
+        .modal img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 8px;
+        }
+        .modal-codigo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+        }
+        .close:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        .modal-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        .modal-info .descricao {
+            font-size: 16px;
+        }
+        .modal-info .preco {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .modal-info .parcela {
+            font-size: 16px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .save-btn {
+            margin: 10px 0;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            background-color: #007bff;
+        }
+        .save-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .rodape {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ddd;
+        }
+        .rodape-text {
+            margin: 0;
+            padding: 5px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .pagination button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #5a6268;
+        }
+        .pagination button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
+    <h1 class="title">Catálogo de Semijoias e Acessórios</h1>
+    <div class="tabs-container">
+        <div class="tabs" id="tabs"></div>
+    </div>
+    <div class="subcategories" id="subcategories" style="display: none;"></div>
+    <div class="filter-container">
+        <label for="sortFilter">Ordenar por: </label>
+        <select id="sortFilter" onchange="applySort()">
+            <option value="newest" selected>Mais Novos</option>
+            <option value="oldest">Mais Antigos</option>
+            <option value="highestPrice">Maior Preço</option>
+            <option value="lowestPrice">Menor Preço</option>
+        </select>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <div class="pagination" id="pagination"></div>
+    
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div class="capture-area" id="captureArea">
+                <div class="modal-codigo" id="modalCodigo"></div>
+                <img id="modalImg">
+            </div>
+            <div class="modal-info" id="modalInfo"></div>
+            <button class="save-btn" onclick="saveImage()">
+                <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
+                Salvar Imagem
+            </button>
+        </div>
+    </div>
+    <div id="rodape" class="rodape"></div>
 
+    <script>
+        const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
+        const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/ItensDescricao.txt";
+        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/CategoriasAtivas.txt";
+        let descricoes = {};
+        let categoriasAtivas = [];
+        let currentFolder = '';
+        const itemsPerPage = 20;
+        let currentPage = 1;
+        let allFiles = [];
+        let currentBanho = 'todos';
+        let currentSort = 'newest';
+
+        function formatarPreco(preco) {
+            if (!preco) return "Preço não disponível";
+            const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Preço não disponível";
+            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
+        }
+
+        function calcularParcela(preco) {
+            if (!preco || preco === "Preço não disponível") return "Parcela não disponível";
+            const valorNumerico = parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Parcela não disponível";
+            const valorParcela = valorNumerico / 3;
+            return `em até 3x R$ ${valorParcela.toFixed(2).replace('.', ',')}`;
+        }
+
+        function getNumericPrice(preco) {
+            if (!preco || preco === "Preço não disponível") return 0;
+            return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+        }
+
+        async function loadCategoriasAtivas() {
+            try {
+                const response = await fetch(categoriasAtivasUrl);
+                if (!response.ok) {
+                    console.warn("Arquivo categoriasativas.txt não encontrado, todas as categorias serão exibidas.");
+                    categoriasAtivas = []; // Quando vazio, todas as categorias são exibidas
+                    return;
+                }
+                const text = await response.text();
+                categoriasAtivas = text.split('\n')
+                    .map(linha => linha.trim())
+                    .filter(linha => linha !== '');
+                console.log('Categorias ativas carregadas:', categoriasAtivas);
+            } catch (error) {
+                console.error("Erro ao carregar categorias ativas:", error);
+                categoriasAtivas = []; // Em caso de erro, exibir todas as categorias
+            }
+        }
+
+        async function loadDescriptions() {
+            try {
+                const response = await fetch(descricoesUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const lines = text.split('\n');
+                lines.forEach(line => {
+                    const [codigo, descricao, preco, banho] = line.split(';');
+                    if (codigo && descricao && preco && banho) {
+                        let normalizedBanho = banho.trim().toLowerCase();
+                        if (normalizedBanho.includes('2 banhos')) {
+                            normalizedBanho = '2 banhos';
+                        }
+                        descricoes[codigo.trim()] = {
+                            descricao: descricao.trim(),
+                            preco: formatarPreco(preco.trim()),
+                            banho: normalizedBanho
+                        };
+                    }
+                });
+                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
+            } catch (error) {
+                console.error("Erro ao carregar descrições:", error);
+                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar descrições. Verifique o console.</p>';
+            }
+        }
+
+        async function loadCategories() {
+            console.log('Iniciando loadCategories');
+            try {
+                const response = await fetch(repoUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const data = await response.json();
+                console.log('Dados das categorias recebidos:', data);
+                const tabs = document.getElementById('tabs');
+                tabs.innerHTML = '';
+
+                if (!data || !Array.isArray(data)) {
+                    throw new Error('Resposta da API inválida');
+                }
+
+                data.forEach(item => {
+                    if (item.type === 'dir') {
+                        // Verificar se a categoria está ativa ou se todas são permitidas (lista vazia)
+                        if (categoriasAtivas.length === 0 || categoriasAtivas.includes(item.name)) {
+                            const tab = document.createElement('button');
+                            tab.className = 'tab';
+                            tab.textContent = item.name;
+                            tab.onclick = () => {
+                                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                                tab.classList.add('active');
+                                loadImages(item.name);
+                                scrollToActiveTab();
+                            };
+                            tabs.appendChild(tab);
+                        }
+                    }
+                });
+
+                // Verificar se há categorias ativas disponíveis
+                if (tabs.children.length === 0) {
+                    tabs.innerHTML = '<p>Nenhuma categoria disponível no momento.</p>';
+                    return;
+                }
+
+                const initialCategory = getQueryParam('categoria');
+                let initialTab = null;
+                
+                // Verificar se a categoria da URL está disponível
+                if (initialCategory) {
+                    initialTab = findTabByText(initialCategory);
+                }
+                
+                // Se não houver categoria na URL ou ela não estiver disponível, tentar "Brincos"
+                if (!initialTab) {
+                    initialTab = findTabByText('Brincos');
+                }
+                
+                // Se "Brincos" não estiver disponível, usar a primeira categoria disponível
+                if (!initialTab && tabs.children.length > 0) {
+                    initialTab = tabs.children[0];
+                }
+                
+                if (initialTab) {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    initialTab.classList.add('active');
+                    console.log('Carregando categoria:', initialTab.textContent.trim());
+                    loadImages(initialTab.textContent.trim());
+                    scrollToActiveTab();
+                } else {
+                    console.error('Nenhuma categoria disponível para carregar.');
+                }
+            } catch (error) {
+                console.error("Erro ao carregar categorias:", error);
+                document.getElementById('tabs').innerHTML = '<p>Erro ao carregar categorias. Verifique o console.</p>';
+            }
+        }
+
+        function findTabByText(categoryName) {
+            const tabs = document.querySelectorAll('.tab');
+            for (let tab of tabs) {
+                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return tab;
+                }
+            }
+            return null;
+        }
+
+        async function loadImages(folderName) {
+            console.log('Iniciando loadImages para:', folderName);
+            currentFolder = folderName;
+            const banhosNaCategoria = new Set();
+            currentPage = 1;
+            currentBanho = 'todos';
+
+            try {
+                const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
+                if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
+                allFiles = await response.json();
+                console.log('Arquivos recebidos:', allFiles);
+
+                if (!allFiles || !Array.isArray(allFiles)) {
+                    throw new Error('Resposta da API inválida');
+                }
+
+                allFiles.forEach(file => {
+                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
+                        const codigo = file.name.split('.')[0];
+                        const { banho } = descricoes[codigo] || { banho: '' };
+                        if (banho) {
+                            banhosNaCategoria.add(banho);
+                        }
+                    }
+                });
+
+                displayPage(currentPage, banhosNaCategoria);
+                criarBotoesSubcategorias(banhosNaCategoria);
+                console.log('Imagens carregadas com sucesso para:', folderName);
+            } catch (error) {
+                console.error("Erro ao carregar imagens:", error);
+                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar imagens. Verifique o console.</p>';
+            }
+        }
+
+        function getFilteredFiles() {
+            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
+            let filtered = allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
+                return currentBanho === 'todos' || banho === currentBanho;
+            });
+
+            filtered.sort((a, b) => {
+                const codigoA = a.name.split('.')[0];
+                const codigoB = b.name.split('.')[0];
+                const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
+                const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
+
+                switch (currentSort) {
+                    case 'newest':
+                        return codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'oldest':
+                        return codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                    case 'highestPrice':
+                        return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'lowestPrice':
+                        return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    default:
+                        return 0;
+                }
+            });
+
+            console.log('Arquivos filtrados e ordenados:', filtered.length);
+            return filtered;
+        }
+
+        function displayPage(page, banhosNaCategoria) {
+            console.log('Exibindo página:', page);
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            const filteredFiles = getFilteredFiles();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedFiles = filteredFiles.slice(start, end);
+            console.log('Itens a exibir:', paginatedFiles.length);
+
+            if (paginatedFiles.length === 0) {
+                gallery.innerHTML = '<p>Nenhuma imagem encontrada para esta categoria.</p>';
+                return;
+            }
+
+            paginatedFiles.forEach(file => {
+                const codigo = file.name.split('.')[0];
+                const { descricao, preco, banho } = descricoes[codigo] || { 
+                    descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                    preco: "Preço não disponível",
+                    banho: ""
+                };
+                
+                // Calcular o valor da parcela
+                const valorParcela = calcularParcela(preco);
+
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.dataset.banho = banho || 'todos';
+
+                const img = document.createElement('img');
+                img.src = file.download_url;
+                img.alt = descricao || 'Imagem do produto';
+                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
+                img.onclick = () => showModal(file.download_url, codigo);
+                
+                const codigoElement = document.createElement('div');
+                codigoElement.className = 'codigo';
+                codigoElement.textContent = `COD: ${codigo}`;
+
+                const desc = document.createElement('div');
+                desc.className = 'description';
+                desc.textContent = descricao;
+
+                const precoElement = document.createElement('div');
+                precoElement.className = 'preco';
+                precoElement.textContent = preco;
+                
+                const parcelaElement = document.createElement('div');
+                parcelaElement.className = 'parcela';
+                parcelaElement.textContent = valorParcela;
+
+                item.append(img, codigoElement, desc, precoElement, parcelaElement);
+                gallery.appendChild(item);
+            });
+
+            updatePagination();
+        }
+
+        function updatePagination() {
+            const filteredFiles = getFilteredFiles();
+            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            prevButton.disabled = currentPage === 1;
+            paginationDiv.appendChild(prevButton);
+
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Próxima';
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            nextButton.disabled = currentPage === totalPages;
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function applySort() {
+            currentSort = document.getElementById('sortFilter').value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+            console.log('Ordenação aplicada:', currentSort);
+        }
+
+        function criarBotoesSubcategorias(banhosNaCategoria) {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = '';
+
+            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
+            if (!botaoTodosExistente) {
+                const botaoTodos = document.createElement('button');
+                botaoTodos.textContent = 'Todos';
+                botaoTodos.dataset.banho = 'todos';
+                botaoTodos.classList.add('active');
+                botaoTodos.onclick = () => filterByBanho('todos');
+                subcategoriesDiv.appendChild(botaoTodos);
+            }
+
+            banhosNaCategoria.forEach(banho => {
+                if (banho && banho !== '') {
+                    const botaoBanho = document.createElement('button');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
+                }
+            });
+
+            subcategoriesDiv.style.display = 'flex';
+        }
+
+        function filterByBanho(banho) {
+            currentBanho = banho;
+            currentPage = 1;
+            
+            // Atualize a classe 'active' para o botão selecionado
+            const subcategoriesDiv = document.getElementById('subcategories');
+            const buttons = subcategoriesDiv.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.dataset.banho === banho) {
+                    button.classList.add('active');
+                }
+            });
+            
+            displayPage(currentPage, new Set());
+        }
+
+        function showModal(src, codigo) {
+            const { descricao, preco } = descricoes[codigo] || { 
+                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                preco: "Preço não disponível"
+            };
+            
+            // Calcular o valor da parcela para o modal
+            const valorParcela = calcularParcela(preco);
+            
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${descricao}</div>
+                <div class="preco">${preco}</div>
+                <div class="parcela">${valorParcela}</div>
+            `;
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        function saveImage() {
+            html2canvas(document.querySelector("#captureArea"), {
+                useCORS: true,
+                allowTaint: true,
+                scale: 2
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(error => {
+                console.error("Erro ao salvar imagem:", error);
+            });
+        }
+        async function loadRodape() {
+            try {
+                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt");
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const formattedText = text.replace(/\n/g, '<br>');
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
+            } catch (error) {
+                console.error("Erro ao carregar rodapé:", error);
+                document.getElementById("rodape").innerHTML = '<p>Erro ao carregar rodapé.</p>';
+            }
+        }
+        
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        function scrollToActiveTab() {
+            const activeTab = document.querySelector('.tab.active');
+            if (activeTab) {
+                const tabRect = activeTab.getBoundingClientRect();
+                const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
+                const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
+                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
+        
+                activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
+            }
+        }
+        
+        window.onload = async () => {
+            console.log('Iniciando carregamento da página');
+            try {
+                // Primeiro carregamos as categorias ativas para saber quais mostrar
+                await loadCategoriasAtivas();
+                await loadDescriptions();
+                await loadCategories();
+                await loadRodape();
+                console.log('Carregamento da página concluído');
+            } catch (error) {
+                console.error('Erro no carregamento inicial:', error);
+                document.body.innerHTML += '<p>Erro ao iniciar o catálogo. Verifique o console.</p>';
+            }
+        };
+    </script>
+</body>
+</html>
