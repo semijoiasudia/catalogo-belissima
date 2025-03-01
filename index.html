@@ -43,8 +43,8 @@
             cursor: pointer;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #8a2be2, #7b1fa2); /* Roxo médio */
-            color: white; /* Volta ao branco para contraste com roxo */
+            background: linear-gradient(135deg, #d8bfd8, #e6d8e6);
+            color: #333;
             font-weight: bold;
             transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
             white-space: nowrap;
@@ -53,10 +53,10 @@
         }
         .tab:hover {
             transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(138, 43, 226, 0.5); /* Sombra baseada em #8a2be2 */
+            box-shadow: 0px 4px 8px rgba(216, 191, 216, 0.3);
         }
         .tab.active {
-            background: linear-gradient(135deg, #7b1fa2, #6a0dad); /* Roxo mais escuro */
+            background: linear-gradient(135deg, #e6d8e6, #d8bfd8);
             font-weight: bold;
         }
         .tabs-container::-webkit-scrollbar {
@@ -67,11 +67,11 @@
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb {
-            background: #8a2be2; /* Roxo no scroll */
+            background: #d8bfd8;
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #7b1fa2; /* Roxo mais escuro no hover do scroll */
+            background: #e6d8e6;
         }
         .subcategories {
             display: flex;
@@ -118,7 +118,7 @@
             transition: border-color 0.3s;
         }
         .filter-container select:hover {
-            border-color: #8a2be2; /* Roxo para combinar */
+            border-color: #d8bfd8;
         }
         .gallery {
             display: grid;
@@ -686,7 +686,7 @@
 
         async function loadRodape() {
             try {
-                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/rodape.txt");
+                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt");
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const text = await response.text();
                 const formattedText = text.replace(/\n/g, '<br>');
