@@ -43,7 +43,7 @@
             cursor: pointer;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #d8bfd8, #e6d8e6);
+            background: #a89fb0; /* Cor exata da logo, sem gradiente */
             color: #333;
             font-weight: bold;
             transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
@@ -53,10 +53,10 @@
         }
         .tab:hover {
             transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(216, 191, 216, 0.3);
+            box-shadow: 0px 4px 8px rgba(168, 159, 176, 0.3); /* Sombra leve baseada em #a89fb0 */
         }
         .tab.active {
-            background: linear-gradient(135deg, #b8b0c0, #a89fb0);
+            background: #b0a7b8; /* Variação mínima mais clara para ativo */
             font-weight: bold;
         }
         .tabs-container::-webkit-scrollbar {
@@ -67,11 +67,11 @@
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb {
-            background: #a89fb0; /* Cor da logo na barra de rolagem */
+            background: #a89fb0; /* Cor da logo */
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #b8b0c0; /* Variação mais clara no hover */
+            background: #b0a7b8; /* Variação sutil no hover */
         }
         .subcategories {
             display: flex;
@@ -118,7 +118,7 @@
             transition: border-color 0.3s;
         }
         .filter-container select:hover {
-            border-color: #a89fb0; /* Combinando com a cor da logo */
+            border-color: #a89fb0; /* Combinando com a logo */
         }
         .gallery {
             display: grid;
