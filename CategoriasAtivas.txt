@@ -8,8 +8,7 @@ Aneis
 Conjuntos
 Piercings
 Pulseiras
-<<<<<<< HEAD
+Bijuterias
 Tornozeleiras
-=======
 Tornozeleiras
->>>>>>> 07ff3642a8f974f7d6e3cde42444f57255ef8fbe
+Pingentes
