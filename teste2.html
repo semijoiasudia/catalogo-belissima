@@ -430,7 +430,7 @@
             const valorNumerico = parseFloat(preco.replace('R$ ', '').replace(',', '.'));
             if (isNaN(valorNumerico)) return "Parcela não disponível";
             const valorParcela = valorNumerico / 3;
-            return `em até 3x R$ ${valorParcela.toFixed(2).replace('.', ',')} no link de pagamento`;
+            return `em 3x de R$ ${valorParcela.toFixed(2).replace('.', ',')} sem juros no cartão por link de pagamento`;
         }
 
         function getNumericPrice(preco) {
