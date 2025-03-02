@@ -337,8 +337,14 @@
         }
         /* Estilo para a logo no modal */
         .modal .logo-watermark {
-            pointer-events: none;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 25%; /* 1/4 do tamanho da imagem */
+            max-height: 25%;
+            object-fit: contain;
             z-index: 2;
+            pointer-events: none; /* Permite clicar através da logo */
         }
         /* Ajuste para a imagem na galeria */
         .gallery .img-container img {
@@ -934,46 +940,30 @@
         }
         // Adicione um detector de zoom no modal para identificar quando a imagem está ampliada
         function detectImageZoom() {
-            const modalImg = document.getElementById('modalImg');
-            
-            // Usando o MutationObserver para detectar mudanças na escala/zoom
-            const observer = new MutationObserver(function(mutations) {
-                mutations.forEach(function(mutation) {
-                    if (mutation.attributeName === 'style') {
-                        const style = modalImg.style;
-                        // Verificar se há algum transform scale aplicado
-                        if (style.transform && style.transform.includes('scale')) {
-                            isImageZoomed = true;
-                        } else {
-                            isImageZoomed = false;
-                        }
-                        console.log('Estado de zoom alterado:', isImageZoomed);
-                    }
-                });
+            const modalImg = document.getElementById('modalImg');    
+            // Monitorar gestos de pinça
+            modalImg.addEventListener('touchstart', function(e) {
+                if (e.touches.length >= 2) {
+                    isImageZoomed = true;
+                    console.log('Zoom iniciado');
+                }
             });
             
-            observer.observe(modalImg, { attributes: true });
-            
-            // Monitorar gestos de pinça que podem ser usados para zoom
-            modalImg.addEventListener('gesturestart', function(e) {
-                isImageZoomed = true;
-                e.preventDefault(); // Prevenir zoom padrão do navegador
-            });
-            
-            modalImg.addEventListener('gestureend', function(e) {
-                // Definir um timeout para resetar após o gesto terminar
+            // Quando o toque termina, verifica após um pequeno delay se o zoom ainda está ativo
+            modalImg.addEventListener('touchend', function() {
                 setTimeout(() => {
-                    const transform = window.getComputedStyle(modalImg).getPropertyValue('transform');
-                    const matrix = transform.match(/matrix.*\((.+)\)/);
-                    if (matrix) {
-                        const values = matrix[1].split(', ');
-                        const scaleX = parseFloat(values[0]);
-                        isImageZoomed = Math.abs(scaleX - 1) > 0.1;
+                    // Verificar se a imagem ainda está com zoom após o gesto terminar
+                    const rect = modalImg.getBoundingClientRect();
+                    const containerRect = modalImg.parentElement.getBoundingClientRect();
+                    
+                    // Se a imagem for maior que o container, ainda tem zoom
+                    if (rect.width > containerRect.width || rect.height > containerRect.height) {
+                        isImageZoomed = true;
                     } else {
                         isImageZoomed = false;
+                        console.log('Zoom finalizado');
                     }
-                }, 500);
-                e.preventDefault();
+                }, 300);
             });
         }
         
