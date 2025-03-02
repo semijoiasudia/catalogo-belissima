@@ -940,28 +940,46 @@
         }
         // Adicione um detector de zoom no modal para identificar quando a imagem está ampliada
         function detectImageZoom() {
-            const modalImg = document.getElementById('modalImg');    
+            const modalImg = document.getElementById('modalImg');
+    
+            // Usando MutationObserver para detectar mudanças na escala
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.attributeName === 'style') {
+                        const style = modalImg.style;
+                        if (style.transform && style.transform.includes('scale')) {
+                            isImageZoomed = true;
+                            console.log('Zoom detectado via style');
+                        }
+                    }
+                });
+            });
+            
+            observer.observe(modalImg, { attributes: true });
+            
             // Monitorar gestos de pinça
             modalImg.addEventListener('touchstart', function(e) {
                 if (e.touches.length >= 2) {
                     isImageZoomed = true;
-                    console.log('Zoom iniciado');
+                    console.log('Zoom iniciado via pinça');
                 }
             });
             
-            // Quando o toque termina, verifica após um pequeno delay se o zoom ainda está ativo
+            // Quando o toque termina, verificar se o zoom ainda está ativo
             modalImg.addEventListener('touchend', function() {
                 setTimeout(() => {
-                    // Verificar se a imagem ainda está com zoom após o gesto terminar
                     const rect = modalImg.getBoundingClientRect();
                     const containerRect = modalImg.parentElement.getBoundingClientRect();
                     
-                    // Se a imagem for maior que o container, ainda tem zoom
                     if (rect.width > containerRect.width || rect.height > containerRect.height) {
                         isImageZoomed = true;
+                        console.log('Zoom ainda ativo');
                     } else {
-                        isImageZoomed = false;
-                        console.log('Zoom finalizado');
+                        const transform = window.getComputedStyle(modalImg).getPropertyValue('transform');
+                        if (transform === 'none' || transform === 'matrix(1, 0, 0, 1, 0, 0)') {
+                            isImageZoomed = false;
+                            console.log('Zoom finalizado');
+                        }
                     }
                 }, 300);
             });
