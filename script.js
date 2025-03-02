@@ -370,4 +370,215 @@ function criarBotoesSubcategorias(banhosNaCategoria) {
     banhosNaCategoria.forEach(banho => {
         if (banho && banho !== '') {
             const botaoBanho = document.createElement('button');
-            let displayText = banho.charAt(0).toUpperCase() + banho.slice
+            let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+            if (banho === '2 banhos') {
+                displayText = '2 Banhos';
+            }
+            botaoBanho.textContent = displayText;
+            botaoBanho.dataset.banho = banho;
+            botaoBanho.onclick = () => filterByBanho(banho);
+            subcategoriesDiv.appendChild(botaoBanho);
+        }
+    });
+
+    subcategoriesDiv.style.display = 'flex';
+}
+
+// Filtrar por tipo de banho
+function filterByBanho(banho) {
+    currentBanho = banho;
+    currentPage = 1;
+    
+    // Atualize a classe 'active' para o botão selecionado
+    const subcategoriesDiv = document.getElementById('subcategories');
+    const buttons = subcategoriesDiv.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+        if (button.dataset.banho === banho) {
+            button.classList.add('active');
+        }
+    });
+    
+    displayPage(currentPage, new Set());
+}
+
+// Mostrar modal com a imagem ampliada
+function showModal(src, codigo, index) {
+    currentModalIndex = index;
+    updateModalContent(codigo);
+    document.getElementById('imageModal').style.display = 'flex';
+    document.body.classList.add('modal-open');
+    
+    // Adicionar eventos de toque para swipe
+    setupSwipeNavigation();
+}
+
+// Fechar o modal
+function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+    document.body.classList.remove('modal-open');
+}
+
+// Atualizar o conteúdo do modal
+function updateModalContent(codigo) {
+    const file = currentVisibleFiles[currentModalIndex];
+    if (!file) return;
+    
+    const src = file.download_url;
+    codigo = file.name.split('.')[0]; // Garantir que estamos usando o código correto
+    
+    const { descricao, preco } = descricoes[codigo] || { 
+        descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+        preco: "Preço não disponível"
+    };
+    
+    // Calcular o valor da parcela para o modal
+    const valorParcela = calcularParcela(preco);
+    
+    // Limpar o conteúdo da área de captura e adicionar os elementos
+    const captureArea = document.getElementById('captureArea');
+    
+    // Verificar se já existe uma logo e removê-la para evitar duplicações
+    const existingLogo = captureArea.querySelector('.logo-watermark');
+    if (existingLogo) {
+        existingLogo.remove();
+    }
+    
+    document.getElementById('modalImg').src = src;
+    document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+    
+    // Adicionar a logo marca d'água no modal
+    const logo = document.createElement('img');
+    logo.src = 'imagens/logo.png';
+    logo.className = 'logo-watermark';
+    logo.alt = 'Logo';
+    captureArea.appendChild(logo);
+    
+    document.getElementById('modalInfo').innerHTML = `
+        <div class="descricao">${descricao}</div>
+        <div class="preco">${preco}</div>
+        <div class="parcela">${valorParcela}</div>
+    `;
+}
+
+// Funções de navegação
+function navigatePrev() {
+    if (currentModalIndex > 0) {
+        currentModalIndex--;
+        const prevFile = currentVisibleFiles[currentModalIndex];
+        const codigo = prevFile.name.split('.')[0];
+        updateModalContent(codigo);
+    }
+}
+
+function navigateNext() {
+    if (currentModalIndex < currentVisibleFiles.length - 1) {
+        currentModalIndex++;
+        const nextFile = currentVisibleFiles[currentModalIndex];
+        const codigo = nextFile.name.split('.')[0];
+        updateModalContent(codigo);
+    }
+}
+
+// Configurar navegação por swipe
+function setupSwipeNavigation() {
+    const captureArea = document.getElementById('captureArea');
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    // Remover event listeners anteriores para evitar duplicação
+    captureArea.removeEventListener('touchstart', touchStartHandler);
+    captureArea.removeEventListener('touchend', touchEndHandler);
+    
+    // Adicionar novos event listeners
+    captureArea.addEventListener('touchstart', touchStartHandler, false);
+    captureArea.addEventListener('touchend', touchEndHandler, false);
+}
+
+function touchStartHandler(e) {
+    touchStartX = e.changedTouches[0].screenX;
+}
+
+function touchEndHandler(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}
+
+function handleSwipe() {
+    const swipeThreshold = 50; // Mínima distância para considerar um swipe
+    
+    if (touchEndX < touchStartX - swipeThreshold) {
+        // Swipe para a esquerda (próxima imagem)
+        navigateNext();
+    }
+    
+    if (touchEndX > touchStartX + swipeThreshold) {
+        // Swipe para a direita (imagem anterior)
+        navigatePrev();
+    }
+}
+
+// Salvar imagem
+function saveImage() {
+    html2canvas(document.querySelector("#captureArea"), {
+        useCORS: true,
+        allowTaint: true,
+        scale: 2
+    }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    }).catch(error => {
+        console.error("Erro ao salvar imagem:", error);
+    });
+}
+
+// Carregar o rodapé
+async function loadRodape() {
+    try {
+        const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt");
+        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+        const text = await response.text();
+        const formattedText = text.replace(/\n/g, '<br>');
+        document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
+    } catch (error) {
+        console.error("Erro ao carregar rodapé:", error);
+        document.getElementById("rodape").innerHTML = '<p>Erro ao carregar rodapé.</p>';
+    }
+}
+
+// Obter parâmetro da URL
+function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+// Rolar para a aba ativa
+function scrollToActiveTab() {
+    const activeTab = document.querySelector('.tab.active');
+    if (activeTab) {
+        const tabRect = activeTab.getBoundingClientRect();
+        const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
+        const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
+        const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
+
+        activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
+    }
+}
+
+// Inicialização da página
+window.onload = async () => {
+    console.log('Iniciando carregamento da página');
+    try {
+        // Primeiro carregamos as categorias ativas para saber quais mostrar
+        await loadCategoriasAtivas();
+        await loadDescriptions();
+        await loadCategories();
+        await loadRodape();
+        console.log('Carregamento da página concluído');
+    } catch (error) {
+        console.error('Erro no carregamento inicial:', error);
+        document.body.innerHTML += '<p>Erro ao iniciar o catálogo. Verifique o console.</p>';
+    }
+};
