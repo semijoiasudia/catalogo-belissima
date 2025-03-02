@@ -142,6 +142,8 @@
             cursor: pointer;
             border-radius: 8px;
             transition: transform 0.2s;
+            user-select: none; /* Impede seleção */
+            -webkit-touch-callout: none; /* Impede menu de contexto em iOS */
         }
         .gallery img:hover {
             transform: scale(1.05);
@@ -188,7 +190,7 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            overflow: auto; /* Permitir rolagem se necessário */
+            overflow: auto;
         }
         .modal-content {
             position: relative;
@@ -198,9 +200,9 @@
             max-width: 90%;
             max-height: 90%;
             overflow: hidden;
-            transform-origin: center center; /* Zoom centrado */
-            transition: transform 0.1s ease-out; /* Suavizar o zoom */
-            touch-action: none; /* Impedir comportamento padrão do navegador */
+            transform-origin: center center;
+            transition: transform 0.1s ease-out;
+            touch-action: none;
         }
         .capture-area {
             position: relative;
@@ -210,6 +212,8 @@
             max-height: 65vh;
             border-radius: 8px;
             display: block;
+            user-select: none; /* Impede seleção */
+            -webkit-touch-callout: none; /* Impede menu de contexto em iOS */
         }
         .modal-codigo {
             position: absolute;
@@ -351,6 +355,8 @@
             cursor: pointer;
             transition: transform 0.2s;
             display: block;
+            user-select: none; /* Impede seleção */
+            -webkit-touch-callout: none; /* Impede menu de contexto em iOS */
         }
         .gallery .img-container img:hover {
             transform: scale(1.05);
@@ -408,7 +414,6 @@
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
 
-        // Variáveis para controle de zoom e arrastar
         let scale = 1;
         let minScale = 1;
         let maxScale = 5;
@@ -430,7 +435,7 @@
             const valorNumerico = parseFloat(preco.replace('R$ ', '').replace(',', '.'));
             if (isNaN(valorNumerico)) return "Parcela não disponível";
             const valorParcela = valorNumerico / 3;
-            return `em 3x de R$ ${valorParcela.toFixed(2).replace('.', ',')} sem juros no cartão por link de pagamento`;
+            return `em até 3x R$ ${valorParcela.toFixed(2).replace('.', ',')} no link de pagamento`;
         }
 
         function getNumericPrice(preco) {
@@ -698,6 +703,10 @@
             });
         
             updatePagination();
+            // Adicionar evento para impedir menu de contexto nas imagens da galeria
+            document.querySelectorAll('.gallery img').forEach(img => {
+                img.addEventListener('contextmenu', (e) => e.preventDefault());
+            });
         }
 
         function updatePagination() {
@@ -787,17 +796,19 @@
 
         function showModal(src, codigo, index) {
             currentModalIndex = index;
-            resetZoomAndPan(); // Resetar zoom e posição ao abrir o modal
+            resetZoomAndPan();
             updateModalContent(codigo);
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
-            setupModalInteraction(); // Configurar interações de zoom e arrastar
+            setupModalInteraction();
+            // Adicionar evento para impedir menu de contexto na imagem do modal
+            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
-            resetZoomAndPan(); // Resetar ao fechar o modal
+            resetZoomAndPan();
         }
 
         function resetZoomAndPan() {
@@ -841,7 +852,7 @@
                 <div class="preco">${preco}</div>
                 <div class="parcela">${valorParcela}</div>
             `;
-            updateModalTransform(); // Aplicar transformação inicial
+            updateModalTransform();
         }
 
         function updateModalTransform() {
@@ -858,7 +869,6 @@
             let touchStartX = 0;
             let touchStartTime = 0;
 
-            // Mouse events
             modalContent.addEventListener('wheel', (e) => {
                 e.preventDefault();
                 const delta = e.deltaY * -0.01;
@@ -887,7 +897,6 @@
                 isDragging = false;
             });
 
-            // Touch events
             modalContent.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
                     touchStartX = e.touches[0].screenX;
@@ -934,7 +943,7 @@
                     if (scale === 1) {
                         const touchEndX = e.changedTouches[0].screenX;
                         const timeDiff = Date.now() - touchStartTime;
-                        if (timeDiff < 300) { // Swipe só se for rápido
+                        if (timeDiff < 300) {
                             handleSwipe(touchStartX, touchEndX);
                         }
                     }
