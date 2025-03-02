@@ -311,6 +311,50 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
+        /* Estilo para o container da imagem na galeria */
+        .gallery .img-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        /* Estilo para a logo na galeria */
+        .gallery .img-container .logo-watermark {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 25%; /* 1/4 do tamanho da imagem */
+            max-height: 25%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none; /* Permite clicar através da logo */
+        }
+        /* Estilo para o container da imagem no modal */
+        .modal .capture-area {
+            position: relative;
+        }
+        /* Estilo para a logo no modal */
+        .modal .logo-watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 25%; /* 1/4 do tamanho da imagem */
+            max-height: 25%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none; /* Permite clicar através da logo */
+        }
+        /* Ajuste para a imagem na galeria */
+        .gallery .img-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: block;
+        }
+        .gallery .img-container img:hover {
+            transform: scale(1.05);
+        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
@@ -339,6 +383,7 @@
             <div class="capture-area" id="captureArea">
                 <div class="modal-codigo" id="modalCodigo"></div>
                 <img id="modalImg">
+                <!-- A logo será adicionada dinamicamente pelo JavaScript -->
             </div>
             <div class="modal-info" id="modalInfo"></div>
             <button class="save-btn" onclick="saveImage()">
@@ -580,12 +625,14 @@
         }
 
         function displayPage(page, banhosNaCategoria) {
+            console.log('Exibindo página:', page);
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
             const filteredFiles = getFilteredFiles();
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const paginatedFiles = filteredFiles.slice(start, end);
+            console.log('Itens a exibir:', paginatedFiles.length);
         
             if (paginatedFiles.length === 0) {
                 gallery.innerHTML = '<p>Nenhuma imagem encontrada para esta categoria.</p>';
@@ -600,21 +647,36 @@
                     banho: ""
                 };
                 
+                // Calcular o valor da parcela
                 const valorParcela = calcularParcela(preco);
+        
+                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
         
                 const item = document.createElement('div');
                 item.className = 'item';
                 item.dataset.banho = banho || 'todos';
-                
-                // Encontrar o índice do arquivo na lista completa de arquivos filtrados
-                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
-                
+        
+                // Criar um container para a imagem e a logo
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
+        
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = descricao || 'Imagem do produto';
+                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
                 img.onclick = () => showModal(file.download_url, codigo, indexInAll);
                 
-                // Restante do código para criar o item...
+                // Adicionar a logo marca d'água
+                const logo = document.createElement('img');
+                logo.src = 'imagens/logo.png';
+                logo.className = 'logo-watermark';
+                logo.alt = 'Logo';
+                
+                // Adicionar a imagem e a logo ao container
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(logo);
+                
                 const codigoElement = document.createElement('div');
                 codigoElement.className = 'codigo';
                 codigoElement.textContent = `COD: ${codigo}`;
@@ -631,7 +693,7 @@
                 parcelaElement.className = 'parcela';
                 parcelaElement.textContent = valorParcela;
         
-                item.append(img, codigoElement, desc, precoElement, parcelaElement);
+                item.append(imgContainer, codigoElement, desc, precoElement, parcelaElement);
                 gallery.appendChild(item);
             });
         
@@ -755,8 +817,25 @@
             // Calcular o valor da parcela para o modal
             const valorParcela = calcularParcela(preco);
             
+            // Limpar o conteúdo da área de captura e adicionar os elementos
+            const captureArea = document.getElementById('captureArea');
+            
+            // Verificar se já existe uma logo e removê-la para evitar duplicações
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) {
+                existingLogo.remove();
+            }
+            
             document.getElementById('modalImg').src = src;
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            
+            // Adicionar a logo marca d'água no modal
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+            
             document.getElementById('modalInfo').innerHTML = `
                 <div class="descricao">${descricao}</div>
                 <div class="preco">${preco}</div>
