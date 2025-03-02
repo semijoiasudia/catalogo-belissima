@@ -311,6 +311,50 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
+        /* Estilo para o container da imagem na galeria */
+        .gallery .img-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        /* Estilo para a logo na galeria */
+        .gallery .img-container .logo-watermark {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 25%; /* 1/4 do tamanho da imagem */
+            max-height: 25%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none; /* Permite clicar através da logo */
+        }
+        /* Estilo para o container da imagem no modal */
+        .modal .capture-area {
+            position: relative;
+        }
+        /* Estilo para a logo no modal */
+        .modal .logo-watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 25%; /* 1/4 do tamanho da imagem */
+            max-height: 25%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none; /* Permite clicar através da logo */
+        }
+        /* Ajuste para a imagem na galeria */
+        .gallery .img-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: block;
+        }
+        .gallery .img-container img:hover {
+            transform: scale(1.05);
+        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
@@ -339,6 +383,7 @@
             <div class="capture-area" id="captureArea">
                 <div class="modal-codigo" id="modalCodigo"></div>
                 <img id="modalImg">
+                <!-- A logo será adicionada dinamicamente pelo JavaScript -->
             </div>
             <div class="modal-info" id="modalInfo"></div>
             <button class="save-btn" onclick="saveImage()">
@@ -361,6 +406,8 @@
         let allFiles = [];
         let currentBanho = 'todos';
         let currentSort = 'newest';
+        let currentModalIndex = 0; //adicionadas para a funcionalidade de swipe (deslizar para os lados) 
+        let currentVisibleFiles = [];    //adicionadas para a funcionalidade de swipe (deslizar para os lados) 
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -546,7 +593,6 @@
         }
 
         function getFilteredFiles() {
-            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
             let filtered = allFiles.filter(file => {
                 if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
                 const codigo = file.name.split('.')[0];
@@ -559,7 +605,7 @@
                 const codigoB = b.name.split('.')[0];
                 const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
                 const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
-
+        
                 switch (currentSort) {
                     case 'newest':
                         return codigoB.localeCompare(codigoA, undefined, { numeric: true });
@@ -574,7 +620,7 @@
                 }
             });
 
-            console.log('Arquivos filtrados e ordenados:', filtered.length);
+            currentVisibleFiles = filtered; // Armazenar todas as imagens filtradas
             return filtered;
         }
 
@@ -587,12 +633,12 @@
             const end = start + itemsPerPage;
             const paginatedFiles = filteredFiles.slice(start, end);
             console.log('Itens a exibir:', paginatedFiles.length);
-
+        
             if (paginatedFiles.length === 0) {
                 gallery.innerHTML = '<p>Nenhuma imagem encontrada para esta categoria.</p>';
                 return;
             }
-
+        
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
                 const { descricao, preco, banho } = descricoes[codigo] || { 
@@ -603,26 +649,42 @@
                 
                 // Calcular o valor da parcela
                 const valorParcela = calcularParcela(preco);
-
+        
+                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
+        
                 const item = document.createElement('div');
                 item.className = 'item';
                 item.dataset.banho = banho || 'todos';
-
+        
+                // Criar um container para a imagem e a logo
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
+        
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = descricao || 'Imagem do produto';
                 img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
                 img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
-                img.onclick = () => showModal(file.download_url, codigo);
+                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                
+                // Adicionar a logo marca d'água
+                const logo = document.createElement('img');
+                logo.src = 'imagens/logo.png';
+                logo.className = 'logo-watermark';
+                logo.alt = 'Logo';
+                
+                // Adicionar a imagem e a logo ao container
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(logo);
                 
                 const codigoElement = document.createElement('div');
                 codigoElement.className = 'codigo';
                 codigoElement.textContent = `COD: ${codigo}`;
-
+        
                 const desc = document.createElement('div');
                 desc.className = 'description';
                 desc.textContent = descricao;
-
+        
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
                 precoElement.textContent = preco;
@@ -630,11 +692,11 @@
                 const parcelaElement = document.createElement('div');
                 parcelaElement.className = 'parcela';
                 parcelaElement.textContent = valorParcela;
-
-                item.append(img, codigoElement, desc, precoElement, parcelaElement);
+        
+                item.append(imgContainer, codigoElement, desc, precoElement, parcelaElement);
                 gallery.appendChild(item);
             });
-
+        
             updatePagination();
         }
 
@@ -724,7 +786,29 @@
             displayPage(currentPage, new Set());
         }
 
-        function showModal(src, codigo) {
+        function showModal(src, codigo, index) {
+            currentModalIndex = index;
+            updateModalContent(codigo);
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            
+            // Adicionar eventos de toque para swipe
+            setupSwipeNavigation();
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        // Nova função para atualizar o conteúdo do modal
+        function updateModalContent(codigo) {
+            const file = currentVisibleFiles[currentModalIndex];
+            if (!file) return;
+            
+            const src = file.download_url;
+            codigo = file.name.split('.')[0]; // Garantir que estamos usando o código correto
+            
             const { descricao, preco } = descricoes[codigo] || { 
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                 preco: "Preço não disponível"
@@ -733,22 +817,82 @@
             // Calcular o valor da parcela para o modal
             const valorParcela = calcularParcela(preco);
             
+            // Limpar o conteúdo da área de captura e adicionar os elementos
+            const captureArea = document.getElementById('captureArea');
+            
+            // Verificar se já existe uma logo e removê-la para evitar duplicações
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) {
+                existingLogo.remove();
+            }
+            
             document.getElementById('modalImg').src = src;
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            
+            // Adicionar a logo marca d'água no modal
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+            
             document.getElementById('modalInfo').innerHTML = `
                 <div class="descricao">${descricao}</div>
                 <div class="preco">${preco}</div>
                 <div class="parcela">${valorParcela}</div>
             `;
-            document.getElementById('imageModal').style.display = 'flex';
-            document.body.classList.add('modal-open');
         }
-
-        function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
-            document.body.classList.remove('modal-open');
+        // Funções de navegação
+        function navigatePrev() {
+            if (currentModalIndex > 0) {
+                currentModalIndex--;
+                const prevFile = currentVisibleFiles[currentModalIndex];
+                const codigo = prevFile.name.split('.')[0];
+                updateModalContent(codigo);
+            }
         }
-
+        function navigateNext() {
+            if (currentModalIndex < currentVisibleFiles.length - 1) {
+                currentModalIndex++;
+                const nextFile = currentVisibleFiles[currentModalIndex];
+                const codigo = nextFile.name.split('.')[0];
+                updateModalContent(codigo);
+            }
+        }
+        // Configurar navegação por swipe
+        function setupSwipeNavigation() {
+            const captureArea = document.getElementById('captureArea');
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            // Remover event listeners anteriores para evitar duplicação
+            captureArea.removeEventListener('touchstart', touchStartHandler);
+            captureArea.removeEventListener('touchend', touchEndHandler);
+            
+            // Adicionar novos event listeners
+            captureArea.addEventListener('touchstart', touchStartHandler, false);
+            captureArea.addEventListener('touchend', touchEndHandler, false);
+        }
+        function touchStartHandler(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }
+        function touchEndHandler(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }
+        function handleSwipe() {
+            const swipeThreshold = 50; // Mínima distância para considerar um swipe
+            
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe para a esquerda (próxima imagem)
+                navigateNext();
+            }
+            
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe para a direita (imagem anterior)
+                navigatePrev();
+            }
+        }
         function saveImage() {
             html2canvas(document.querySelector("#captureArea"), {
                 useCORS: true,
