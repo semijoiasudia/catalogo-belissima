@@ -188,7 +188,7 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            overflow: auto; /* Permitir rolagem se o modal ficar muito grande */
+            overflow: auto; /* Permitir rolagem se necessário */
         }
         .modal-content {
             position: relative;
@@ -198,7 +198,7 @@
             max-width: 90%;
             max-height: 90%;
             overflow: hidden;
-            transform-origin: center center; /* Zoom centrado no modal */
+            transform-origin: center center; /* Zoom centrado */
             transition: transform 0.1s ease-out; /* Suavizar o zoom */
             touch-action: none; /* Impedir comportamento padrão do navegador */
         }
@@ -265,7 +265,7 @@
         .save-btn {
             margin: 10px 0;
             color: white;
-            padding: 6px 16px; /* Aumentado para mais espaço */
+            padding: 6px 16px;
             border: none;
             border-radius: 25px;
             cursor: pointer;
@@ -274,9 +274,9 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: all 0.3s;
             background-color: #007bff;
-            display: inline-flex; /* Corrige o layout do botão */
-            align-items: center; /* Alinha verticalmente */
-            white-space: nowrap; /* Impede quebra de linha */
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
         }
         .save-btn:hover {
             background-color: #0056b3;
@@ -408,10 +408,15 @@
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
 
-        // Variáveis para controle de zoom
+        // Variáveis para controle de zoom e arrastar
         let scale = 1;
         let minScale = 1;
         let maxScale = 5;
+        let translateX = 0;
+        let translateY = 0;
+        let startX = 0;
+        let startY = 0;
+        let isDragging = false;
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -782,21 +787,23 @@
 
         function showModal(src, codigo, index) {
             currentModalIndex = index;
-            resetZoom(); // Resetar zoom ao abrir o modal
+            resetZoomAndPan(); // Resetar zoom e posição ao abrir o modal
             updateModalContent(codigo);
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
-            setupModalInteraction(); // Configurar interações de zoom
+            setupModalInteraction(); // Configurar interações de zoom e arrastar
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
-            resetZoom(); // Resetar ao fechar o modal
+            resetZoomAndPan(); // Resetar ao fechar o modal
         }
 
-        function resetZoom() {
+        function resetZoomAndPan() {
             scale = 1;
+            translateX = 0;
+            translateY = 0;
             updateModalTransform();
         }
 
@@ -839,13 +846,15 @@
 
         function updateModalTransform() {
             const modalContent = document.getElementById('modalContent');
-            modalContent.style.transform = `scale(${scale})`;
+            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
         }
 
         function setupModalInteraction() {
             const modalContent = document.getElementById('modalContent');
             
             let startDist = 0;
+            let lastX = 0;
+            let lastY = 0;
             let touchStartX = 0;
             let touchStartTime = 0;
 
@@ -856,32 +865,78 @@
                 adjustScale(delta);
             });
 
+            modalContent.addEventListener('mousedown', (e) => {
+                if (scale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                }
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    e.preventDefault();
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
             // Touch events
             modalContent.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
                     touchStartX = e.touches[0].screenX;
                     touchStartTime = Date.now();
+                    if (scale > 1) {
+                        isDragging = true;
+                        startX = e.touches[0].clientX - translateX;
+                        startY = e.touches[0].clientY - translateY;
+                    }
                 } else if (e.touches.length === 2) {
                     startDist = getDistance(e.touches);
+                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
                 }
             }, false);
 
             modalContent.addEventListener('touchmove', (e) => {
                 e.preventDefault();
-                if (e.touches.length === 2) {
+                if (e.touches.length === 1 && isDragging) {
+                    translateX = e.touches[0].clientX - startX;
+                    translateY = e.touches[0].clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                } else if (e.touches.length === 2) {
                     const newDist = getDistance(e.touches);
                     const scaleChange = newDist / startDist;
                     adjustScale((scaleChange - 1) * 2);
                     startDist = newDist;
+
+                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                    translateX += (newX - lastX) / scale;
+                    translateY += (newY - lastY) / scale;
+                    lastX = newX;
+                    lastY = newY;
+                    clampTranslation();
+                    updateModalTransform();
                 }
             }, false);
 
             modalContent.addEventListener('touchend', (e) => {
-                if (e.touches.length === 0 && scale === 1) {
-                    const touchEndX = e.changedTouches[0].screenX;
-                    const timeDiff = Date.now() - touchStartTime;
-                    if (timeDiff < 300) { // Swipe só se for rápido
-                        handleSwipe(touchStartX, touchEndX);
+                if (e.touches.length === 0) {
+                    isDragging = false;
+                    if (scale === 1) {
+                        const touchEndX = e.changedTouches[0].screenX;
+                        const timeDiff = Date.now() - touchStartTime;
+                        if (timeDiff < 300) { // Swipe só se for rápido
+                            handleSwipe(touchStartX, touchEndX);
+                        }
                     }
                 }
             }, false);
@@ -890,6 +945,7 @@
         function adjustScale(delta) {
             scale += delta;
             scale = Math.max(minScale, Math.min(maxScale, scale));
+            clampTranslation();
             updateModalTransform();
         }
 
@@ -899,12 +955,31 @@
             return Math.sqrt(dx * dx + dy * dy);
         }
 
+        function clampTranslation() {
+            const modalContent = document.getElementById('modalContent');
+            const modal = document.getElementById('imageModal');
+            const modalRect = modalContent.getBoundingClientRect();
+            const containerRect = modal.getBoundingClientRect();
+
+            const scaledWidth = modalRect.width * scale;
+            const scaledHeight = modalRect.height * scale;
+
+            const maxX = (scaledWidth - containerRect.width) / (2 * scale);
+            const maxY = (scaledHeight - containerRect.height) / (2 * scale);
+
+            translateX = Math.max(-maxX, Math.min(maxX, translateX));
+            translateY = Math.max(-maxY, Math.min(maxY, translateY));
+
+            if (scaledWidth <= containerRect.width) translateX = 0;
+            if (scaledHeight <= containerRect.height) translateY = 0;
+        }
+
         function navigatePrev() {
             if (currentModalIndex > 0) {
                 currentModalIndex--;
                 const prevFile = currentVisibleFiles[currentModalIndex];
                 const codigo = prevFile.name.split('.')[0];
-                resetZoom();
+                resetZoomAndPan();
                 updateModalContent(codigo);
             }
         }
@@ -914,7 +989,7 @@
                 currentModalIndex++;
                 const nextFile = currentVisibleFiles[currentModalIndex];
                 const codigo = nextFile.name.split('.')[0];
-                resetZoom();
+                resetZoomAndPan();
                 updateModalContent(codigo);
             }
         }
