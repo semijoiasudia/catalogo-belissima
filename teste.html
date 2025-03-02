@@ -332,17 +332,13 @@
         /* Estilo para o container da imagem no modal */
         .modal .capture-area {
             position: relative;
+            touch-action: manipulation; /* Permite tocar e manipular a imagem */
+            overflow: hidden; /* Opcional, para controlar o que aparece fora da área durante o zoom */
         }
         /* Estilo para a logo no modal */
         .modal .logo-watermark {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: 25%; /* 1/4 do tamanho da imagem */
-            max-height: 25%;
-            object-fit: contain;
+            pointer-events: none;
             z-index: 2;
-            pointer-events: none; /* Permite clicar através da logo */
         }
         /* Ajuste para a imagem na galeria */
         .gallery .img-container img {
@@ -353,7 +349,20 @@
             display: block;
         }
         .gallery .img-container img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05);            
+        }
+        /* Permitir zoom natural na imagem do modal */
+        .modal img#modalImg {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            transform-origin: center;
+            touch-action: pinch-zoom; /* Permitir zoom de pinça */
+        }
+        /* Quando o modal está com zoom */
+        .modal-zoomed .capture-area {
+            touch-action: pan-x pan-y; /* Permitir arrastar a imagem ampliada */
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -794,11 +803,14 @@
             
             // Adicionar eventos de toque para swipe
             setupSwipeNavigation();
+            // Detectar zoom na imagem
+            detectImageZoom();
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
+            isImageZoomed = false; // Resetar estado de zoom
         }
 
         // Nova função para atualizar o conteúdo do modal
@@ -862,12 +874,35 @@
         // Configurar navegação por swipe
         function setupSwipeNavigation() {
             const captureArea = document.getElementById('captureArea');
-            let touchStartX = 0;
-            let touchEndX = 0;
+            const modalImg = document.getElementById('modalImg');
             
             // Remover event listeners anteriores para evitar duplicação
             captureArea.removeEventListener('touchstart', touchStartHandler);
             captureArea.removeEventListener('touchend', touchEndHandler);
+            
+            // Verificar quando a imagem é ampliada ou reduzida
+            // Podemos usar o evento 'transitionend' para detectar quando a transformação de escala termina
+            modalImg.addEventListener('transitionend', function(e) {
+                if (e.propertyName === 'transform') {
+                    // Verificar se a imagem está em escala diferente de 1 (ampliada)
+                    const transform = window.getComputedStyle(modalImg).getPropertyValue('transform');
+                    const matrix = transform.match(/matrix.*\((.+)\)/);
+                    if (matrix) {
+                        const values = matrix[1].split(', ');
+                        const scaleX = parseFloat(values[0]);
+                        isImageZoomed = Math.abs(scaleX - 1) > 0.1; // Consideramos ampliado se a escala for diferente de 1
+                        console.log('Zoom detectado:', isImageZoomed);
+                    }
+                }
+            });
+            
+            // Adicionar verificação de zoom durante o toque
+            modalImg.addEventListener('touchmove', function(e) {
+                // Se houver mais de um toque, está usando gesto de pinça (zoom)
+                if (e.touches.length > 1) {
+                    isImageZoomed = true;
+                }
+            });
             
             // Adicionar novos event listeners
             captureArea.addEventListener('touchstart', touchStartHandler, false);
@@ -877,6 +912,10 @@
             touchStartX = e.changedTouches[0].screenX;
         }
         function touchEndHandler(e) {
+            // Se a imagem estiver ampliada, não processar o swipe
+            if (isImageZoomed) {
+                return;
+            }            
             touchEndX = e.changedTouches[0].screenX;
             handleSwipe();
         }
@@ -893,6 +932,51 @@
                 navigatePrev();
             }
         }
+        // Adicione um detector de zoom no modal para identificar quando a imagem está ampliada
+        function detectImageZoom() {
+            const modalImg = document.getElementById('modalImg');
+            
+            // Usando o MutationObserver para detectar mudanças na escala/zoom
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.attributeName === 'style') {
+                        const style = modalImg.style;
+                        // Verificar se há algum transform scale aplicado
+                        if (style.transform && style.transform.includes('scale')) {
+                            isImageZoomed = true;
+                        } else {
+                            isImageZoomed = false;
+                        }
+                        console.log('Estado de zoom alterado:', isImageZoomed);
+                    }
+                });
+            });
+            
+            observer.observe(modalImg, { attributes: true });
+            
+            // Monitorar gestos de pinça que podem ser usados para zoom
+            modalImg.addEventListener('gesturestart', function(e) {
+                isImageZoomed = true;
+                e.preventDefault(); // Prevenir zoom padrão do navegador
+            });
+            
+            modalImg.addEventListener('gestureend', function(e) {
+                // Definir um timeout para resetar após o gesto terminar
+                setTimeout(() => {
+                    const transform = window.getComputedStyle(modalImg).getPropertyValue('transform');
+                    const matrix = transform.match(/matrix.*\((.+)\)/);
+                    if (matrix) {
+                        const values = matrix[1].split(', ');
+                        const scaleX = parseFloat(values[0]);
+                        isImageZoomed = Math.abs(scaleX - 1) > 0.1;
+                    } else {
+                        isImageZoomed = false;
+                    }
+                }, 500);
+                e.preventDefault();
+            });
+        }
+        
         function saveImage() {
             html2canvas(document.querySelector("#captureArea"), {
                 useCORS: true,
