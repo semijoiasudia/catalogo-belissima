@@ -1,0 +1,392 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+/* Estilos das abas de categorias */
+.tabs-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    margin: 0 auto 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tabs {
+    display: inline-flex;
+    gap: 5px;
+}
+
+.tab {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #a89fb0; /* Cor exata da logo, sem gradiente */
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+    white-space: nowrap;
+    min-width: 120px;
+    text-align: center;
+}
+
+.tab:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(168, 159, 176, 0.3); /* Sombra leve baseada em #a89fb0 */
+}
+
+.tab.active {
+    background: #b0a7b8; /* Variação mínima mais clara para ativo */
+    font-weight: bold;
+}
+
+.tabs-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tabs-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.tabs-container::-webkit-scrollbar-thumb {
+    background: #a89fb0; /* Cor da logo */
+    border-radius: 4px;
+}
+
+.tabs-container::-webkit-scrollbar-thumb:hover {
+    background: #b0a7b8; /* Variação sutil no hover */
+}
+
+/* Estilos das subcategorias */
+.subcategories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.subcategories button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.subcategories button:hover {
+    background-color: #5a6268;
+}
+
+.subcategories button.active {
+    background-color: #5a6268;
+    font-weight: bold;
+}
+
+/* Estilos do filtro */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-container label {
+    font-size: 14px;
+    color: #333;
+}
+
+.filter-container select {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.filter-container select:hover {
+    border-color: #a89fb0; /* Combinando com a logo */
+}
+
+/* Estilos da galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.gallery .item {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.gallery .description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    white-space: normal;
+}
+
+.gallery .preco {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+.gallery .parcela {
+    margin-top: 2px;
+    font-size: 14px;
+    color: #666;
+}
+
+.gallery .codigo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+.capture-area {
+    position: relative;
+}
+
+.modal img {
+    max-width: 100%;
+    max-height: 65vh;
+    border-radius: 8px;
+}
+
+.modal-codigo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.close:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.modal-info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.modal-info .descricao {
+    font-size: 16px;
+}
+
+.modal-info .preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.modal-info .parcela {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Estilos do botão de salvar */
+.save-btn {
+    margin: 10px 0;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    background-color: #007bff;
+}
+
+.save-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilos do rodapé */
+.rodape {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+.rodape-text {
+    margin: 0;
+    padding: 5px;
+}
+
+/* Estilos da paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #5a6268;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Estilos para o container da imagem na galeria */
+.gallery .img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Estilos para a logo na galeria */
+.gallery .img-container .logo-watermark {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 25%; /* 1/4 do tamanho da imagem */
+    max-height: 25%;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: none; /* Permite clicar através da logo */
+}
+
+/* Estilos para a logo no modal */
+.modal .logo-watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 25%; /* 1/4 do tamanho da imagem */
+    max-height: 25%;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: none; /* Permite clicar através da logo */
+}
+
+/* Ajustes para a imagem na galeria */
+.gallery .img-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: block;
+}
+
+.gallery .img-container img:hover {
+    transform: scale(1.05);
+}
