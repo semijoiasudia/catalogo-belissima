@@ -40,12 +40,25 @@
             height: 100%;
             z-index: 2;
         }
-        .title {
+        
+        /* Novo estilo para o título em duas linhas */
+        .title-container {
             margin: 20px 0;
-            font-size: 20px;
-            color: #333;
-            font-weight: bold;
+            line-height: 1.3;
         }
+        .title-main {
+            font-size: 22px;
+            color: #333;
+            font-weight: normal;
+            margin: 0;
+        }
+        .title-sub {
+            font-size: 18px;
+            color: #666;
+            font-weight: normal;
+            margin: 0;
+        }
+        
         .modal-open {
             overflow: hidden;
         }
@@ -432,7 +445,11 @@
         <div class="logo-protection"></div>
     </div>
     
-    <h1 class="title">Catálogo de Semijoias e Acessórios</h1>
+    <!-- Título em duas linhas com fonte mais leve -->
+    <div class="title-container">
+        <h1 class="title-main">Semijoias e Acessórios</h1>
+        <h2 class="title-sub">Catálogo Online</h2>
+    </div>
     
     <!-- Novo container de navegação -->
     <div class="navigation-controls">
