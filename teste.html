@@ -49,21 +49,36 @@
         .modal-open {
             overflow: hidden;
         }
+        
+        /* Novo container de navegação */
+        .navigation-controls {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
         .tabs-container {
             width: 100%;
-            max-width: 1000px;
+            max-width: 100%;
             overflow-x: auto;
             overflow-y: hidden;
             white-space: nowrap;
             padding: 10px 0;
-            margin: 0 auto 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 0 auto 12px;
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
         }
         .tabs {
             display: inline-flex;
-            gap: 5px;
+            gap: 8px;
+            padding: 2px;
         }
         .tab {
             padding: 10px 20px;
@@ -74,7 +89,7 @@
             background: #a89fb0;
             color: white;
             font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+            transition: all 0.2s;
             white-space: nowrap;
             min-width: 120px;
             text-align: center;
@@ -82,10 +97,14 @@
         .tab:hover {
             transform: scale(1.05);
             box-shadow: 0px 4px 8px rgba(168, 159, 176, 0.3);
+            padding: 11px 22px;
+            margin: -1px -2px;
         }
         .tab.active {
-            background: #b0a7b8;
-            font-weight: bold;
+            background: #8a7e94; /* Cor mais escura para o estado ativo */
+            box-shadow: 0px 4px 8px rgba(168, 159, 176, 0.5);
+            padding: 11px 22px;
+            margin: -1px -2px;
         }
         .tabs-container::-webkit-scrollbar {
             height: 8px;
@@ -99,30 +118,34 @@
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #b0a7b8;
+            background: #8a7e94;
         }
         .subcategories {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
             flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 12px 0;
+            padding: 0 0 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
         }
         .subcategories button {
             padding: 8px 16px;
             font-size: 14px;
             cursor: pointer;
             border: none;
-            border-radius: 5px;
-            background-color: #6c757d;
-            color: white;
-            transition: background-color 0.3s;
+            border-radius: 6px;
+            background-color: #d1cad8; /* Cor mais clara que combina com o roxo/lilás */
+            color: #555;
+            transition: all 0.2s;
         }
         .subcategories button:hover {
-            background-color: #5a6268;
+            background-color: #c2b9cc; /* Cor um pouco mais escura para hover */
+            transform: translateY(-1px);
         }
         .subcategories button.active {
-            background-color: #5a6268;
+            background-color: #a89fb0; /* Mesma cor dos botões de categoria */
+            color: white;
             font-weight: bold;
         }
         .filter-container {
@@ -130,24 +153,34 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            margin-bottom: 20px;
+            margin: 0;
+            padding-top: 4px;
         }
         .filter-container label {
             font-size: 14px;
-            color: #333;
+            font-weight: 500;
+            color: #555;
         }
         .filter-container select {
             padding: 8px 16px;
             font-size: 14px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
             cursor: pointer;
-            transition: border-color 0.3s;
+            transition: all 0.2s;
+            color: #555;
         }
         .filter-container select:hover {
             border-color: #a89fb0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
+        .filter-container select:focus {
+            outline: none;
+            border-color: #a89fb0;
+            box-shadow: 0 0 0 2px rgba(168, 159, 176, 0.2);
+        }
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -339,12 +372,12 @@
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            background-color: #6c757d;
+            background-color: #a89fb0;
             color: white;
             transition: background-color 0.3s;
         }
         .pagination button:hover {
-            background-color: #5a6268;
+            background-color: #8a7e94;
         }
         .pagination button:disabled {
             background-color: #cccccc;
@@ -400,19 +433,24 @@
     </div>
     
     <h1 class="title">Catálogo de Semijoias e Acessórios</h1>
-    <div class="tabs-container">
-        <div class="tabs" id="tabs"></div>
+    
+    <!-- Novo container de navegação -->
+    <div class="navigation-controls">
+        <div class="tabs-container">
+            <div class="tabs" id="tabs"></div>
+        </div>
+        <div class="subcategories" id="subcategories" style="display: none;"></div>
+        <div class="filter-container">
+            <label for="sortFilter">Ordenar por: </label>
+            <select id="sortFilter" onchange="applySort()">
+                <option value="newest" selected>Mais Novos</option>
+                <option value="oldest">Mais Antigos</option>
+                <option value="highestPrice">Maior Preço</option>
+                <option value="lowestPrice">Menor Preço</option>
+            </select>
+        </div>
     </div>
-    <div class="subcategories" id="subcategories" style="display: none;"></div>
-    <div class="filter-container">
-        <label for="sortFilter">Ordenar por: </label>
-        <select id="sortFilter" onchange="applySort()">
-            <option value="newest" selected>Mais Novos</option>
-            <option value="oldest">Mais Antigos</option>
-            <option value="highestPrice">Maior Preço</option>
-            <option value="lowestPrice">Menor Preço</option>
-        </select>
-    </div>
+    
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
     
