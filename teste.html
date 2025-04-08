@@ -1112,12 +1112,84 @@
                 allowTaint: true,
                 scale: 2
             }).then(canvas => {
-                const link = document.createElement('a');
-                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
-                link.href = canvas.toDataURL('image/png');
-                link.click();
+                // Detecta iOS
+                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+                
+                if (isIOS) {
+                    // Para iOS - mostra a imagem em uma nova guia que o usuário pode então salvar manualmente
+                    // Converter o canvas para um Blob
+                    canvas.toBlob(function(blob) {
+                        // Criar uma URL para o Blob
+                        const blobUrl = URL.createObjectURL(blob);
+                        
+                        // Abrir em uma nova janela/aba
+                        const newWindow = window.open();
+                        if (newWindow) {
+                            // Construir página simples para iOS com instruções
+                            newWindow.document.write(`
+                                <html>
+                                <head>
+                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    <title>Salvar Imagem</title>
+                                    <style>
+                                        body { 
+                                            font-family: Arial, sans-serif; 
+                                            text-align: center; 
+                                            padding: 20px;
+                                            margin: 0;
+                                            background-color: #f8f8f8;
+                                        }
+                                        img { 
+                                            max-width: 100%; 
+                                            border-radius: 8px;
+                                            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                                            margin-bottom: 20px;
+                                        }
+                                        p {
+                                            color: #555;
+                                            font-size: 16px;
+                                            line-height: 1.5;
+                                            margin: 15px 0;
+                                        }
+                                        h2 {
+                                            color: #333;
+                                        }
+                                        .instructions {
+                                            background-color: white;
+                                            padding: 15px;
+                                            border-radius: 8px;
+                                            margin: 20px auto;
+                                            max-width: 500px;
+                                            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+                                        }
+                                    </style>
+                                </head>
+                                <body>
+                                    <h2>Imagem Pronta</h2>
+                                    <img src="${blobUrl}" alt="Imagem do produto">
+                                    <div class="instructions">
+                                        <p><strong>Para salvar a imagem no iOS:</strong></p>
+                                        <p>1. Toque e segure a imagem acima</p>
+                                        <p>2. Selecione "Adicionar à Fotos" ou "Salvar Imagem"</p>
+                                    </div>
+                                </body>
+                                </html>
+                            `);
+                            newWindow.document.close();
+                        } else {
+                            alert("Não foi possível abrir uma nova janela. Verifique se os pop-ups estão permitidos.");
+                        }
+                    }, 'image/png');
+                } else {
+                    // Para outros dispositivos - Usa o método tradicional
+                    const link = document.createElement('a');
+                    link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+                }
             }).catch(error => {
                 console.error("Erro ao salvar imagem:", error);
+                alert("Erro ao salvar imagem. Por favor, tente novamente.");
             });
         }
 
