@@ -572,13 +572,26 @@
                 // O GitHub retorna metadados do arquivo, precisamos buscar o conteúdo real
                 if (fileData.content) {
                     // Decodificar o conteúdo Base64
-                    const decodedContent = atob(fileData.content.replace(/\n/g, ''));
-                    catalogData = JSON.parse(decodedContent);
-                    console.log('Dados do catálogo carregados:', catalogData);
+                    let decodedContent = atob(fileData.content.replace(/\n/g, ''));
                     
-                    // Processa os dados do JSON para o formato que a aplicação espera
-                    processCatalogData();
-                    return true;
+                    // Remover BOM (Byte Order Mark) UTF-8 se presente
+                    if (decodedContent.charCodeAt(0) === 0xFEFF || decodedContent.startsWith('\uFEFF') || decodedContent.startsWith('\u00EF\u00BB\u00BF')) {
+                        console.log('Removendo BOM do conteúdo JSON');
+                        decodedContent = decodedContent.replace(/^\uFEFF/, '').replace(/^\u00EF\u00BB\u00BF/, '');
+                    }
+                    
+                    try {
+                        catalogData = JSON.parse(decodedContent);
+                        console.log('Dados do catálogo carregados:', catalogData);
+                        
+                        // Processa os dados do JSON para o formato que a aplicação espera
+                        processCatalogData();
+                        return true;
+                    } catch (parseError) {
+                        console.error('Erro ao fazer parse do JSON:', parseError);
+                        console.log('Primeiros caracteres do conteúdo (para diagnóstico):', decodedContent.substring(0, 30));
+                        throw parseError;
+                    }
                 } else {
                     throw new Error('Formato de resposta inesperado da API do GitHub');
                 }
