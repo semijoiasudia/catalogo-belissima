@@ -506,6 +506,7 @@
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
         let catalogData = null; // Variável para armazenar os dados do catálogo JSON
+        const IMAGE_LOAD_DELAY = 150; // Delay entre o carregamento de cada imagem (em ms)
 
         let scale = 1;
         let minScale = 1;
@@ -799,6 +800,9 @@
                 gallery.innerHTML = '<p>Nenhuma imagem encontrada para esta categoria.</p>';
                 return;
             }
+            
+            // Array para armazenar as referências às imagens para carregamento sequencial
+            const itemsToLoad = [];
         
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
@@ -809,7 +813,6 @@
                 };
                 
                 const valorParcela = calcularParcela(preco);
-        
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
         
                 const item = document.createElement('div');
@@ -820,11 +823,12 @@
                 imgContainer.className = 'img-container';
         
                 const img = document.createElement('img');
-                img.src = file.download_url;
+                // Não definimos o src ainda, apenas armazenamos a URL para carregamento posterior
                 img.alt = descricao || 'Imagem do produto';
-                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
-                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
                 img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                
+                // Adicionamos o item à lista para carregamento sequencial
+                itemsToLoad.push({ img, url: file.download_url });
                 
                 const logo = document.createElement('img');
                 logo.src = 'imagens/logo.png';
@@ -853,6 +857,9 @@
                 item.append(imgContainer, codigoElement, desc, precoElement, parcelaElement);
                 gallery.appendChild(item);
             });
+            
+            // Inicia o carregamento sequencial das imagens
+            loadImagesSequentially(itemsToLoad, 0);
         
             updatePagination();
             // Adicionar evento para impedir menu de contexto nas imagens da galeria
