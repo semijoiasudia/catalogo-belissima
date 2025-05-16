@@ -510,10 +510,18 @@
 
     <script>
         // URLs base e constantes
-        const apiBaseUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents";
-        const rawBaseUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main";
-        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/CategoriasAtivas.txt";
-        const rodapeUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt";
+        // Repositório das imagens e dados dos produtos
+        const imageRepoBaseUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents";
+        const imageRawBaseUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main";
+        
+        // Repositório do site e arquivos de configuração
+        const siteRepoBaseUrl = "https://api.github.com/repos/semijoiasudia/catalogo-belissima/contents";
+        const siteRawBaseUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main";
+        
+        // URLs específicos
+        const categoriasAtivasUrl = `${siteRawBaseUrl}/CategoriasAtivas.txt`;
+        const rodapeUrl = `${siteRawBaseUrl}/rodape.txt`;
+        
         const itemsPerPage = 20;
         const itemsPerPage = 20;
         
@@ -561,10 +569,27 @@
         // Funções de carregamento inicial
         async function loadCategoriasAtivas() {
             try {
+                console.log('Tentando carregar categorias de:', categoriasAtivasUrl);
                 const response = await fetch(categoriasAtivasUrl);
                 if (!response.ok) {
-                    console.warn("Arquivo categoriasativas.txt não encontrado, todas as categorias serão exibidas.");
-                    categoriasAtivas = [];
+                    console.warn(`Arquivo CategoriasAtivas.txt não encontrado (${response.status}), usando lista predefinida.`);
+                    // Lista predefinida conforme o documento original
+                    categoriasAtivas = [
+                        "Braceletes",
+                        "Brincos",
+                        "Chokers",
+                        "Colares",
+                        "Relogios",
+                        "Aco Inox",
+                        "Aneis",
+                        "Conjuntos",
+                        "Piercings",
+                        "Pulseiras",
+                        "Bijuterias",
+                        "Tornozeleiras",
+                        "Pingentes",
+                        "Acessorios"
+                    ];
                     return;
                 }
                 const text = await response.text();
@@ -574,7 +599,23 @@
                 console.log('Categorias ativas carregadas:', categoriasAtivas);
             } catch (error) {
                 console.error("Erro ao carregar categorias ativas:", error);
-                categoriasAtivas = [];
+                // Usar lista predefinida em caso de erro
+                categoriasAtivas = [
+                    "Braceletes",
+                    "Brincos",
+                    "Chokers",
+                    "Colares",
+                    "Relogios",
+                    "Aco Inox",
+                    "Aneis",
+                    "Conjuntos",
+                    "Piercings",
+                    "Pulseiras",
+                    "Bijuterias",
+                    "Tornozeleiras",
+                    "Pingentes",
+                    "Acessorios"
+                ];
             }
         }
 
@@ -650,7 +691,7 @@
             
             try {
                 // URL do JSON dentro da pasta desta categoria
-                const jsonUrl = `${rawBaseUrl}/Catalogos/${categoria}/ItensDescricao.json`;
+                const jsonUrl = `${imageRawBaseUrl}/Catalogos/${categoria}/ItensDescricao.json`;
                 
                 // Buscar dados do JSON
                 console.log('Tentando carregar JSON de:', jsonUrl);
@@ -747,7 +788,7 @@
                 const valorParcela = calcularParcela(preco);
                 
                 // Construindo a URL da imagem
-                const imagemUrl = `https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/${pastaFotos}${imagem}`;
+                const imagemUrl = `${imageRawBaseUrl}/${pastaFotos}${imagem}`;
                 
                 // Criando a estrutura do item
                 const item = document.createElement('div');
@@ -915,7 +956,7 @@
             const produto = currentVisibleProducts[currentModalIndex];
             if (!produto) return;
             
-            const imagemUrl = `https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/${produto.pastaFotos}${produto.imagem}`;
+            const imagemUrl = `${rawBaseUrl}/${produto.pastaFotos}${produto.imagem}`;
             const { descricao, precoConsignado } = produto;
             
             const preco = formatarPreco(precoConsignado);
@@ -1118,14 +1159,19 @@
         // Carregamento do rodapé
         async function loadRodape() {
             try {
+                console.log('Tentando carregar rodapé de:', rodapeUrl);
                 const response = await fetch(rodapeUrl);
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                if (!response.ok) {
+                    console.warn(`Arquivo rodape.txt não encontrado (${response.status})`);
+                    document.getElementById("rodape").innerHTML = '<p class="rodape-text">© 2025 Belíssima Mulher Semijoias. Todos os direitos reservados.</p>';
+                    return;
+                }
                 const text = await response.text();
                 const formattedText = text.replace(/\n/g, '<br>');
                 document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
             } catch (error) {
                 console.error("Erro ao carregar rodapé:", error);
-                document.getElementById("rodape").innerHTML = '<p>Erro ao carregar rodapé.</p>';
+                document.getElementById("rodape").innerHTML = '<p class="rodape-text">© 2025 Belíssima Mulher Semijoias. Todos os direitos reservados.</p>';
             }
         }
         
