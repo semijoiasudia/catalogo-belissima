@@ -785,6 +785,32 @@
             currentVisibleFiles = filtered;
             return filtered;
         }
+        function loadImagesSequentially(itemsToLoad, index) {
+            // Se já carregamos todas as imagens, encerra a recursão
+            if (index >= itemsToLoad.length) return;
+            
+            const { img, url } = itemsToLoad[index];
+            
+            // Configura os handlers antes de definir o src
+            img.onload = () => {
+                console.log(`Imagem carregada: ${url}`);
+                // Carrega a próxima imagem após o delay
+                setTimeout(() => {
+                    loadImagesSequentially(itemsToLoad, index + 1);
+                }, IMAGE_LOAD_DELAY);
+            };
+            
+            img.onerror = () => {
+                console.error(`Erro ao carregar imagem: ${url}`);
+                // Mesmo em caso de erro, continua para a próxima após o delay
+                setTimeout(() => {
+                    loadImagesSequentially(itemsToLoad, index + 1);
+                }, IMAGE_LOAD_DELAY);
+            };
+            
+            // Inicia o carregamento da imagem atual
+            img.src = url;
+        }
 
         function displayPage(page, banhosNaCategoria) {
             console.log('Exibindo página:', page);
