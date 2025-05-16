@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+        async function loadCategories() {
+            console.log('Iniciando carregamento de categorias');
+            const tabs = document.getElementById('tabs');
+            tabs.innerHTML = '';
+
+            // Verificamos se há categorias ativas carregadas
+            if (categoriasAtivas.length === 0) {
+                tabs.innerHTML = '<p>Nenhuma categoria disponível no momento.</p>';
+                return;
+            }
+
+            // Criamos as abas para cada categoria
+            categoriasAtivas.forEach(categoria => {
+                const tab = document.createElement('button');
+                tab.className = 'tab';
+                tab.textContent = categoria;<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -515,13 +530,13 @@
         const imageRawBaseUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main";
         
         // Repositório do site e arquivos de configuração
-        const siteRepoBaseUrl = "https://api.github.com/repos/semijoiasudia/catalogo-belissima/contents";
         const siteRawBaseUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main";
         
         // URLs específicos
         const categoriasAtivasUrl = `${siteRawBaseUrl}/CategoriasAtivas.txt`;
         const rodapeUrl = `${siteRawBaseUrl}/rodape.txt`;
         
+        // Configurações da paginação
         const itemsPerPage = 20;
         const itemsPerPage = 20;
         
@@ -571,6 +586,11 @@
             try {
                 console.log('Tentando carregar categorias de:', categoriasAtivasUrl);
                 const response = await fetch(categoriasAtivasUrl);
+                
+                // Vamos verificar detalhes da resposta para depuração
+                console.log('Status da resposta:', response.status);
+                console.log('Headers:', [...response.headers.entries()]);
+                
                 if (!response.ok) {
                     console.warn(`Arquivo CategoriasAtivas.txt não encontrado (${response.status}), usando lista predefinida.`);
                     // Lista predefinida conforme o documento original
@@ -592,7 +612,10 @@
                     ];
                     return;
                 }
+                
                 const text = await response.text();
+                console.log('Conteúdo do arquivo categoriasAtivas:', text);
+                
                 categoriasAtivas = text.split('\n')
                     .map(linha => linha.trim())
                     .filter(linha => linha !== '');
@@ -956,7 +979,7 @@
             const produto = currentVisibleProducts[currentModalIndex];
             if (!produto) return;
             
-            const imagemUrl = `${rawBaseUrl}/${produto.pastaFotos}${produto.imagem}`;
+            const imagemUrl = `${imageRawBaseUrl}/${produto.pastaFotos}${produto.imagem}`;
             const { descricao, precoConsignado } = produto;
             
             const preco = formatarPreco(precoConsignado);
