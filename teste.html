@@ -511,9 +511,10 @@
     <script>
         // URLs base e constantes
         const apiBaseUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents";
-        const rawBaseUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main";
-        const categoriasAtivasUrl = `${rawBaseUrl}/CategoriasAtivas.txt`;
-        const rodapeUrl = `${rawBaseUrl}/rodape.txt`;
+        const rawBaseUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main";
+        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/CategoriasAtivas.txt";
+        const rodapeUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt";
+        const itemsPerPage = 20;
         const itemsPerPage = 20;
         
         // Variáveis de estado
@@ -648,72 +649,17 @@
             document.getElementById('gallery').innerHTML = '<div class="loading"></div>';
             
             try {
-                // Determinando o arquivo JSON baseado na categoria
-                // Mapeando para o formato que está sendo usado nos JSONs
-                let categoriaJSON = "";
-                
-                switch(categoria.toLowerCase()) {
-                    case "aneis":
-                        categoriaJSON = "ANEL";
-                        break;
-                    case "brincos":
-                        categoriaJSON = "BRINCO";
-                        break;
-                    case "colares":
-                        categoriaJSON = "COLAR";
-                        break;
-                    case "pulseiras":
-                        categoriaJSON = "PULSEIRA";
-                        break;
-                    case "chokers":
-                        categoriaJSON = "CHOKER";
-                        break;
-                    case "conjuntos":
-                        categoriaJSON = "CONJUNTO";
-                        break;
-                    case "piercings":
-                        categoriaJSON = "PIERCING";
-                        break;
-                    case "pingentes":
-                        categoriaJSON = "PINGENTE";
-                        break;
-                    case "tornozeleiras":
-                        categoriaJSON = "TORNOZELEIRA";
-                        break;
-                    case "aco inox":
-                        categoriaJSON = "ACO";
-                        break;
-                    case "braceletes":
-                        categoriaJSON = "BRACELETE";
-                        break;
-                    case "relogios":
-                        categoriaJSON = "RELOGIO";
-                        break;
-                    case "bijuterias":
-                        categoriaJSON = "BIJUTERIA";
-                        break;
-                    case "acessorios":
-                        categoriaJSON = "ACESSORIO";
-                        break;
-                    default:
-                        categoriaJSON = categoria.toUpperCase();
-                }
-                
-                // URL do JSON desta categoria
-                const jsonUrl = `${rawBaseUrl}/ItensDescricao.json`;
+                // URL do JSON dentro da pasta desta categoria
+                const jsonUrl = `${rawBaseUrl}/Catalogos/${categoria}/ItensDescricao.json`;
                 
                 // Buscar dados do JSON
+                console.log('Tentando carregar JSON de:', jsonUrl);
                 const response = await fetch(jsonUrl);
                 if (!response.ok) throw new Error(`Erro HTTP ao carregar JSON: ${response.status}`);
                 const jsonData = await response.json();
                 
-                // Filtra produtos da categoria atual
-                if (jsonData.categoria === categoriaJSON) {
-                    allProducts = jsonData.produtos || [];
-                } else {
-                    console.warn(`Categoria ${categoriaJSON} não encontrada no JSON`);
-                    allProducts = [];
-                }
+                // Armazenar os produtos
+                allProducts = jsonData.produtos || [];
                 
                 // Coletando os tipos de banho disponíveis
                 const banhosNaCategoria = new Set();
@@ -731,7 +677,10 @@
                 
             } catch (error) {
                 console.error("Erro ao carregar produtos:", error);
-                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar produtos. Verifique o console.</p>';
+                document.getElementById('gallery').innerHTML = `
+                    <p>Erro ao carregar produtos: ${error.message}</p>
+                    <p>Verifique se o arquivo JSON está disponível no caminho correto.</p>
+                `;
             }
         }
 
@@ -798,7 +747,7 @@
                 const valorParcela = calcularParcela(preco);
                 
                 // Construindo a URL da imagem
-                const imagemUrl = `${apiBaseUrl}/${pastaFotos}${imagem}`.replace('/contents/', '/raw/main/');
+                const imagemUrl = `https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/${pastaFotos}${imagem}`;
                 
                 // Criando a estrutura do item
                 const item = document.createElement('div');
@@ -966,7 +915,7 @@
             const produto = currentVisibleProducts[currentModalIndex];
             if (!produto) return;
             
-            const imagemUrl = `${apiBaseUrl}/${produto.pastaFotos}${produto.imagem}`.replace('/contents/', '/raw/main/');
+            const imagemUrl = `https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/${produto.pastaFotos}${produto.imagem}`;
             const { descricao, precoConsignado } = produto;
             
             const preco = formatarPreco(precoConsignado);
