@@ -1,19 +1,4 @@
-        async function loadCategories() {
-            console.log('Iniciando carregamento de categorias');
-            const tabs = document.getElementById('tabs');
-            tabs.innerHTML = '';
-
-            // Verificamos se há categorias ativas carregadas
-            if (categoriasAtivas.length === 0) {
-                tabs.innerHTML = '<p>Nenhuma categoria disponível no momento.</p>';
-                return;
-            }
-
-            // Criamos as abas para cada categoria
-            categoriasAtivas.forEach(categoria => {
-                const tab = document.createElement('button');
-                tab.className = 'tab';
-                tab.textContent = categoria;<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
