@@ -494,7 +494,6 @@
 
     <script>
         const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
-        const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/ItensDescricao.txt";
         const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/CategoriasAtivas.txt";
         let descricoes = {};
         let categoriasAtivas = [];
@@ -506,6 +505,8 @@
         let currentSort = 'newest';
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
+        let catalogData = null; // Variável para armazenar os dados do catálogo JSON
+        const IMAGE_LOAD_DELAY = 150; // Delay entre o carregamento de cada imagem (em ms)
 
         let scale = 1;
         let minScale = 1;
@@ -555,31 +556,78 @@
             }
         }
 
-        async function loadDescriptions() {
+        async function loadCatalogJSON(folderName) {
+            console.log(`Carregando JSON da categoria: ${folderName}`);
+            descricoes = {}; // Limpa o objeto de descrições para a nova categoria
             try {
-                const response = await fetch(descricoesUrl);
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                const text = await response.text();
-                const lines = text.split('\n');
-                lines.forEach(line => {
-                    const [codigo, descricao, preco, banho] = line.split(';');
-                    if (codigo && descricao && preco && banho) {
-                        let normalizedBanho = banho.trim().toLowerCase();
-                        if (normalizedBanho.includes('2 banhos')) {
-                            normalizedBanho = '2 banhos';
-                        }
-                        descricoes[codigo.trim()] = {
-                            descricao: descricao.trim(),
-                            preco: formatarPreco(preco.trim()),
-                            banho: normalizedBanho
-                        };
+                // Constrói a URL para o arquivo JSON da categoria
+                const jsonUrl = `${repoUrl}/${encodeURIComponent(folderName)}/ItensDescricao.json`;
+                console.log("URL do JSON:", jsonUrl);
+                
+                // Busca o arquivo JSON na API do GitHub
+                const response = await fetch(jsonUrl);
+                if (!response.ok) throw new Error(`Erro HTTP ao carregar JSON: ${response.status}`);
+                
+                const fileData = await response.json();
+                
+                // O GitHub retorna metadados do arquivo, precisamos buscar o conteúdo real
+                if (fileData.content) {
+                    // Decodificar o conteúdo Base64
+                    let decodedContent = atob(fileData.content.replace(/\n/g, ''));
+                    
+                    // Remover BOM (Byte Order Mark) UTF-8 se presente
+                    if (decodedContent.charCodeAt(0) === 0xFEFF || decodedContent.startsWith('\uFEFF') || decodedContent.startsWith('\u00EF\u00BB\u00BF')) {
+                        console.log('Removendo BOM do conteúdo JSON');
+                        decodedContent = decodedContent.replace(/^\uFEFF/, '').replace(/^\u00EF\u00BB\u00BF/, '');
                     }
-                });
-                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
+                    
+                    try {
+                        catalogData = JSON.parse(decodedContent);
+                        console.log('Dados do catálogo carregados:', catalogData);
+                        
+                        // Processa os dados do JSON para o formato que a aplicação espera
+                        processCatalogData();
+                        return true;
+                    } catch (parseError) {
+                        console.error('Erro ao fazer parse do JSON:', parseError);
+                        console.log('Primeiros caracteres do conteúdo (para diagnóstico):', decodedContent.substring(0, 30));
+                        throw parseError;
+                    }
+                } else {
+                    throw new Error('Formato de resposta inesperado da API do GitHub');
+                }
             } catch (error) {
-                console.error("Erro ao carregar descrições:", error);
-                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar descrições. Verifique o console.</p>';
+                console.error(`Erro ao carregar JSON da categoria ${folderName}:`, error);
+                document.getElementById('gallery').innerHTML = 
+                    `<p>Erro ao carregar dados da categoria ${folderName}. Tente novamente mais tarde.</p>`;
+                return false;
             }
+        }
+
+        function processCatalogData() {
+            if (!catalogData || !catalogData.produtos || !Array.isArray(catalogData.produtos)) {
+                console.error("Dados do catálogo inválidos:", catalogData);
+                return;
+            }
+
+            // Processa os produtos do JSON e converte para o formato usado pela aplicação
+            catalogData.produtos.forEach(produto => {
+                const { codigo, descricao, preco, banho } = produto;
+                if (codigo) {
+                    let normalizedBanho = banho ? banho.trim().toLowerCase() : '';
+                    if (normalizedBanho.includes('2 banhos')) {
+                        normalizedBanho = '2 banhos';
+                    }
+                    
+                    descricoes[codigo.trim()] = {
+                        descricao: descricao ? descricao.trim() : 'Descrição não disponível',
+                        preco: formatarPreco(preco),
+                        banho: normalizedBanho
+                    };
+                }
+            });
+            
+            console.log('Descrições processadas:', Object.keys(descricoes).length);
         }
 
         async function loadCategories() {
@@ -664,8 +712,16 @@
             const banhosNaCategoria = new Set();
             currentPage = 1;
             currentBanho = 'todos';
+            
+            // Primeiro carregamos o JSON da categoria
+            const jsonLoaded = await loadCatalogJSON(folderName);
+            if (!jsonLoaded) {
+                console.error(`Falha ao carregar o JSON da categoria ${folderName}`);
+                return;
+            }
 
             try {
+                // Carrega a lista de arquivos (imagens) da pasta da categoria
                 const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
                 if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
                 allFiles = await response.json();
@@ -675,13 +731,17 @@
                     throw new Error('Resposta da API inválida');
                 }
 
+                // Filtra apenas os arquivos de imagem
+                allFiles = allFiles.filter(file => {
+                    return file.name.endsWith('.jpg') || file.name.endsWith('.png');
+                });
+
+                // Identifica os banhos disponíveis na categoria
                 allFiles.forEach(file => {
-                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
-                        const codigo = file.name.split('.')[0];
-                        const { banho } = descricoes[codigo] || { banho: '' };
-                        if (banho) {
-                            banhosNaCategoria.add(banho);
-                        }
+                    const codigo = file.name.split('.')[0];
+                    const { banho } = descricoes[codigo] || { banho: '' };
+                    if (banho) {
+                        banhosNaCategoria.add(banho);
                     }
                 });
 
@@ -725,6 +785,32 @@
             currentVisibleFiles = filtered;
             return filtered;
         }
+        function loadImagesSequentially(itemsToLoad, index) {
+            // Se já carregamos todas as imagens, encerra a recursão
+            if (index >= itemsToLoad.length) return;
+            
+            const { img, url } = itemsToLoad[index];
+            
+            // Configura os handlers antes de definir o src
+            img.onload = () => {
+                console.log(`Imagem carregada: ${url}`);
+                // Carrega a próxima imagem após o delay
+                setTimeout(() => {
+                    loadImagesSequentially(itemsToLoad, index + 1);
+                }, IMAGE_LOAD_DELAY);
+            };
+            
+            img.onerror = () => {
+                console.error(`Erro ao carregar imagem: ${url}`);
+                // Mesmo em caso de erro, continua para a próxima após o delay
+                setTimeout(() => {
+                    loadImagesSequentially(itemsToLoad, index + 1);
+                }, IMAGE_LOAD_DELAY);
+            };
+            
+            // Inicia o carregamento da imagem atual
+            img.src = url;
+        }
 
         function displayPage(page, banhosNaCategoria) {
             console.log('Exibindo página:', page);
@@ -740,6 +826,9 @@
                 gallery.innerHTML = '<p>Nenhuma imagem encontrada para esta categoria.</p>';
                 return;
             }
+            
+            // Array para armazenar as referências às imagens para carregamento sequencial
+            const itemsToLoad = [];
         
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
@@ -750,7 +839,6 @@
                 };
                 
                 const valorParcela = calcularParcela(preco);
-        
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
         
                 const item = document.createElement('div');
@@ -761,11 +849,12 @@
                 imgContainer.className = 'img-container';
         
                 const img = document.createElement('img');
-                img.src = file.download_url;
+                // Não definimos o src ainda, apenas armazenamos a URL para carregamento posterior
                 img.alt = descricao || 'Imagem do produto';
-                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
-                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
                 img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                
+                // Adicionamos o item à lista para carregamento sequencial
+                itemsToLoad.push({ img, url: file.download_url });
                 
                 const logo = document.createElement('img');
                 logo.src = 'imagens/logo.png';
@@ -794,6 +883,9 @@
                 item.append(imgContainer, codigoElement, desc, precoElement, parcelaElement);
                 gallery.appendChild(item);
             });
+            
+            // Inicia o carregamento sequencial das imagens
+            loadImagesSequentially(itemsToLoad, 0);
         
             updatePagination();
             // Adicionar evento para impedir menu de contexto nas imagens da galeria
@@ -1112,84 +1204,12 @@
                 allowTaint: true,
                 scale: 2
             }).then(canvas => {
-                // Detecta iOS
-                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-                
-                if (isIOS) {
-                    // Para iOS - mostra a imagem em uma nova guia que o usuário pode então salvar manualmente
-                    // Converter o canvas para um Blob
-                    canvas.toBlob(function(blob) {
-                        // Criar uma URL para o Blob
-                        const blobUrl = URL.createObjectURL(blob);
-                        
-                        // Abrir em uma nova janela/aba
-                        const newWindow = window.open();
-                        if (newWindow) {
-                            // Construir página simples para iOS com instruções
-                            newWindow.document.write(`
-                                <html>
-                                <head>
-                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                    <title>Salvar Imagem</title>
-                                    <style>
-                                        body { 
-                                            font-family: Arial, sans-serif; 
-                                            text-align: center; 
-                                            padding: 20px;
-                                            margin: 0;
-                                            background-color: #f8f8f8;
-                                        }
-                                        img { 
-                                            max-width: 100%; 
-                                            border-radius: 8px;
-                                            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                                            margin-bottom: 20px;
-                                        }
-                                        p {
-                                            color: #555;
-                                            font-size: 16px;
-                                            line-height: 1.5;
-                                            margin: 15px 0;
-                                        }
-                                        h2 {
-                                            color: #333;
-                                        }
-                                        .instructions {
-                                            background-color: white;
-                                            padding: 15px;
-                                            border-radius: 8px;
-                                            margin: 20px auto;
-                                            max-width: 500px;
-                                            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-                                        }
-                                    </style>
-                                </head>
-                                <body>
-                                    <h2>Imagem Pronta</h2>
-                                    <img src="${blobUrl}" alt="Imagem do produto">
-                                    <div class="instructions">
-                                        <p><strong>Para salvar a imagem no iOS:</strong></p>
-                                        <p>1. Toque e segure a imagem acima</p>
-                                        <p>2. Selecione "Adicionar à Fotos" ou "Salvar Imagem"</p>
-                                    </div>
-                                </body>
-                                </html>
-                            `);
-                            newWindow.document.close();
-                        } else {
-                            alert("Não foi possível abrir uma nova janela. Verifique se os pop-ups estão permitidos.");
-                        }
-                    }, 'image/png');
-                } else {
-                    // Para outros dispositivos - Usa o método tradicional
-                    const link = document.createElement('a');
-                    link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
-                    link.href = canvas.toDataURL('image/png');
-                    link.click();
-                }
+                const link = document.createElement('a');
+                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
             }).catch(error => {
                 console.error("Erro ao salvar imagem:", error);
-                alert("Erro ao salvar imagem. Por favor, tente novamente.");
             });
         }
 
@@ -1227,7 +1247,6 @@
             console.log('Iniciando carregamento da página');
             try {
                 await loadCategoriasAtivas();
-                await loadDescriptions();
                 await loadCategories();
                 await loadRodape();
                 console.log('Carregamento da página concluído');
