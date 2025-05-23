@@ -1,0 +1,181 @@
+﻿{
+  "categoria": "BIJUTERIA",
+  "produtos": [
+    {
+      "codigo": "4268",
+      "descricao": "BIJUTERIA CHOCKER RIVIERA E CORACOES COLORS 37CM",
+      "tipo": "Bijuteria",
+      "imagem": "4268.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/04/2025"
+    },
+    {
+      "codigo": "4265",
+      "descricao": "BIJUTERIA CONJUNTO ARO E BRINCO FLOR PRATA E DOURADO",
+      "tipo": "Bijuteria",
+      "imagem": "4265.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "16/04/2025"
+    },
+    {
+      "codigo": "4184",
+      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
+      "tipo": "Bijuteria",
+      "imagem": "4184.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4183",
+      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
+      "tipo": "Bijuteria",
+      "imagem": "4183.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4181",
+      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
+      "tipo": "Bijuteria",
+      "imagem": "4181.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4174",
+      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
+      "tipo": "Bijuteria",
+      "imagem": "4174.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "01/04/2025"
+    },
+    {
+      "codigo": "4128",
+      "descricao": "BIJUTERIA COLAR MAXI PEDRAS ORGANICAS ",
+      "tipo": "Bijuteria",
+      "imagem": "4128.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/03/2025"
+    },
+    {
+      "codigo": "4027",
+      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
+      "tipo": "Bijuteria",
+      "imagem": "4027.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "4024",
+      "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
+      "tipo": "Bijuteria",
+      "imagem": "4024.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "69,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "4022",
+      "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE CRISTAL 4MM 46CM",
+      "tipo": "Bijuteria",
+      "imagem": "4022.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "RÓDIO",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "4020",
+      "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE COLORS 5MM 39CM",
+      "tipo": "Bijuteria",
+      "imagem": "4020.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "4005",
+      "descricao": "BIJUTERIA COLAR PRATA MAXI PEDRAS ORGANICAS ",
+      "tipo": "Bijuteria",
+      "imagem": "4005.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "14/02/2025"
+    },
+    {
+      "codigo": "3979",
+      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
+      "tipo": "Bijuteria",
+      "imagem": "3979.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "189,98",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/02/2025"
+    },
+    {
+      "codigo": "3948",
+      "descricao": "BIJUTERIA BRACELETE INSPIRACAO CRAVEJADO",
+      "tipo": "Bijuteria",
+      "imagem": "3948.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "24/01/2025"
+    },
+    {
+      "codigo": "645",
+      "descricao": "BIJUTERIA RIVIERA BAG VERDE ESMERALDA 5MM 43CM",
+      "tipo": "Bijuteria",
+      "imagem": "645.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "89,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/12/2022"
+    },
+    {
+      "codigo": "405",
+      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
+      "tipo": "Bijuteria",
+      "imagem": "405.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2022"
+    }
+  ]
+}

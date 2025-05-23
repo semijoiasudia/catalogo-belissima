@@ -1,0 +1,49 @@
+﻿{
+  "categoria": "PINGENTE",
+  "produtos": [
+    {
+      "codigo": "3271",
+      "descricao": "PINGENTE FLOR ORGANICA",
+      "tipo": "Semijoia",
+      "imagem": "3271.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "36,90",
+      "precoConsignado": "54,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "01/07/2024"
+    },
+    {
+      "codigo": "3270",
+      "descricao": "PINGENTE CORACAO CRISTAL G",
+      "tipo": "Semijoia",
+      "imagem": "3270.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "01/07/2024"
+    },
+    {
+      "codigo": "3269",
+      "descricao": "PINGENTE SAO BENTO M",
+      "tipo": "Semijoia",
+      "imagem": "3269.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "01/07/2024"
+    },
+    {
+      "codigo": "1497",
+      "descricao": "PINGENTE CHANEL CRAV. CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "1497.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "07/08/2023"
+    }
+  ]
+}

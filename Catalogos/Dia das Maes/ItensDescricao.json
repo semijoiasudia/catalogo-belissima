@@ -1,0 +1,170 @@
+﻿{
+  "categoria": "DIA DAS MAES",
+  "produtos": [
+    {
+      "codigo": "4321",
+      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
+      "tipo": "Semijoia",
+      "imagem": "4321.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4319",
+      "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4319.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4318",
+      "descricao": "BRINCO GOTA ABAULADA CRAVEJADA AO REDOR",
+      "tipo": "Semijoia",
+      "imagem": "4318.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4317",
+      "descricao": "BRINCO ARGOLA CRAVEJADA CURVAS TAM M",
+      "tipo": "Semijoia",
+      "imagem": "4317.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4316",
+      "descricao": "BRINCO CORAÇÃO DESENHADO TAM M",
+      "tipo": "Semijoia",
+      "imagem": "4316.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4315",
+      "descricao": "CONJUNTO ZIRCONIA QUADRADA ROSA 44+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4315.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "72,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4314",
+      "descricao": "CONJUNTO ZIRCONIA QUADRADA VERDE 44+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4314.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "72,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4313",
+      "descricao": "CONJUNTO GOTA LILÁS CRAVEJADA AO REDOR 44+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4313.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "119,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4312",
+      "descricao": "CONJUNTO GOTA ROSA CRAVEJADA AO REDOR 44+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4312.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "119,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4311",
+      "descricao": "CONJUNTO GOTA VERDE ESMERALDA CRAVEJADA AO REDOR 44+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4311.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "119,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4310",
+      "descricao": "PULSEIRA EU MEREÇO TODO AMOR DO MUNDO 16+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4310.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "74,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4309",
+      "descricao": "COLAR ABENÇOADA 52+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4309.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4308",
+      "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4308.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "3285",
+      "descricao": "PULSEIRA ABENÇOADA",
+      "tipo": "Semijoia",
+      "imagem": "3285.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "69,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "tipo": "Semijoia",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    }
+  ]
+}

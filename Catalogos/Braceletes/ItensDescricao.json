@@ -1,0 +1,38 @@
+﻿{
+  "categoria": "BRACELETE",
+  "produtos": [
+    {
+      "codigo": "3864",
+      "descricao": "BRACELETE FIO TORCIDO",
+      "tipo": "Semijoia",
+      "imagem": "3864.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "94,90",
+      "precoConsignado": "134,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/12/2024"
+    },
+    {
+      "codigo": "3617",
+      "descricao": "BRACELETE ONDAS",
+      "tipo": "Semijoia",
+      "imagem": "3617.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/12/2024"
+    },
+    {
+      "codigo": "3619",
+      "descricao": "BRACELETE ORGANICO",
+      "tipo": "Semijoia",
+      "imagem": "3619.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/10/2024"
+    }
+  ]
+}
