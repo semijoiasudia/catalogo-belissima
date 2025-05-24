@@ -2,17 +2,6 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "4364",
-      "descricao": "PIERCING FAKE 2 BARRAS CRAVEJADAS",
-      "tipo": "Semijoia",
-      "imagem": "4364.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
       "codigo": "4363",
       "descricao": "PIERCING FAKE 2 BARRAS CRAVEJADAS",
       "tipo": "Semijoia",
