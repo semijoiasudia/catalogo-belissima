@@ -26,30 +26,6 @@
       "dataUltimaEntrada": "15/04/2025"
     },
     {
-      "codigo": "4171",
-      "descricao": "INOX COLAR 2 CORACOES 41+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4171.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "79,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "01/04/2025"
-    },
-    {
-      "codigo": "4065",
-      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4065.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "79,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "20/02/2025"
-    },
-    {
       "codigo": "3948",
       "descricao": "BIJUTERIA BRACELETE INSPIRACAO CRAVEJADO",
       "tipo": "Bijuteria",
@@ -348,18 +324,6 @@
       "precoConsignado": "69,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "05/08/2024"
-    },
-    {
-      "codigo": "1077",
-      "descricao": "ANEL REGULAVEL DUPLO",
-      "tipo": "Semijoia",
-      "imagem": "1077.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/07/2024"
     }
   ]
 }
