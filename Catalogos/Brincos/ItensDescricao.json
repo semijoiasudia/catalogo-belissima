@@ -2,6 +2,50 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4402",
+      "descricao": "BRINCO CORAÇÃO CRAVEJADO E PÉROLA",
+      "tipo": "Semijoia",
+      "imagem": "4402.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
+      "codigo": "4401",
+      "descricao": "BRINCO CORAÇÃO PEROLA AMARELA M",
+      "tipo": "Semijoia",
+      "imagem": "4401.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
+      "codigo": "4400",
+      "descricao": "BRINCO FOLHAS E PING PÉROLA",
+      "tipo": "Semijoia",
+      "imagem": "4400.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
+      "codigo": "4399",
+      "descricao": "BRINCO GOTA LIZA/CRAVEJADA COM PEROLA",
+      "tipo": "Semijoia",
+      "imagem": "4399.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
       "codigo": "4376",
       "descricao": "BRINCO QUADRADO BORDA ARREDONDADA CRAVEJADO CRISTAL",
       "tipo": "Semijoia",
@@ -383,17 +427,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "42,90",
       "precoConsignado": "64,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/05/2025"
-    },
-    {
-      "codigo": "3254",
-      "descricao": "BRINCO GOTA VIRGULA P",
-      "tipo": "Semijoia",
-      "imagem": "3254.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "36,90",
-      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "12/05/2025"
     },

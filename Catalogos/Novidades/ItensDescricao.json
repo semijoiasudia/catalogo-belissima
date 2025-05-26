@@ -2,6 +2,39 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4401",
+      "descricao": "BRINCO CORAÇÃO PEROLA AMARELA M",
+      "tipo": "Semijoia",
+      "imagem": "4401.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
+      "codigo": "4400",
+      "descricao": "BRINCO FOLHAS E PING PÉROLA",
+      "tipo": "Semijoia",
+      "imagem": "4400.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
+      "codigo": "4399",
+      "descricao": "BRINCO GOTA LIZA/CRAVEJADA COM PEROLA",
+      "tipo": "Semijoia",
+      "imagem": "4399.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
       "codigo": "4384",
       "descricao": "INOX PULSEIRA DUPLA 3 TREVOS PRETOS",
       "tipo": "Aço Inox",
@@ -240,17 +273,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "54,90",
       "precoConsignado": "84,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4236",
-      "descricao": "COLAR CORACAO CONCAVO TORTO CRAVEJADO 47+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4236.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "14/04/2025"
     },

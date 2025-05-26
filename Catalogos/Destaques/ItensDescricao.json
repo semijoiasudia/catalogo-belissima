@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4401",
+      "descricao": "BRINCO CORAÇÃO PEROLA AMARELA M",
+      "tipo": "Semijoia",
+      "imagem": "4401.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
+      "codigo": "4399",
+      "descricao": "BRINCO GOTA LIZA/CRAVEJADA COM PEROLA",
+      "tipo": "Semijoia",
+      "imagem": "4399.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/05/2025"
+    },
+    {
       "codigo": "4355",
       "descricao": "CHOKER ESFERA 38+5CM",
       "tipo": "Semijoia",
