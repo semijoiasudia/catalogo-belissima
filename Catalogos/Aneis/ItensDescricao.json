@@ -211,6 +211,17 @@
       "dataUltimaEntrada": "17/11/2024"
     },
     {
+      "codigo": "3653",
+      "descricao": "ANEL FALANGE 3 FIOS 2 ESFERAS",
+      "tipo": "Semijoia",
+      "imagem": "3653.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/11/2024"
+    },
+    {
       "codigo": "3589",
       "descricao": "ANEL SOLITARIO FIO TORCIDO E GOTA CRISTAL",
       "tipo": "Semijoia",
@@ -297,6 +308,17 @@
       "precoConsignado": "69,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "05/08/2024"
+    },
+    {
+      "codigo": "3331",
+      "descricao": "ANEL REGULAVEL LACO",
+      "tipo": "Semijoia",
+      "imagem": "3331.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "52,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/07/2024"
     },
     {
       "codigo": "3292",

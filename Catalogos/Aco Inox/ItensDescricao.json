@@ -497,6 +497,17 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
+      "codigo": "4252",
+      "descricao": "INOX BRACELETE CIRCULO PRETO E ALGARISMOS INSP",
+      "tipo": "Aço Inox",
+      "imagem": "4252.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
       "codigo": "4251",
       "descricao": "INOX BRACELETE CORACAO PRETO E MADREPEROLA",
       "tipo": "Aço Inox",
@@ -528,6 +539,17 @@
       "precoConsignado": "39,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "12/04/2025"
+    },
+    {
+      "codigo": "4216",
+      "descricao": "INOX CONJUNTO INFANTIL HELLO KITTY 40CM",
+      "tipo": "Aço Inox",
+      "imagem": "4216.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/04/2025"
     },
     {
       "codigo": "4012",
