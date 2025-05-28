@@ -2,6 +2,50 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4412",
+      "descricao": "PULSEIRA DUPLA CORACOES E CHAPINHAS 17+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4412.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4410",
+      "descricao": "PULSEIRA ELOS CORAÇÕES CIRCULO COM ESPÍRITO SANTO 17+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4410.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4409",
+      "descricao": "PULSEIRA DUPLA BOLINHAS E PING DE CORAÇÃO 17+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4409.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4403",
+      "descricao": "PULSEIRA 6 CORAÇÕES COLORS 18+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4403.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
       "codigo": "3811",
       "descricao": "PULSEIRA TREVO V&C RESINA OFF WHITE",
       "tipo": "Semijoia",

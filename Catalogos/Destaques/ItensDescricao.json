@@ -2,6 +2,72 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4410",
+      "descricao": "PULSEIRA ELOS CORAÇÕES CIRCULO COM ESPÍRITO SANTO 17+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4410.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4409",
+      "descricao": "PULSEIRA DUPLA BOLINHAS E PING DE CORAÇÃO 17+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4409.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4408",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO CRISTAL 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4408.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4407",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO CRISTAL 40+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4407.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "64,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4404",
+      "descricao": "CHOKER PINGENTES CORAÇÕES COLORS 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4404.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
+      "codigo": "4403",
+      "descricao": "PULSEIRA 6 CORAÇÕES COLORS 18+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4403.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
       "codigo": "4401",
       "descricao": "BRINCO CORAÇÃO PEROLA AMARELA M",
       "tipo": "Semijoia",
@@ -44,28 +110,6 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "15/05/2025"
-    },
-    {
-      "codigo": "4340",
-      "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4340.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
-      "codigo": "4339",
-      "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4339.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "08/05/2025"
     },
     {
       "codigo": "4321",

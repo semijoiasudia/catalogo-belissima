@@ -2,6 +2,50 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4408",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO CRISTAL 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4408.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4407",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO CRISTAL 40+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4407.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "64,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4406",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO COLORS 45+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4406.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
+      "codigo": "4405",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO COLORS 40+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4405.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "102,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
       "codigo": "1501",
       "descricao": "COLAR FIO DE NYLON CORACAO CRAVEJADO 41+5CM",
       "tipo": "Semijoia",
@@ -253,17 +297,6 @@
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/11/2024"
-    },
-    {
-      "codigo": "3597",
-      "descricao": "COLAR ELOS OVAIS TRABALHADOS E CORACOES 46+5CM",
-      "tipo": "Semijoia",
-      "imagem": "3597.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/10/2024"
     },
     {
       "codigo": "2509",

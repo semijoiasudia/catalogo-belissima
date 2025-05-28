@@ -13,17 +13,6 @@
       "dataUltimaEntrada": "22/05/2025"
     },
     {
-      "codigo": "4386",
-      "descricao": "INOX CONJUNTO INFANTIL STITCH 40CM",
-      "tipo": "Aço Inox",
-      "imagem": "4386.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "22/05/2025"
-    },
-    {
       "codigo": "4385",
       "descricao": "INOX COLAR TREVOS E PONTOS DE LUZ COLORS 46+5CM",
       "tipo": "Aço Inox",
@@ -31,17 +20,6 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "62,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/05/2025"
-    },
-    {
-      "codigo": "4384",
-      "descricao": "INOX PULSEIRA DUPLA 3 TREVOS PRETOS",
-      "tipo": "Aço Inox",
-      "imagem": "4384.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/05/2025"
     },
@@ -449,17 +427,6 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "15/04/2025"
-    },
-    {
-      "codigo": "4258",
-      "descricao": "INOX CONJUNTO TREVO BRANCO ESMALTADO 51CM",
-      "tipo": "Aço Inox",
-      "imagem": "4258.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
       "banho": "INOX",
       "dataUltimaEntrada": "15/04/2025"
     },

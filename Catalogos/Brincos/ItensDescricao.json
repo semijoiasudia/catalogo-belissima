@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4411",
+      "descricao": "BRINCO ESPIRITO SANTO PP",
+      "tipo": "Semijoia",
+      "imagem": "4411.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
       "codigo": "4402",
       "descricao": "BRINCO CORAÇÃO CRAVEJADO E PÉROLA",
       "tipo": "Semijoia",
@@ -2081,17 +2092,6 @@
       "dataUltimaEntrada": "23/07/2024"
     },
     {
-      "codigo": "3316",
-      "descricao": "BRINCO CORACAO CRAVEJADO CRISTAL P",
-      "tipo": "Semijoia",
-      "imagem": "3316.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/07/2024"
-    },
-    {
       "codigo": "3311",
       "descricao": "BRINCO MEIA ARGOLA LISA P 2CM",
       "tipo": "Semijoia",
@@ -2233,17 +2233,6 @@
       "precoConsignado": "52,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "25/05/2024"
-    },
-    {
-      "codigo": "2796",
-      "descricao": "BRINCO FLOR VAZADA PONTO DE LUZ P M1",
-      "tipo": "Semijoia",
-      "imagem": "2796.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "29,90",
-      "precoConsignado": "39,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/03/2024"
     }
   ]
 }
