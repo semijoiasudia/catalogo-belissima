@@ -2,17 +2,6 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
-      "codigo": "4321",
-      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
-      "tipo": "Semijoia",
-      "imagem": "4321.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/05/2025"
-    },
-    {
       "codigo": "4319",
       "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
       "tipo": "Semijoia",
@@ -20,17 +9,6 @@
       "pastaFotos": "Catalogos/Dia das Maes/",
       "preco": "64,90",
       "precoConsignado": "94,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/05/2025"
-    },
-    {
-      "codigo": "4318",
-      "descricao": "BRINCO GOTA ABAULADA CRAVEJADA AO REDOR",
-      "tipo": "Semijoia",
-      "imagem": "4318.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/05/2025"
     },
@@ -143,17 +121,6 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/05/2025"
-    },
-    {
-      "codigo": "3235",
-      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
-      "tipo": "Semijoia",
-      "imagem": "3235.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "74,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
     }
   ]
 }

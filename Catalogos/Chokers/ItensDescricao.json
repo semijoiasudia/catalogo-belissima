@@ -13,28 +13,6 @@
       "dataUltimaEntrada": "27/05/2025"
     },
     {
-      "codigo": "4355",
-      "descricao": "CHOKER ESFERA 38+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4355.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "62,90",
-      "precoConsignado": "94,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/05/2025"
-    },
-    {
-      "codigo": "4186",
-      "descricao": "CHOKER CORACOES COLORIDOS 41+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4186.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/05/2025"
-    },
-    {
       "codigo": "4235",
       "descricao": "CHOKER PEROLAS FORMATO CORACAO BRANCO 41+5CM",
       "tipo": "Semijoia",
@@ -178,17 +156,6 @@
       "dataUltimaEntrada": "29/12/2024"
     },
     {
-      "codigo": "3885",
-      "descricao": "CHOKER TREVO VAZADO 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "3885.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/12/2024"
-    },
-    {
       "codigo": "3829",
       "descricao": "CHOKER ELOS OVAIS E RETANGULARES 38+5CM",
       "tipo": "Semijoia",
@@ -253,17 +220,6 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "06/11/2024"
-    },
-    {
-      "codigo": "3268",
-      "descricao": "CHOKER ARO FINO",
-      "tipo": "Semijoia",
-      "imagem": "3268.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "01/07/2024"
     }
   ]
 }

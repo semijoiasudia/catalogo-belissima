@@ -101,17 +101,6 @@
       "dataUltimaEntrada": "30/04/2025"
     },
     {
-      "codigo": "3235",
-      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
-      "tipo": "Semijoia",
-      "imagem": "3235.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "74,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
       "codigo": "4304",
       "descricao": "PULSEIRA INFANTIL CORAÇÃO E PONTO DE LUZ 15CM",
       "tipo": "Semijoia",
@@ -295,17 +284,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "56,90",
       "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
-    },
-    {
-      "codigo": "2578",
-      "descricao": "PULSEIRA CORACOES ENTRELACADOS FECHO GRAVATA",
-      "tipo": "Semijoia",
-      "imagem": "2578.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/08/2024"
     },
