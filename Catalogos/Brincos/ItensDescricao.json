@@ -57,6 +57,17 @@
       "dataUltimaEntrada": "30/05/2025"
     },
     {
+      "codigo": "3222",
+      "descricao": "BRINCO ARGOLA CLICK 2 ESTRELAS 1 P. LUZ PP",
+      "tipo": "Semijoia",
+      "imagem": "3222.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
       "codigo": "4411",
       "descricao": "BRINCO ESPIRITO SANTO PP",
       "tipo": "Semijoia",
@@ -1991,17 +2002,6 @@
       "precoConsignado": "42,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/07/2024"
-    },
-    {
-      "codigo": "3222",
-      "descricao": "BRINCO ARGOLA CLICK 2 ESTRELAS 1 P. LUZ PP",
-      "tipo": "Semijoia",
-      "imagem": "3222.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/06/2024"
     },
     {
       "codigo": "3206",

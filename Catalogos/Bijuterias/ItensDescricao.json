@@ -68,17 +68,6 @@
       "dataUltimaEntrada": "01/04/2025"
     },
     {
-      "codigo": "4128",
-      "descricao": "BIJUTERIA COLAR MAXI PEDRAS ORGANICAS ",
-      "tipo": "Bijuteria",
-      "imagem": "4128.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/03/2025"
-    },
-    {
       "codigo": "4027",
       "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
       "tipo": "Bijuteria",
@@ -121,17 +110,6 @@
       "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "4005",
-      "descricao": "BIJUTERIA COLAR PRATA MAXI PEDRAS ORGANICAS ",
-      "tipo": "Bijuteria",
-      "imagem": "4005.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "14/02/2025"
     },
     {
       "codigo": "3979",
