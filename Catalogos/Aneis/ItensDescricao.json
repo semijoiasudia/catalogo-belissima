@@ -2,6 +2,72 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "4418",
+      "descricao": "ANEL REGULÁVEL BORBOLETA",
+      "tipo": "Semijoia",
+      "imagem": "4418.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
+      "codigo": "4417",
+      "descricao": "ANEL REGULÁVEL BORBOLETA",
+      "tipo": "Semijoia",
+      "imagem": "4417.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
+      "codigo": "4416",
+      "descricao": "ANEL CORAÇÃO CRAVEJADO - TAMANHOS",
+      "tipo": "Semijoia",
+      "imagem": "4416.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
+      "codigo": "4415",
+      "descricao": "ANEL REGULÁVEL TRIANGULAR CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "4415.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
+      "codigo": "4414",
+      "descricao": "ANEL CORAÇÕES E CRUZES CRAVEJADAS - TAMANHOS",
+      "tipo": "Semijoia",
+      "imagem": "4414.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
+      "codigo": "4413",
+      "descricao": "ANEL LISO CRAVEJADO BORDAS QUADRADAS - TAMANHOS",
+      "tipo": "Semijoia",
+      "imagem": "4413.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
       "codigo": "3479",
       "descricao": "ANEL REGULAVEL 2 BARRAS E ZIRCONIAS",
       "tipo": "Semijoia",
@@ -275,28 +341,6 @@
       "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/07/2024"
-    },
-    {
-      "codigo": "3213",
-      "descricao": "ANEL FALANGE CRUZ TRABALHADA",
-      "tipo": "Semijoia",
-      "imagem": "3213.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/06/2024"
-    },
-    {
-      "codigo": "3212",
-      "descricao": "ANEL FALANGE REGULAVEL 2 FLORES",
-      "tipo": "Semijoia",
-      "imagem": "3212.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/06/2024"
     },
     {
       "codigo": "2990",

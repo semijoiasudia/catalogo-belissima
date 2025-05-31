@@ -255,17 +255,6 @@
       "dataUltimaEntrada": "09/12/2024"
     },
     {
-      "codigo": "886",
-      "descricao": "PULSEIRA CORDÃO BAIANO 4MM",
-      "tipo": "Semijoia",
-      "imagem": "886.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "94,90",
-      "precoConsignado": "139,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/11/2024"
-    },
-    {
       "codigo": "2574",
       "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
       "tipo": "Semijoia",
@@ -308,6 +297,17 @@
       "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/06/2024"
+    },
+    {
+      "codigo": "3186",
+      "descricao": "PULSEIRA PINGENTE CORACAO TRABALHADO",
+      "tipo": "Semijoia",
+      "imagem": "3186.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "10/06/2024"
     },
     {
       "codigo": "3185",
