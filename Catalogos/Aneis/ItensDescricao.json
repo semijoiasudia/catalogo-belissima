@@ -156,17 +156,6 @@
       "dataUltimaEntrada": "26/02/2025"
     },
     {
-      "codigo": "4090",
-      "descricao": "ANEL REGULAVEL FIO 2 CORACOES CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "4090.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "42,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/02/2025"
-    },
-    {
       "codigo": "3954",
       "descricao": "ANEL REGULAVEL FIO DUPLO CRUZADO",
       "tipo": "Semijoia",
@@ -299,28 +288,6 @@
       "dataUltimaEntrada": "19/08/2024"
     },
     {
-      "codigo": "3363",
-      "descricao": "ANEL FALANGE REGULAVEL 2 CORACOES",
-      "tipo": "Semijoia",
-      "imagem": "3363.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
-    },
-    {
-      "codigo": "3362",
-      "descricao": "ANEL REGULAVEL CORACAO ORGANICO G",
-      "tipo": "Semijoia",
-      "imagem": "3362.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
-    },
-    {
       "codigo": "2600",
       "descricao": "ANEL REGULAVEL BARRA/PONTO DE LUZ CRISTAL",
       "tipo": "Semijoia",
@@ -330,17 +297,6 @@
       "precoConsignado": "69,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "05/08/2024"
-    },
-    {
-      "codigo": "3292",
-      "descricao": "ANEL LACO TRABALHADO TAMANHOS",
-      "tipo": "Semijoia",
-      "imagem": "3292.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/07/2024"
     },
     {
       "codigo": "2990",

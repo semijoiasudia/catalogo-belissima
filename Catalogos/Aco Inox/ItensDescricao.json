@@ -189,17 +189,6 @@
       "dataUltimaEntrada": "08/05/2025"
     },
     {
-      "codigo": "4335",
-      "descricao": "INOX BRINCO LOSANGOS G",
-      "tipo": "Aço Inox",
-      "imagem": "4335.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "07/05/2025"
-    },
-    {
       "codigo": "4334",
       "descricao": "INOX PULSEIRA BORBOLETAS COLORIDAS 18+3CM",
       "tipo": "Aço Inox",
@@ -295,17 +284,6 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
       "precoConsignado": "52,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/04/2025"
-    },
-    {
-      "codigo": "4286",
-      "descricao": "INOX COLAR CORACOES COLORIDOS INOX 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4286.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
       "banho": "INOX",
       "dataUltimaEntrada": "19/04/2025"
     },

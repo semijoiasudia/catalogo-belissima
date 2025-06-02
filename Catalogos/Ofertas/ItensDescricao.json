@@ -2,18 +2,6 @@
   "categoria": "OFERTAS",
   "produtos": [
     {
-      "codigo": "4286",
-      "descricao": "INOX COLAR CORACOES COLORIDOS INOX 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4286.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "39,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/04/2025"
-    },
-    {
       "codigo": "4268",
       "descricao": "BIJUTERIA CHOCKER RIVIERA E CORACOES COLORS 37CM",
       "tipo": "Bijuteria",
@@ -194,30 +182,6 @@
       "dataUltimaEntrada": "10/08/2024"
     },
     {
-      "codigo": "3363",
-      "descricao": "ANEL FALANGE REGULAVEL 2 CORACOES",
-      "tipo": "Semijoia",
-      "imagem": "3363.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "34,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
-    },
-    {
-      "codigo": "3362",
-      "descricao": "ANEL REGULAVEL CORACAO ORGANICO G",
-      "tipo": "Semijoia",
-      "imagem": "3362.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
-    },
-    {
       "codigo": "3351",
       "descricao": "BRINCO TREVO CRAVEJADO P",
       "tipo": "Semijoia",
@@ -278,18 +242,6 @@
       "dataUltimaEntrada": "09/07/2024"
     },
     {
-      "codigo": "3292",
-      "descricao": "ANEL LACO TRABALHADO TAMANHOS",
-      "tipo": "Semijoia",
-      "imagem": "3292.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/07/2024"
-    },
-    {
       "codigo": "3283",
       "descricao": "BRINCO PONTO DE LUZ 5MM",
       "tipo": "Semijoia",
@@ -334,18 +286,6 @@
       "preco": "44,90",
       "precoOferta": "29,90",
       "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/06/2024"
-    },
-    {
-      "codigo": "3181",
-      "descricao": "BRINCO CORACAO LISO/CORACOES TRABALHADOS",
-      "tipo": "Semijoia",
-      "imagem": "3181.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "39,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "10/06/2024"
     },
