@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4420",
+      "descricao": "BRINCO MEIA FLOR ORGANICA TAM M",
+      "tipo": "Semijoia",
+      "imagem": "4420.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "62,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/06/2025"
+    },
+    {
       "codigo": "4412",
       "descricao": "PULSEIRA DUPLA CORACOES E CHAPINHAS 17+5CM",
       "tipo": "Semijoia",
@@ -348,7 +359,7 @@
       "tipo": "Semijoia",
       "imagem": "3463.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "62,90",
+      "preco": "59,90",
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "12/05/2025"

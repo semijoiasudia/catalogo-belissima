@@ -2,6 +2,17 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "3809",
+      "descricao": "PULSEIRA TREVO V&C RESINA PRETA",
+      "tipo": "Semijoia",
+      "imagem": "3809.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/06/2025"
+    },
+    {
       "codigo": "4412",
       "descricao": "PULSEIRA DUPLA CORACOES E CHAPINHAS 17+5CM",
       "tipo": "Semijoia",

@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4420",
+      "descricao": "BRINCO MEIA FLOR ORGANICA TAM M",
+      "tipo": "Semijoia",
+      "imagem": "4420.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "62,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/06/2025"
+    },
+    {
       "codigo": "4410",
       "descricao": "PULSEIRA ELOS CORAÇÕES CIRCULO COM ESPÍRITO SANTO 17+5CM",
       "tipo": "Semijoia",
