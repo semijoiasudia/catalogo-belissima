@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4423",
+      "descricao": "CHOKER CORAÇÕES CORES CLARAS 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4423.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/06/2025"
+    },
+    {
       "codigo": "4420",
       "descricao": "BRINCO MEIA FLOR ORGANICA TAM M",
       "tipo": "Semijoia",
@@ -341,6 +352,17 @@
       "precoConsignado": "159,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4186",
+      "descricao": "CHOKER CORAÇÕES COLORIDOS 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4186.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/06/2025"
     },
     {
       "codigo": "3471",
