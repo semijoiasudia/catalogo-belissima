@@ -2,6 +2,28 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4429",
+      "descricao": "CONJUNTO CORAÇÃO CRISTAL 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4429.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "72,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "4428",
+      "descricao": "CONJUNTO 1 TREVO CRISTAL 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4428.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
       "codigo": "3793",
       "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
       "tipo": "Semijoia",
