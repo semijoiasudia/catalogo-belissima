@@ -2,17 +2,6 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
-      "codigo": "4319",
-      "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "4319.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "64,90",
-      "precoConsignado": "94,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/05/2025"
-    },
-    {
       "codigo": "4316",
       "descricao": "BRINCO CORAÇÃO DESENHADO TAM M",
       "tipo": "Semijoia",

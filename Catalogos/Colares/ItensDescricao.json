@@ -2,6 +2,50 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4427",
+      "descricao": "COLAR PINGENTE NOSSA SENHORA COLORS 44+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4427.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "4426",
+      "descricao": "COLAR NOSSA SENHORA MADREPÉROLA M2 22MM 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4426.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "4425",
+      "descricao": "COLAR NOSSA SENHORA MADREPÉROLA 22MM 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4425.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "4424",
+      "descricao": "COLAR ESPÍRITO SANTO MADREPÉROLA 22MM - 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4424.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
       "codigo": "4422",
       "descricao": "COLAR FIO DE NYLON PONTO DE LUZ VERDE 6MM 41+5CM",
       "tipo": "Semijoia",
@@ -127,17 +171,6 @@
       "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
       "tipo": "Semijoia",
       "imagem": "1504.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
-      "codigo": "440",
-      "descricao": "COLAR FIO DE NYLON CORACAO ABAULADO 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "440.jpg",
       "pastaFotos": "Catalogos/Colares/",
       "preco": "62,90",
       "precoConsignado": "89,90",

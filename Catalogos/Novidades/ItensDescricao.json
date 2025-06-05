@@ -2,6 +2,50 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4427",
+      "descricao": "COLAR PINGENTE NOSSA SENHORA COLORS 44+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4427.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "62,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "4426",
+      "descricao": "COLAR NOSSA SENHORA MADREPÉROLA M2 22MM 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4426.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "4425",
+      "descricao": "COLAR NOSSA SENHORA MADREPÉROLA 22MM 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4425.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "4424",
+      "descricao": "COLAR ESPÍRITO SANTO MADREPÉROLA 22MM - 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4424.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
       "codigo": "4423",
       "descricao": "CHOKER CORAÇÕES CORES CLARAS 40+5CM",
       "tipo": "Semijoia",
@@ -429,6 +473,28 @@
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/05/2025"
+    },
+    {
+      "codigo": "2004",
+      "descricao": "PINGENTE MENINA M 18MM COM CORAÇÃO ZIRCONIA VERMELHA",
+      "tipo": "Semijoia",
+      "imagem": "2004.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
+    },
+    {
+      "codigo": "2003",
+      "descricao": "PINGENTE MENINO 18MM COM CORAÇÃO ZIRCONIA AZUL",
+      "tipo": "Semijoia",
+      "imagem": "2003.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/06/2025"
     }
   ]
 }
