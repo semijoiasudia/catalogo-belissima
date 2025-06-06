@@ -2,6 +2,50 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4436",
+      "descricao": "BRINCO EAR HOOK TRIPLO",
+      "tipo": "Semijoia",
+      "imagem": "4436.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "96,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4435",
+      "descricao": "BRINCO EAR CUFF 2 EM 1 GOTAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4435.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4432",
+      "descricao": "BRINCO TRIO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
+      "tipo": "Semijoia",
+      "imagem": "4432.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "2124",
+      "descricao": "BRINCO TRIO CORACAO CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "2124.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
       "codigo": "4420",
       "descricao": "BRINCO MEIA FLOR ORGANICA TAM M",
       "tipo": "Semijoia",
@@ -339,17 +383,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
       "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/05/2025"
-    },
-    {
-      "codigo": "3328",
-      "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO COLORS",
-      "tipo": "Semijoia",
-      "imagem": "3328.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "76,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/05/2025"
     },

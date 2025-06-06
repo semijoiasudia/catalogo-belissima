@@ -2,6 +2,39 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4436",
+      "descricao": "BRINCO EAR HOOK TRIPLO",
+      "tipo": "Semijoia",
+      "imagem": "4436.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "96,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4435",
+      "descricao": "BRINCO EAR CUFF 2 EM 1 GOTAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4435.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4432",
+      "descricao": "BRINCO TRIO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
+      "tipo": "Semijoia",
+      "imagem": "4432.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
       "codigo": "4426",
       "descricao": "COLAR NOSSA SENHORA MADREPÉROLA M2 22MM 40+5CM",
       "tipo": "Semijoia",
@@ -211,6 +244,17 @@
       "dataUltimaEntrada": "30/04/2025"
     },
     {
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
+      "tipo": "Semijoia",
+      "imagem": "4218.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
       "codigo": "4200",
       "descricao": "BRINCO TELA FORMATO FOLHA",
       "tipo": "Semijoia",
@@ -264,6 +308,17 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "2124",
+      "descricao": "BRINCO TRIO CORACAO CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "2124.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
     }
   ]
 }

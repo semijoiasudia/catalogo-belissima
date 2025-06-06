@@ -2,6 +2,39 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4436",
+      "descricao": "BRINCO EAR HOOK TRIPLO",
+      "tipo": "Semijoia",
+      "imagem": "4436.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "96,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4435",
+      "descricao": "BRINCO EAR CUFF 2 EM 1 GOTAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4435.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4432",
+      "descricao": "BRINCO TRIO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
+      "tipo": "Semijoia",
+      "imagem": "4432.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
       "codigo": "4429",
       "descricao": "CONJUNTO CORAÇÃO CRISTAL 40+5CM",
       "tipo": "Semijoia",
@@ -9,17 +42,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "72,90",
       "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/06/2025"
-    },
-    {
-      "codigo": "4428",
-      "descricao": "CONJUNTO 1 TREVO CRISTAL 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4428.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/06/2025"
     },
@@ -495,6 +517,17 @@
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/05/2025"
+    },
+    {
+      "codigo": "2124",
+      "descricao": "BRINCO TRIO CORACAO CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "2124.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "2004",

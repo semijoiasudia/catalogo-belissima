@@ -2,6 +2,28 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "3386",
+      "descricao": "COLAR FIO DE NYLON CORACAO LISO GRANDE 40+6CM",
+      "tipo": "Semijoia",
+      "imagem": "3386.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "1488",
+      "descricao": "COLAR FIO DE NYLON 3 CORACOES 2 BANHOS 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "1488.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "96,90",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
       "codigo": "4427",
       "descricao": "COLAR PINGENTE NOSSA SENHORA COLORS 44+5CM",
       "tipo": "Semijoia",

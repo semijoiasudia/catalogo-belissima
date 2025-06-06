@@ -2,15 +2,15 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "3809",
-      "descricao": "PULSEIRA TREVO V&C RESINA PRETA",
+      "codigo": "4433",
+      "descricao": "PULSEIRA INFANTIL BORBOLETA PNK",
       "tipo": "Semijoia",
-      "imagem": "3809.jpg",
+      "imagem": "4433.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/06/2025"
+      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4412",
@@ -308,17 +308,6 @@
       "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/06/2024"
-    },
-    {
-      "codigo": "3185",
-      "descricao": "PULSEIRA PINGENTE CORACAO TRABALHADO",
-      "tipo": "Semijoia",
-      "imagem": "3185.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/06/2024"
     },
     {
       "codigo": "3026",

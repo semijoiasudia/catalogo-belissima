@@ -2,6 +2,17 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "4433",
+      "descricao": "PULSEIRA INFANTIL BORBOLETA PNK",
+      "tipo": "Semijoia",
+      "imagem": "4433.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
       "codigo": "4387",
       "descricao": "INOX CONJUNTO INFANTIL GATINHO 40CM",
       "tipo": "Aço Inox",
@@ -77,6 +88,17 @@
       "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
+      "tipo": "Semijoia",
+      "imagem": "4218.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4216",
