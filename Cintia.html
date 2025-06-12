@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belíssima Mulher Semijoias</title>
+    <meta property="og:title" content="Belíssima Mulher - Semijoias">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        /* Container da logo */
+        .logo-container {
+            padding: 8px 0;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70px;
+        }
+        .logo-container img {
+            max-width: 300px;
+            height: auto;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
+        }
+        /* Overlay para proteger a logo */
+        .logo-protection {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+        
+        /* Novo estilo para o título em duas linhas */
+        .title-container {
+            margin: 15px 0;
+            line-height: 1.3;
+        }
+        .title-main {
+            font-size: 20px;
+            color: #666;
+            font-weight: normal;
+            margin: 0;
+        }
+        .title-sub {
+            font-size: 16px;
+            color: #666;
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        .modal-open {
+            overflow: hidden;
+        }
+        
+        /* Novo container de navegação */
+        .navigation-controls {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
+        .tabs-container {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            margin: 0 auto 12px;
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .tabs {
+            display: inline-flex;
+            gap: 8px;
+            padding: 2px;
+        }
+        .tab {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #a89fb0;
+            color: white;
+            font-weight: bold;
+            transition: all 0.2s;
+            white-space: nowrap;
+            min-width: 120px;
+            text-align: center;
+        }
+        .tab:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(168, 159, 176, 0.3);
+            padding: 11px 22px;
+            margin: -1px -2px;
+        }
+        .tab.active {
+            background: #8a7e94;
+            box-shadow: 0px 4px 8px rgba(168, 159, 176, 0.5);
+            padding: 11px 22px;
+            margin: -1px -2px;
+        }
+        .tabs-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .tabs-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb {
+            background: #a89fb0;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb:hover {
+            background: #8a7e94;
+        }
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 12px 0;
+            padding: 0 0 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .subcategories button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background-color: #d1cad8;
+            color: #555;
+            transition: all 0.2s;
+        }
+        .subcategories button:hover {
+            background-color: #c2b9cc;
+            transform: translateY(-1px);
+        }
+        .subcategories button.active {
+            background-color: #a89fb0;
+            color: white;
+            font-weight: bold;
+        }
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            padding-top: 4px;
+        }
+        .filter-container label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+        }
+        .filter-container select {
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+        }
+        .filter-container select:hover {
+            border-color: #a89fb0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .filter-container select:focus {
+            outline: none;
+            border-color: #a89fb0;
+            box-shadow: 0 0 0 2px rgba(168, 159, 176, 0.2);
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery .item {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            white-space: normal;
+        }
+        .gallery .preco {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+        }
+        .gallery .parcela {
+            margin-top: 2px;
+            font-size: 14px;
+            color: #666;
+        }
+        .gallery .codigo {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            overflow: auto;
+        }
+        .modal-content {
+            position: relative;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: hidden;
+            transform-origin: center center;
+            transition: transform 0.1s ease-out;
+            touch-action: none;
+        }
+        .capture-area {
+            position: relative;
+        }
+        .modal img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 8px;
+            display: block;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .modal-codigo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+        }
+        .close:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        .modal-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        .modal-info .descricao {
+            font-size: 16px;
+        }
+        .modal-info .preco {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .modal-info .parcela {
+            font-size: 16px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        /* NOVOS ESTILOS PARA OS DOIS BOTÕES DE DOWNLOAD */
+        .download-buttons-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .save-btn {
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+            min-width: 160px;
+            justify-content: center;
+        }
+        
+        .save-btn.with-code {
+            background-color: #007bff;
+        }
+        
+        .save-btn.without-code {
+            background-color: #28a745;
+        }
+        
+        .save-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .save-btn.with-code:hover {
+            background-color: #0056b3;
+        }
+        
+        .save-btn.without-code:hover {
+            background-color: #218838;
+        }
+        
+        .save-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        
+        /* Texto explicativo dos botões */
+        .download-info {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .download-info strong {
+            color: #333;
+        }
+        
+        .rodape {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ddd;
+        }
+        .rodape-text {
+            margin: 0;
+            padding: 5px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .pagination button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #a89fb0;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #8a7e94;
+        }
+        .pagination button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .gallery .img-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery .img-container .logo-watermark {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 25%;
+            max-height: 25%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .modal .logo-watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 25%;
+            max-height: 25%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .gallery .img-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: block;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .gallery .img-container img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <!-- Container da logo -->
+    <div class="logo-container">
+        <img src="imagens/logotopo.png" alt="Belíssima Mulher - Semijoias" draggable="false">
+        <div class="logo-protection"></div>
+    </div>
+    
+    <!-- Título em duas linhas -->
+    <div class="title-container">
+        <h1 class="title-main">Semijoias e Acessórios</h1>
+        <h2 class="title-sub">Catálogo Online</h2>
+    </div>
+    
+    <!-- Container de navegação -->
+    <div class="navigation-controls">
+        <div class="tabs-container">
+            <div class="tabs" id="tabs"></div>
+        </div>
+        <div class="subcategories" id="subcategories" style="display: none;"></div>
+        <div class="filter-container">
+            <label for="sortFilter">Ordenar por: </label>
+            <select id="sortFilter" onchange="applySort()">
+                <option value="newest" selected>Mais Novos</option>
+                <option value="oldest">Mais Antigos</option>
+                <option value="highestPrice">Maior Preço</option>
+                <option value="lowestPrice">Menor Preço</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="gallery" id="gallery"></div>
+    <div class="pagination" id="pagination"></div>
+    
+    <!-- Modal com dois botões de download -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content" id="modalContent">
+            <span class="close" onclick="closeModal()">×</span>
+            <div class="capture-area" id="captureArea">
+                <div class="modal-codigo" id="modalCodigo"></div>
+                <img id="modalImg">
+            </div>
+            <div class="modal-info" id="modalInfo"></div>
+            
+            <!-- Container com os dois botões de download -->
+            <div class="download-buttons-container">
+                <button class="save-btn with-code" onclick="saveImageWithCode()">
+                    <img src="imagens/download.png" alt="Download">
+                    Para Cliente
+                </button>
+                <button class="save-btn without-code" onclick="saveImageWithoutCode()">
+                    <img src="imagens/download.png" alt="Download">
+                    Para Divulgação
+                </button>
+            </div>
+            
+            <!-- Texto explicativo -->
+            <div class="download-info">
+                <strong>Para Cliente:</strong> inclui código da peça<br>
+                <strong>Para Divulgação:</strong> imagem sem código para redes sociais
+            </div>
+        </div>
+    </div>
+    
+    <div id="rodape" class="rodape"></div>
+
+    <script>
+        const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
+        const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/ItensDescricao.txt";
+        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/CategoriasAtivas.txt";
+        let descricoes = {};
+        let categoriasAtivas = [];
+        let currentFolder = '';
+        const itemsPerPage = 20;
+        let currentPage = 1;
+        let allFiles = [];
+        let currentBanho = 'todos';
+        let currentSort = 'newest';
+        let currentModalIndex = 0;
+        let currentVisibleFiles = [];
+
+        let scale = 1;
+        let minScale = 1;
+        let maxScale = 5;
+        let translateX = 0;
+        let translateY = 0;
+        let startX = 0;
+        let startY = 0;
+        let isDragging = false;
+
+        function formatarPreco(preco) {
+            if (!preco) return "Preço não disponível";
+            const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Preço não disponível";
+            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
+        }
+
+        function calcularParcela(preco) {
+            if (!preco || preco === "Preço não disponível") return "Parcela não disponível";
+            const valorNumerico = parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Parcela não disponível";
+            const valorParcela = valorNumerico / 3;
+            return `em 3x de R$ ${valorParcela.toFixed(2).replace('.', ',')} sem juros no cartão (por link de pagamento)`;
+        }
+
+        function getNumericPrice(preco) {
+            if (!preco || preco === "Preço não disponível") return 0;
+            return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+        }
+
+        async function loadCategoriasAtivas() {
+            try {
+                const response = await fetch(categoriasAtivasUrl);
+                if (!response.ok) {
+                    console.warn("Arquivo categoriasativas.txt não encontrado, todas as categorias serão exibidas.");
+                    categoriasAtivas = [];
+                    return;
+                }
+                const text = await response.text();
+                categoriasAtivas = text.split('\n')
+                    .map(linha => linha.trim())
+                    .filter(linha => linha !== '');
+                console.log('Categorias ativas carregadas:', categoriasAtivas);
+            } catch (error) {
+                console.error("Erro ao carregar categorias ativas:", error);
+                categoriasAtivas = [];
+            }
+        }
+
+        async function loadDescriptions() {
+            try {
+                const response = await fetch(descricoesUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const lines = text.split('\n');
+                lines.forEach(line => {
+                    const [codigo, descricao, preco, banho] = line.split(';');
+                    if (codigo && descricao && preco && banho) {
+                        let normalizedBanho = banho.trim().toLowerCase();
+                        if (normalizedBanho.includes('2 banhos')) {
+                            normalizedBanho = '2 banhos';
+                        }
+                        descricoes[codigo.trim()] = {
+                            descricao: descricao.trim(),
+                            preco: formatarPreco(preco.trim()),
+                            banho: normalizedBanho
+                        };
+                    }
+                });
+                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
+            } catch (error) {
+                console.error("Erro ao carregar descrições:", error);
+                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar descrições. Verifique o console.</p>';
+            }
+        }
+
+        async function loadCategories() {
+            console.log('Iniciando loadCategories');
+            try {
+                const response = await fetch(repoUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const data = await response.json();
+                console.log('Dados das categorias recebidos:', data);
+                const tabs = document.getElementById('tabs');
+                tabs.innerHTML = '';
+
+                if (!data || !Array.isArray(data)) {
+                    throw new Error('Resposta da API inválida');
+                }
+
+                data.forEach(item => {
+                    if (item.type === 'dir') {
+                        if (categoriasAtivas.length === 0 || categoriasAtivas.includes(item.name)) {
+                            const tab = document.createElement('button');
+                            tab.className = 'tab';
+                            tab.textContent = item.name;
+                            tab.onclick = () => {
+                                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                                tab.classList.add('active');
+                                loadImages(item.name);
+                                scrollToActiveTab();
+                            };
+                            tabs.appendChild(tab);
+                        }
+                    }
+                });
+
+                if (tabs.children.length === 0) {
+                    tabs.innerHTML = '<p>Nenhuma categoria disponível no momento.</p>';
+                    return;
+                }
+
+                const initialCategory = getQueryParam('categoria');
+                let initialTab = null;
+                
+                if (initialCategory) {
+                    initialTab = findTabByText(initialCategory);
+                }
+                
+                if (!initialTab) {
+                    initialTab = findTabByText('Brincos');
+                }
+                
+                if (!initialTab && tabs.children.length > 0) {
+                    initialTab = tabs.children[0];
+                }
+                
+                if (initialTab) {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    initialTab.classList.add('active');
+                    console.log('Carregando categoria:', initialTab.textContent.trim());
+                    loadImages(initialTab.textContent.trim());
+                    scrollToActiveTab();
+                } else {
+                    console.error('Nenhuma categoria disponível para carregar.');
+                }
+            } catch (error) {
+                console.error("Erro ao carregar categorias:", error);
+                document.getElementById('tabs').innerHTML = '<p>Erro ao carregar categorias. Verifique o console.</p>';
+            }
+        }
+
+        function findTabByText(categoryName) {
+            const tabs = document.querySelectorAll('.tab');
+            for (let tab of tabs) {
+                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return tab;
+                }
+            }
+            return null;
+        }
+
+        async function loadImages(folderName) {
+            console.log('Iniciando loadImages para:', folderName);
+            currentFolder = folderName;
+            const banhosNaCategoria = new Set();
+            currentPage = 1;
+            currentBanho = 'todos';
+
+            try {
+                const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
+                if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
+                allFiles = await response.json();
+                console.log('Arquivos recebidos:', allFiles);
+
+                if (!allFiles || !Array.isArray(allFiles)) {
+                    throw new Error('Resposta da API inválida');
+                }
+
+                allFiles.forEach(file => {
+                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
+                        const codigo = file.name.split('.')[0];
+                        const { banho } = descricoes[codigo] || { banho: '' };
+                        if (banho) {
+                            banhosNaCategoria.add(banho);
+                        }
+                    }
+                });
+
+                displayPage(currentPage, banhosNaCategoria);
+                criarBotoesSubcategorias(banhosNaCategoria);
+                console.log('Imagens carregadas com sucesso para:', folderName);
+            } catch (error) {
+                console.error("Erro ao carregar imagens:", error);
+                document.getElementById('gallery').innerHTML = '<p>Erro ao carregar imagens. Verifique o console.</p>';
+            }
+        }
+
+        function getFilteredFiles() {
+            let filtered = allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
+                return currentBanho === 'todos' || banho === currentBanho;
+            });
+
+            filtered.sort((a, b) => {
+                const codigoA = a.name.split('.')[0];
+                const codigoB = b.name.split('.')[0];
+                const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
+                const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
+        
+                switch (currentSort) {
+                    case 'newest':
+                        return codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'oldest':
+                        return codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                    case 'highestPrice':
+                        return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'lowestPrice':
+                        return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    default:
+                        return 0;
+                }
+            });
+
+            currentVisibleFiles = filtered;
+            return filtered;
+        }
+
+        function displayPage(page, banhosNaCategoria) {
+            console.log('Exibindo página:', page);
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            const filteredFiles = getFilteredFiles();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedFiles = filteredFiles.slice(start, end);
+            console.log('Itens a exibir:', paginatedFiles.length);
+        
+            if (paginatedFiles.length === 0) {
+                gallery.innerHTML = '<p>Nenhuma imagem encontrada para esta categoria.</p>';
+                return;
+            }
+        
+            paginatedFiles.forEach(file => {
+                const codigo = file.name.split('.')[0];
+                const { descricao, preco, banho } = descricoes[codigo] || { 
+                    descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                    preco: "Preço não disponível",
+                    banho: ""
+                };
+                
+                const valorParcela = calcularParcela(preco);
+        
+                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
+        
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.dataset.banho = banho || 'todos';
+        
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
+        
+                const img = document.createElement('img');
+                img.src = file.download_url;
+                img.alt = descricao || 'Imagem do produto';
+                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
+                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                
+                const logo = document.createElement('img');
+                logo.src = 'imagens/logo.png';
+                logo.className = 'logo-watermark';
+                logo.alt = 'Logo';
+                
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(logo);
+                
+                const codigoElement = document.createElement('div');
+                codigoElement.className = 'codigo';
+                codigoElement.textContent = `COD: ${codigo}`;
+        
+                const desc = document.createElement('div');
+                desc.className = 'description';
+                desc.textContent = descricao;
+        
+                const precoElement = document.createElement('div');
+                precoElement.className = 'preco';
+                precoElement.textContent = preco;
+                
+                const parcelaElement = document.createElement('div');
+                parcelaElement.className = 'parcela';
+                parcelaElement.textContent = valorParcela;
+        
+                item.append(imgContainer, codigoElement, desc, precoElement, parcelaElement);
+                gallery.appendChild(item);
+            });
+        
+            updatePagination();
+            document.querySelectorAll('.gallery img').forEach(img => {
+                img.addEventListener('contextmenu', (e) => e.preventDefault());
+            });
+        }
+
+        function updatePagination() {
+            const filteredFiles = getFilteredFiles();
+            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            prevButton.disabled = currentPage === 1;
+            paginationDiv.appendChild(prevButton);
+
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Próxima';
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            nextButton.disabled = currentPage === totalPages;
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function applySort() {
+            currentSort = document.getElementById('sortFilter').value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+            console.log('Ordenação aplicada:', currentSort);
+        }
+
+        function criarBotoesSubcategorias(banhosNaCategoria) {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = '';
+
+            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
+            if (!botaoTodosExistente) {
+                const botaoTodos = document.createElement('button');
+                botaoTodos.textContent = 'Todos';
+                botaoTodos.dataset.banho = 'todos';
+                botaoTodos.classList.add('active');
+                botaoTodos.onclick = () => filterByBanho('todos');
+                subcategoriesDiv.appendChild(botaoTodos);
+            }
+
+            banhosNaCategoria.forEach(banho => {
+                if (banho && banho !== '') {
+                    const botaoBanho = document.createElement('button');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
+                }
+            });
+
+            subcategoriesDiv.style.display = 'flex';
+        }
+
+        function filterByBanho(banho) {
+            currentBanho = banho;
+            currentPage = 1;
+            
+            const subcategoriesDiv = document.getElementById('subcategories');
+            const buttons = subcategoriesDiv.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.dataset.banho === banho) {
+                    button.classList.add('active');
+                }
+            });
+            
+            displayPage(currentPage, new Set());
+        }
+
+        function showModal(src, codigo, index) {
+            currentModalIndex = index;
+            resetZoomAndPan();
+            updateModalContent(codigo);
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
+            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+            resetZoomAndPan();
+        }
+
+        function resetZoomAndPan() {
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateModalTransform();
+        }
+
+        function updateModalContent(codigo) {
+            const file = currentVisibleFiles[currentModalIndex];
+            if (!file) return;
+            
+            const src = file.download_url;
+            codigo = file.name.split('.')[0];
+            
+            const { descricao, preco } = descricoes[codigo] || { 
+                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                preco: "Preço não disponível"
+            };
+            
+            const valorParcela = calcularParcela(preco);
+            
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) {
+                existingLogo.remove();
+            }
+            
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+            
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${descricao}</div>
+                <div class="preco">${preco}</div>
+                <div class="parcela">${valorParcela}</div>
+            `;
+            updateModalTransform();
+        }
+
+        function updateModalTransform() {
+            const modalContent = document.getElementById('modalContent');
+            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+        }
+
+        function setupModalInteraction() {
+            const modalContent = document.getElementById('modalContent');
+            
+            let startDist = 0;
+            let lastX = 0;
+            let lastY = 0;
+            let touchStartX = 0;
+            let touchStartTime = 0;
+
+            modalContent.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const delta = e.deltaY * -0.01;
+                adjustScale(delta);
+            });
+
+            modalContent.addEventListener('mousedown', (e) => {
+                if (scale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                }
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    e.preventDefault();
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            modalContent.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].screenX;
+                    touchStartTime = Date.now();
+                    if (scale > 1) {
+                        isDragging = true;
+                        startX = e.touches[0].clientX - translateX;
+                        startY = e.touches[0].clientY - translateY;
+                    }
+                } else if (e.touches.length === 2) {
+                    startDist = getDistance(e.touches);
+                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                }
+            }, false);
+
+            modalContent.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                if (e.touches.length === 1 && isDragging) {
+                    translateX = e.touches[0].clientX - startX;
+                    translateY = e.touches[0].clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                } else if (e.touches.length === 2) {
+                    const newDist = getDistance(e.touches);
+                    const scaleChange = newDist / startDist;
+                    adjustScale((scaleChange - 1) * 2);
+                    startDist = newDist;
+
+                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                    translateX += (newX - lastX) / scale;
+                    translateY += (newY - lastY) / scale;
+                    lastX = newX;
+                    lastY = newY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, false);
+
+            modalContent.addEventListener('touchend', (e) => {
+                if (e.touches.length === 0) {
+                    isDragging = false;
+                    if (scale === 1) {
+                        const touchEndX = e.changedTouches[0].screenX;
+                        const timeDiff = Date.now() - touchStartTime;
+                        if (timeDiff < 300) {
+                            handleSwipe(touchStartX, touchEndX);
+                        }
+                    }
+                }
+            }, false);
+        }
+
+        function adjustScale(delta) {
+            scale += delta;
+            scale = Math.max(minScale, Math.min(maxScale, scale));
+            clampTranslation();
+            updateModalTransform();
+        }
+
+        function getDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        function clampTranslation() {
+            const modalContent = document.getElementById('modalContent');
+            const modal = document.getElementById('imageModal');
+            const modalRect = modalContent.getBoundingClientRect();
+            const containerRect = modal.getBoundingClientRect();
+
+            const scaledWidth = modalRect.width * scale;
+            const scaledHeight = modalRect.height * scale;
+
+            const maxX = (scaledWidth - containerRect.width) / (2 * scale);
+            const maxY = (scaledHeight - containerRect.height) / (2 * scale);
+
+            translateX = Math.max(-maxX, Math.min(maxX, translateX));
+            translateY = Math.max(-maxY, Math.min(maxY, translateY));
+
+            if (scaledWidth <= containerRect.width) translateX = 0;
+            if (scaledHeight <= containerRect.height) translateY = 0;
+        }
+
+        function navigatePrev() {
+            if (currentModalIndex > 0) {
+                currentModalIndex--;
+                const prevFile = currentVisibleFiles[currentModalIndex];
+                const codigo = prevFile.name.split('.')[0];
+                resetZoomAndPan();
+                updateModalContent(codigo);
+            }
+        }
+
+        function navigateNext() {
+            if (currentModalIndex < currentVisibleFiles.length - 1) {
+                currentModalIndex++;
+                const nextFile = currentVisibleFiles[currentModalIndex];
+                const codigo = nextFile.name.split('.')[0];
+                resetZoomAndPan();
+                updateModalContent(codigo);
+            }
+        }
+
+        function handleSwipe(touchStartX, touchEndX) {
+            const swipeThreshold = 50;
+            if (touchEndX < touchStartX - swipeThreshold) {
+                navigateNext();
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                navigatePrev();
+            }
+        }
+
+        // NOVAS FUNÇÕES PARA OS DOIS TIPOS DE DOWNLOAD
+        
+        // Função para salvar imagem COM código (para clientes)
+        function saveImageWithCode() {
+            // Garante que o código está visível
+            const modalCodigo = document.getElementById('modalCodigo');
+            modalCodigo.style.display = 'block';
+            
+            html2canvas(document.querySelector("#captureArea"), {
+                useCORS: true,
+                allowTaint: true,
+                scale: 2 // Qualidade 2x
+            }).then(canvas => {
+                const link = document.createElement('a');
+                const codigo = modalCodigo.textContent.replace('COD: ', '');
+                link.download = `peca-${codigo}-com-codigo.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(error => {
+                console.error("Erro ao salvar imagem com código:", error);
+                alert("Erro ao salvar a imagem. Por favor, tente novamente.");
+            });
+        }
+
+        // Função para salvar imagem SEM código (para divulgação)
+        function saveImageWithoutCode() {
+            // Temporariamente esconde o código
+            const modalCodigo = document.getElementById('modalCodigo');
+            const originalDisplay = modalCodigo.style.display;
+            modalCodigo.style.display = 'none';
+            
+            // Pequeno delay para garantir que o DOM atualizou
+            setTimeout(() => {
+                html2canvas(document.querySelector("#captureArea"), {
+                    useCORS: true,
+                    allowTaint: true,
+                    scale: 2 // Qualidade 2x
+                }).then(canvas => {
+                    const link = document.createElement('a');
+                    const codigo = modalCodigo.textContent.replace('COD: ', '');
+                    link.download = `peca-${codigo}-divulgacao.png`;
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+                    
+                    // Restaura a visibilidade do código
+                    modalCodigo.style.display = originalDisplay;
+                }).catch(error => {
+                    console.error("Erro ao salvar imagem sem código:", error);
+                    alert("Erro ao salvar a imagem. Por favor, tente novamente.");
+                    // Garante que o código volte a aparecer mesmo em caso de erro
+                    modalCodigo.style.display = originalDisplay;
+                });
+            }, 50); // Delay mínimo para garantir renderização
+        }
+
+        async function loadRodape() {
+            try {
+                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt");
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const formattedText = text.replace(/\n/g, '<br>');
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
+            } catch (error) {
+                console.error("Erro ao carregar rodapé:", error);
+                document.getElementById("rodape").innerHTML = '<p>Erro ao carregar rodapé.</p>';
+            }
+        }
+        
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        function scrollToActiveTab() {
+            const activeTab = document.querySelector('.tab.active');
+            if (activeTab) {
+                const tabRect = activeTab.getBoundingClientRect();
+                const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
+                const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
+                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
+        
+                activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
+            }
+        }
+        
+        window.onload = async () => {
+            console.log('Iniciando carregamento da página');
+            try {
+                await loadCategoriasAtivas();
+                await loadDescriptions();
+                await loadCategories();
+                await loadRodape();
+                console.log('Carregamento da página concluído');
+            } catch (error) {
+                console.error('Erro no carregamento inicial:', error);
+                document.body.innerHTML += '<p>Erro ao iniciar o catálogo. Verifique o console.</p>';
+            }
+        };
+    </script>
+</body>
+</html>
