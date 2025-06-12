@@ -1169,14 +1169,24 @@
         
         // Função para salvar imagem COM código (para clientes)
         function saveImageWithCode() {
-            // Garante que o código está visível
             const modalCodigo = document.getElementById('modalCodigo');
-            modalCodigo.style.display = 'block';
+            const modalImg = document.getElementById('modalImg');
+            const captureArea = document.querySelector("#captureArea");
             
-            html2canvas(document.querySelector("#captureArea"), {
+            const originalBorderRadius = modalImg.style.borderRadius;
+            
+            modalCodigo.style.display = 'block';
+            modalImg.style.borderRadius = '0px';
+            
+            html2canvas(captureArea, {
                 useCORS: true,
                 allowTaint: true,
-                scale: 2 // Qualidade 2x
+                scale: 2,
+                backgroundColor: null,
+                // --- AJUSTE PRINCIPAL ---
+                // Define a largura e altura da captura para serem as mesmas da imagem
+                width: modalImg.width,
+                height: modalImg.height
             }).then(canvas => {
                 const link = document.createElement('a');
                 const codigo = modalCodigo.textContent.replace('COD: ', '');
@@ -1186,38 +1196,49 @@
             }).catch(error => {
                 console.error("Erro ao salvar imagem com código:", error);
                 alert("Erro ao salvar a imagem. Por favor, tente novamente.");
+            }).finally(() => {
+                // Restaura o estilo original da borda da imagem
+                modalImg.style.borderRadius = originalBorderRadius;
             });
         }
 
         // Função para salvar imagem SEM código (para divulgação)
         function saveImageWithoutCode() {
-            // Temporariamente esconde o código
             const modalCodigo = document.getElementById('modalCodigo');
+            const modalImg = document.getElementById('modalImg');
+            const captureArea = document.querySelector("#captureArea");
+
             const originalDisplay = modalCodigo.style.display;
+            const originalBorderRadius = modalImg.style.borderRadius;
+
             modalCodigo.style.display = 'none';
+            modalImg.style.borderRadius = '0px';
             
-            // Pequeno delay para garantir que o DOM atualizou
             setTimeout(() => {
-                html2canvas(document.querySelector("#captureArea"), {
+                html2canvas(captureArea, {
                     useCORS: true,
                     allowTaint: true,
-                    scale: 2 // Qualidade 2x
+                    scale: 4,
+                    backgroundColor: null,
+                    // --- AJUSTE PRINCIPAL ---
+                    // Define a largura e altura da captura para serem as mesmas da imagem
+                    width: modalImg.width,
+                    height: modalImg.height
                 }).then(canvas => {
                     const link = document.createElement('a');
-                    const codigo = modalCodigo.textContent.replace('COD: ', '');
+                    const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
                     link.download = `peca-${codigo}-divulgacao.png`;
                     link.href = canvas.toDataURL('image/png');
                     link.click();
-                    
-                    // Restaura a visibilidade do código
-                    modalCodigo.style.display = originalDisplay;
                 }).catch(error => {
                     console.error("Erro ao salvar imagem sem código:", error);
                     alert("Erro ao salvar a imagem. Por favor, tente novamente.");
-                    // Garante que o código volte a aparecer mesmo em caso de erro
+                }).finally(() => {
+                    // Restaura os estilos originais
                     modalCodigo.style.display = originalDisplay;
+                    modalImg.style.borderRadius = originalBorderRadius;
                 });
-            }, 50); // Delay mínimo para garantir renderização
+            }, 50);
         }
 
         async function loadRodape() {
