@@ -410,6 +410,50 @@
             color: #333;
         }
         
+        /* ESTILOS PARA A ÁREA DE CAPTURA OCULTA */
+        .hidden-capture-area {
+            position: fixed;
+            left: -9999px;
+            top: -9999px;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            border: none;
+            display: inline-block;
+        }
+        
+        .hidden-capture-area img {
+            display: block;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            max-width: none !important;
+            max-height: none !important;
+        }
+        
+        .hidden-capture-area .codigo-overlay {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        
+        .hidden-capture-area .logo-overlay {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 25%;
+            max-height: 25%;
+            object-fit: contain;
+            z-index: 2;
+        }
+        
         .rodape {
             margin-top: 20px;
             padding: 10px;
@@ -550,6 +594,9 @@
             </div>
         </div>
     </div>
+    
+    <!-- Área de captura oculta para gerar imagens limpas -->
+    <div id="hiddenCaptureArea" class="hidden-capture-area"></div>
     
     <div id="rodape" class="rodape"></div>
 
@@ -1165,59 +1212,124 @@
             }
         }
 
-        // NOVAS FUNÇÕES PARA OS DOIS TIPOS DE DOWNLOAD
+        // NOVAS FUNÇÕES PARA CAPTURA LIMPA DE IMAGENS
+        
+        // Função auxiliar para preparar a área de captura oculta
+        function prepareHiddenCaptureArea(includeCode) {
+            return new Promise((resolve, reject) => {
+                const hiddenArea = document.getElementById('hiddenCaptureArea');
+                const modalImg = document.getElementById('modalImg');
+                const modalCodigo = document.getElementById('modalCodigo');
+                
+                // Limpa a área oculta
+                hiddenArea.innerHTML = '';
+                hiddenArea.style.position = 'relative';
+                
+                // Cria uma nova imagem para a área oculta
+                const img = new Image();
+                img.onload = function() {
+                    // Define o tamanho da área oculta baseado na imagem
+                    hiddenArea.style.width = img.naturalWidth + 'px';
+                    hiddenArea.style.height = img.naturalHeight + 'px';
+                    
+                    // Adiciona a imagem à área oculta
+                    hiddenArea.appendChild(img);
+                    
+                    // Adiciona o código se necessário
+                    if (includeCode) {
+                        const codigoOverlay = document.createElement('div');
+                        codigoOverlay.className = 'codigo-overlay';
+                        codigoOverlay.textContent = modalCodigo.textContent;
+                        hiddenArea.appendChild(codigoOverlay);
+                    }
+                    
+                    // Adiciona a logo
+                    const logoOverlay = document.createElement('img');
+                    logoOverlay.src = 'imagens/logo.png';
+                    logoOverlay.className = 'logo-overlay';
+                    logoOverlay.onload = function() {
+                        // Aguarda um pequeno delay para garantir que tudo foi renderizado
+                        setTimeout(() => {
+                            resolve();
+                        }, 100);
+                    };
+                    logoOverlay.onerror = function() {
+                        console.error('Erro ao carregar a logo');
+                        // Continua mesmo sem a logo
+                        setTimeout(() => {
+                            resolve();
+                        }, 100);
+                    };
+                    hiddenArea.appendChild(logoOverlay);
+                };
+                
+                img.onerror = function() {
+                    reject(new Error('Erro ao carregar a imagem'));
+                };
+                
+                // Define a fonte da imagem
+                img.src = modalImg.src;
+            });
+        }
         
         // Função para salvar imagem COM código (para clientes)
-        function saveImageWithCode() {
-            // Garante que o código está visível
-            const modalCodigo = document.getElementById('modalCodigo');
-            modalCodigo.style.display = 'block';
-            
-            html2canvas(document.querySelector("#captureArea"), {
-                useCORS: true,
-                allowTaint: true,
-                scale: 2 // Qualidade 2x
-            }).then(canvas => {
+        async function saveImageWithCode() {
+            try {
+                // Prepara a área oculta com o código
+                await prepareHiddenCaptureArea(true);
+                
+                // Captura a área oculta
+                const canvas = await html2canvas(document.getElementById('hiddenCaptureArea'), {
+                    useCORS: true,
+                    allowTaint: true,
+                    scale: 2,
+                    backgroundColor: null, // Fundo transparente
+                    logging: false
+                });
+                
+                // Cria o link de download
                 const link = document.createElement('a');
-                const codigo = modalCodigo.textContent.replace('COD: ', '');
+                const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
                 link.download = `peca-${codigo}-com-codigo.png`;
                 link.href = canvas.toDataURL('image/png');
                 link.click();
-            }).catch(error => {
+                
+                // Limpa a área oculta
+                document.getElementById('hiddenCaptureArea').innerHTML = '';
+            } catch (error) {
                 console.error("Erro ao salvar imagem com código:", error);
                 alert("Erro ao salvar a imagem. Por favor, tente novamente.");
-            });
+            }
         }
 
         // Função para salvar imagem SEM código (para divulgação)
-        function saveImageWithoutCode() {
-            // Temporariamente esconde o código
-            const modalCodigo = document.getElementById('modalCodigo');
-            const originalDisplay = modalCodigo.style.display;
-            modalCodigo.style.display = 'none';
-            
-            // Pequeno delay para garantir que o DOM atualizou
-            setTimeout(() => {
-                html2canvas(document.querySelector("#captureArea"), {
+        async function saveImageWithoutCode() {
+            try {
+                // Prepara a área oculta sem o código
+                await prepareHiddenCaptureArea(false);
+                
+                // Captura a área oculta
+                const canvas = await html2canvas(document.getElementById('hiddenCaptureArea'), {
                     useCORS: true,
                     allowTaint: true,
-                    scale: 2 // Qualidade 2x
-                }).then(canvas => {
-                    const link = document.createElement('a');
-                    const codigo = modalCodigo.textContent.replace('COD: ', '');
-                    link.download = `peca-${codigo}-divulgacao.png`;
-                    link.href = canvas.toDataURL('image/png');
-                    link.click();
-                    
-                    // Restaura a visibilidade do código
-                    modalCodigo.style.display = originalDisplay;
-                }).catch(error => {
-                    console.error("Erro ao salvar imagem sem código:", error);
-                    alert("Erro ao salvar a imagem. Por favor, tente novamente.");
-                    // Garante que o código volte a aparecer mesmo em caso de erro
-                    modalCodigo.style.display = originalDisplay;
+                    scale: 2,
+                    backgroundColor: null, // Fundo transparente
+                    logging: false
                 });
-            }, 50); // Delay mínimo para garantir renderização
+                
+                // Cria o link de download
+                const link = document.createElement('a');
+                const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+                link.download = `peca-${codigo}-divulgacao.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                
+                // Limpa a área oculta
+                document.getElementById('hiddenCaptureArea').innerHTML = '';
+            } catch (error) {
+                console.error("Erro ao salvar imagem sem código:", error);
+                alert("Erro ao salvar a imagem. Por favor, tente novamente.");
+            }
         }
 
         async function loadRodape() {
