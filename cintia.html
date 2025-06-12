@@ -1168,23 +1168,25 @@
         // NOVAS FUNÇÕES PARA OS DOIS TIPOS DE DOWNLOAD
         
         // Função para salvar imagem COM código (para clientes)
-        // Função para salvar imagem COM código (para clientes)
         function saveImageWithCode() {
             const modalCodigo = document.getElementById('modalCodigo');
             const modalImg = document.getElementById('modalImg');
+            const captureArea = document.querySelector("#captureArea");
             
-            // Armazena o estilo original da borda
             const originalBorderRadius = modalImg.style.borderRadius;
             
-            // Garante que o código está visível e remove o arredondamento da imagem
             modalCodigo.style.display = 'block';
             modalImg.style.borderRadius = '0px';
             
-            html2canvas(document.querySelector("#captureArea"), {
+            html2canvas(captureArea, {
                 useCORS: true,
                 allowTaint: true,
-                scale: 2, // Qualidade 2x
-                backgroundColor: null
+                scale: 2,
+                backgroundColor: null,
+                // --- AJUSTE PRINCIPAL ---
+                // Define a largura e altura da captura para serem as mesmas da imagem
+                width: modalImg.width,
+                height: modalImg.height
             }).then(canvas => {
                 const link = document.createElement('a');
                 const codigo = modalCodigo.textContent.replace('COD: ', '');
@@ -1204,22 +1206,24 @@
         function saveImageWithoutCode() {
             const modalCodigo = document.getElementById('modalCodigo');
             const modalImg = document.getElementById('modalImg');
+            const captureArea = document.querySelector("#captureArea");
 
-            // Armazena os estilos originais
             const originalDisplay = modalCodigo.style.display;
             const originalBorderRadius = modalImg.style.borderRadius;
 
-            // Esconde o código e remove o arredondamento da imagem
             modalCodigo.style.display = 'none';
             modalImg.style.borderRadius = '0px';
             
-            // Pequeno delay para garantir que o DOM atualizou
             setTimeout(() => {
-                html2canvas(document.querySelector("#captureArea"), {
+                html2canvas(captureArea, {
                     useCORS: true,
                     allowTaint: true,
-                    scale: 2, // Qualidade 2x
-                    backgroundColor: null
+                    scale: 2,
+                    backgroundColor: null,
+                    // --- AJUSTE PRINCIPAL ---
+                    // Define a largura e altura da captura para serem as mesmas da imagem
+                    width: modalImg.width,
+                    height: modalImg.height
                 }).then(canvas => {
                     const link = document.createElement('a');
                     const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
@@ -1230,11 +1234,11 @@
                     console.error("Erro ao salvar imagem sem código:", error);
                     alert("Erro ao salvar a imagem. Por favor, tente novamente.");
                 }).finally(() => {
-                    // Restaura os estilos originais em qualquer caso (sucesso ou erro)
+                    // Restaura os estilos originais
                     modalCodigo.style.display = originalDisplay;
                     modalImg.style.borderRadius = originalBorderRadius;
                 });
-            }, 50); // Delay mínimo para garantir renderização
+            }, 50);
         }
 
         async function loadRodape() {
