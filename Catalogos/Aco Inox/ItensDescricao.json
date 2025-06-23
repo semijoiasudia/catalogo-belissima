@@ -2,6 +2,17 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4441",
+      "descricao": "INOX BRACELETE BERLOQUES FIXOS ELEFANTE CHAVE CORAÇÃO",
+      "tipo": "Aço Inox",
+      "imagem": "4441.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/06/2025"
+    },
+    {
       "codigo": "4387",
       "descricao": "INOX CONJUNTO INFANTIL GATINHO 40CM",
       "tipo": "Aço Inox",
@@ -53,17 +64,6 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
       "precoConsignado": "59,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "4377",
-      "descricao": "INOX COLAR 5 TREVOS PRETOS 10MM 45+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4377.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
       "banho": "INOX",
       "dataUltimaEntrada": "21/05/2025"
     },
@@ -255,17 +255,6 @@
       "dataUltimaEntrada": "23/04/2025"
     },
     {
-      "codigo": "4291",
-      "descricao": "INOX BRINCO TRIO BORBOLETA PRETO TREVO E PONTO LUZ",
-      "tipo": "Aço Inox",
-      "imagem": "4291.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "22/04/2025"
-    },
-    {
       "codigo": "4289",
       "descricao": "INOX BRINCO TREVO MADREPEROLA M",
       "tipo": "Aço Inox",
@@ -330,39 +319,6 @@
       "precoConsignado": "59,90",
       "banho": "INOX",
       "dataUltimaEntrada": "19/04/2025"
-    },
-    {
-      "codigo": "4278",
-      "descricao": "INOX COLOAR 5 TREVOS PRETOS 12MM 44+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4278.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/04/2025"
-    },
-    {
-      "codigo": "4277",
-      "descricao": "INOX BRACELETE TREVO VERMELHO E PONTO DE LUZ",
-      "tipo": "Aço Inox",
-      "imagem": "4277.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "42,90",
-      "precoConsignado": "69,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "18/04/2025"
-    },
-    {
-      "codigo": "4276",
-      "descricao": "INOX BRACELETE TREVO RESINA VERMELHO",
-      "tipo": "Aço Inox",
-      "imagem": "4276.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "18/04/2025"
     },
     {
       "codigo": "4274",
@@ -450,17 +406,6 @@
       "preco": "42,90",
       "precoConsignado": "69,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4251",
-      "descricao": "INOX BRACELETE CORACAO PRETO E MADREPEROLA",
-      "tipo": "Aço Inox",
-      "imagem": "4251.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "42,90",
-      "precoConsignado": "69,90",
-      "banho": "INOX DOURADO",
       "dataUltimaEntrada": "14/04/2025"
     },
     {
@@ -570,17 +515,6 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "29,90",
       "precoConsignado": "49,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "01/04/2025"
-    },
-    {
-      "codigo": "4170",
-      "descricao": "INOX COLAR BORBOLETA RESINA PEROLADA 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4170.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
       "banho": "INOX",
       "dataUltimaEntrada": "01/04/2025"
     },

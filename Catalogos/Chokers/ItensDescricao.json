@@ -2,17 +2,6 @@
   "categoria": "CHOKER",
   "produtos": [
     {
-      "codigo": "4423",
-      "descricao": "CHOKER CORAÇÕES CORES CLARAS 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4423.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/06/2025"
-    },
-    {
       "codigo": "4186",
       "descricao": "CHOKER CORAÇÕES COLORIDOS 41+5CM",
       "tipo": "Semijoia",
@@ -46,28 +35,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4233",
-      "descricao": "CHOKER FITA 4MM 37+10CM",
-      "tipo": "Semijoia",
-      "imagem": "4233.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "102,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "3216",
-      "descricao": "CHOKER MINI CORACOES CHAPINHAS 37+5CM",
-      "tipo": "Semijoia",
-      "imagem": "3216.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "46,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "3491",
       "descricao": "CHOKER TIFFANYS COLORIDAS 37+5CM",
       "tipo": "Semijoia",
@@ -80,7 +47,7 @@
     },
     {
       "codigo": "4134",
-      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
+      "descricao": "CHOKER PINGENTES DE CORAÇÃO 36+5CM",
       "tipo": "Semijoia",
       "imagem": "4134.jpg",
       "pastaFotos": "Catalogos/Chokers/",
@@ -110,17 +77,6 @@
       "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4108",
-      "descricao": "CHOKER OLHO GREGO AZUL 32+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4108.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/03/2025"
     },
     {
       "codigo": "3976",

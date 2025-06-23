@@ -38,18 +38,6 @@
       "dataUltimaEntrada": "03/10/2024"
     },
     {
-      "codigo": "3497",
-      "descricao": "BRINCO TREVO ESMALTADO VERDE P",
-      "tipo": "Semijoia",
-      "imagem": "3497.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "36,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
-    },
-    {
       "codigo": "3480",
       "descricao": "BRINCO CORACAO TEXTURIZADO",
       "tipo": "Semijoia",
@@ -288,18 +276,6 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/05/2024"
-    },
-    {
-      "codigo": "2600",
-      "descricao": "ANEL REGULAVEL BARRA/PONTO DE LUZ CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "2600.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "05/08/2024"
     }
   ]
 }

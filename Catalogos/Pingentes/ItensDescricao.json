@@ -2,17 +2,6 @@
   "categoria": "PINGENTE",
   "produtos": [
     {
-      "codigo": "2004",
-      "descricao": "PINGENTE MENINA M 18MM COM CORAÇÃO ZIRCONIA VERMELHA",
-      "tipo": "Semijoia",
-      "imagem": "2004.jpg",
-      "pastaFotos": "Catalogos/Pingentes/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/06/2025"
-    },
-    {
       "codigo": "2003",
       "descricao": "PINGENTE MENINO 18MM COM CORAÇÃO ZIRCONIA AZUL",
       "tipo": "Semijoia",

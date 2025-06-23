@@ -2,6 +2,50 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4449",
+      "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
+      "tipo": "Semijoia",
+      "imagem": "4449.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "139,90",
+      "precoConsignado": "198,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/06/2025"
+    },
+    {
+      "codigo": "4446",
+      "descricao": "CONJUNTO 3 TREVOS - BRANCO PEROLADO CHOKER 41CM",
+      "tipo": "Semijoia",
+      "imagem": "4446.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "139,90",
+      "precoConsignado": "198,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/06/2025"
+    },
+    {
+      "codigo": "4445",
+      "descricao": "CONJUNTO 3 TREVOS - PRETO CHOKER 41CM",
+      "tipo": "Semijoia",
+      "imagem": "4445.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "139,90",
+      "precoConsignado": "198,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/06/2025"
+    },
+    {
+      "codigo": "4440",
+      "descricao": "CONJUNTO PONTO DE LUZ 8MM 46+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4440.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/06/2025"
+    },
+    {
       "codigo": "4218",
       "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
       "tipo": "Semijoia",
@@ -72,17 +116,6 @@
       "descricao": "CONJUNTO GOTA LILÁS CRAVEJADA AO REDOR 44+5CM",
       "tipo": "Semijoia",
       "imagem": "4313.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "119,90",
-      "precoConsignado": "179,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "4312",
-      "descricao": "CONJUNTO GOTA ROSA CRAVEJADA AO REDOR 44+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4312.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "119,90",
       "precoConsignado": "179,90",
@@ -174,17 +207,6 @@
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "109,90",
       "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/11/2024"
-    },
-    {
-      "codigo": "3730",
-      "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
-      "tipo": "Semijoia",
-      "imagem": "3730.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "74,90",
-      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "27/11/2024"
     },

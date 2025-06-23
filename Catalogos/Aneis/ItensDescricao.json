@@ -68,17 +68,6 @@
       "dataUltimaEntrada": "30/05/2025"
     },
     {
-      "codigo": "3479",
-      "descricao": "ANEL REGULAVEL 2 BARRAS E ZIRCONIAS",
-      "tipo": "Semijoia",
-      "imagem": "3479.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "17/05/2025"
-    },
-    {
       "codigo": "2092",
       "descricao": "ANEL REGULAVEL INSPIRAÇÃO CART.",
       "tipo": "Semijoia",
@@ -109,6 +98,17 @@
       "preco": "49,90",
       "precoConsignado": "74,90",
       "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "28/03/2025"
+    },
+    {
+      "codigo": "4161",
+      "descricao": "ANEL REGULAVEL 2 FIOS E CORACAO ABAULADO",
+      "tipo": "Semijoia",
+      "imagem": "4161.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/03/2025"
     },
     {
@@ -154,17 +154,6 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/02/2025"
-    },
-    {
-      "codigo": "3954",
-      "descricao": "ANEL REGULAVEL FIO DUPLO CRUZADO",
-      "tipo": "Semijoia",
-      "imagem": "3954.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "36,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/01/2025"
     },
     {
       "codigo": "3953",
@@ -222,17 +211,6 @@
       "dataUltimaEntrada": "12/12/2024"
     },
     {
-      "codigo": "3653",
-      "descricao": "ANEL FALANGE 3 FIOS 2 ESFERAS",
-      "tipo": "Semijoia",
-      "imagem": "3653.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/11/2024"
-    },
-    {
       "codigo": "3589",
       "descricao": "ANEL SOLITARIO FIO TORCIDO E GOTA CRISTAL",
       "tipo": "Semijoia",
@@ -242,28 +220,6 @@
       "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/10/2024"
-    },
-    {
-      "codigo": "3583",
-      "descricao": "ANEL 4 BORBOLETAS E PONTOS DE LUZ",
-      "tipo": "Semijoia",
-      "imagem": "3583.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "52,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/10/2024"
-    },
-    {
-      "codigo": "3472",
-      "descricao": "ANEL 2 FIOS E PATINHA",
-      "tipo": "Semijoia",
-      "imagem": "3472.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "42,90",
-      "precoConsignado": "66,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
     },
     {
       "codigo": "840",
@@ -288,15 +244,15 @@
       "dataUltimaEntrada": "19/08/2024"
     },
     {
-      "codigo": "2600",
-      "descricao": "ANEL REGULAVEL BARRA/PONTO DE LUZ CRISTAL",
+      "codigo": "3319",
+      "descricao": "ANEL FALANGE REGULAVEL ESFERA E P. LUZ",
       "tipo": "Semijoia",
-      "imagem": "2600.jpg",
+      "imagem": "3319.jpg",
       "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
+      "preco": "36,90",
+      "precoConsignado": "52,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "05/08/2024"
+      "dataUltimaEntrada": "20/07/2024"
     },
     {
       "codigo": "2990",

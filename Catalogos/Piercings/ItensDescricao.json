@@ -24,17 +24,6 @@
       "dataUltimaEntrada": "30/05/2025"
     },
     {
-      "codigo": "4363",
-      "descricao": "PIERCING FAKE 2 BARRAS CRAVEJADAS",
-      "tipo": "Semijoia",
-      "imagem": "4363.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "54,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
       "codigo": "4362",
       "descricao": "PIERCING FAKE 2 BARRAS E CORAÇÃO - LADO DIREITO",
       "tipo": "Semijoia",
@@ -176,6 +165,17 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "07/10/2024"
+    },
+    {
+      "codigo": "3544",
+      "descricao": "PIERCING FAKE BORBOLETA LISA",
+      "tipo": "Semijoia",
+      "imagem": "3544.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "06/10/2024"
     },
     {
       "codigo": "3543",

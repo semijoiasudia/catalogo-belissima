@@ -46,17 +46,6 @@
       "dataUltimaEntrada": "30/04/2025"
     },
     {
-      "codigo": "4312",
-      "descricao": "CONJUNTO GOTA ROSA CRAVEJADA AO REDOR 44+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4312.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "119,90",
-      "precoConsignado": "179,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
       "codigo": "4311",
       "descricao": "CONJUNTO GOTA VERDE ESMERALDA CRAVEJADA AO REDOR 44+5CM",
       "tipo": "Semijoia",
@@ -75,17 +64,6 @@
       "pastaFotos": "Catalogos/Dia das Maes/",
       "preco": "74,90",
       "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "4309",
-      "descricao": "COLAR ABENÇOADA 52+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4309.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/04/2025"
     },
@@ -110,6 +88,17 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "tipo": "Semijoia",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
     }
   ]
 }

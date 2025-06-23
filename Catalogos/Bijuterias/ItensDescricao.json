@@ -24,17 +24,6 @@
       "dataUltimaEntrada": "16/04/2025"
     },
     {
-      "codigo": "4184",
-      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4184.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
       "codigo": "4183",
       "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
       "tipo": "Bijuteria",
@@ -55,17 +44,6 @@
       "precoConsignado": "66,00",
       "banho": "2 BANHOS",
       "dataUltimaEntrada": "02/04/2025"
-    },
-    {
-      "codigo": "4174",
-      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
-      "tipo": "Bijuteria",
-      "imagem": "4174.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "01/04/2025"
     },
     {
       "codigo": "4027",

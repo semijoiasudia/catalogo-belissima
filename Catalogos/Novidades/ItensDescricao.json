@@ -2,30 +2,19 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
-      "codigo": "4436",
-      "descricao": "BRINCO EAR HOOK TRIPLO",
-      "tipo": "Semijoia",
-      "imagem": "4436.jpg",
+      "codigo": "4441",
+      "descricao": "INOX BRACELETE BERLOQUES FIXOS ELEFANTE CHAVE CORAÇÃO",
+      "tipo": "Aço Inox",
+      "imagem": "4441.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "96,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
-    },
-    {
-      "codigo": "4435",
-      "descricao": "BRINCO EAR CUFF 2 EM 1 GOTAS CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "4435.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "109,90",
-      "precoConsignado": "169,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/06/2025"
     },
     {
       "codigo": "4432",
-      "descricao": "BRINCO TRIO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
+      "descricao": "BRINCO TRIO ARGO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
       "tipo": "Semijoia",
       "imagem": "4432.jpg",
       "pastaFotos": "Catalogos/Novidades/",
@@ -52,18 +41,7 @@
       "imagem": "4427.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "62,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/06/2025"
-    },
-    {
-      "codigo": "4426",
-      "descricao": "COLAR NOSSA SENHORA MADREPÉROLA M2 22MM 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4426.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "149,90",
+      "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/06/2025"
     },
@@ -77,28 +55,6 @@
       "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/06/2025"
-    },
-    {
-      "codigo": "4424",
-      "descricao": "COLAR ESPÍRITO SANTO MADREPÉROLA 22MM - 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4424.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/06/2025"
-    },
-    {
-      "codigo": "4423",
-      "descricao": "CHOKER CORAÇÕES CORES CLARAS 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4423.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/06/2025"
     },
     {
       "codigo": "4420",
@@ -134,17 +90,6 @@
       "dataUltimaEntrada": "28/05/2025"
     },
     {
-      "codigo": "4410",
-      "descricao": "PULSEIRA ELOS CORAÇÕES CIRCULO COM ESPÍRITO SANTO 17+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4410.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/05/2025"
-    },
-    {
       "codigo": "4409",
       "descricao": "PULSEIRA DUPLA BOLINHAS E PING DE CORAÇÃO 17+5CM",
       "tipo": "Semijoia",
@@ -153,17 +98,6 @@
       "preco": "54,90",
       "precoConsignado": "84,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/05/2025"
-    },
-    {
-      "codigo": "4408",
-      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO CRISTAL 41+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4408.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "Banhado a Prata",
       "dataUltimaEntrada": "28/05/2025"
     },
     {
@@ -222,17 +156,6 @@
       "dataUltimaEntrada": "26/05/2025"
     },
     {
-      "codigo": "4399",
-      "descricao": "BRINCO GOTA LIZA/CRAVEJADA COM PEROLA",
-      "tipo": "Semijoia",
-      "imagem": "4399.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/05/2025"
-    },
-    {
       "codigo": "4381",
       "descricao": "INOX COLAR INSPIRAÇÃO 5 TREVOS 44+4CM",
       "tipo": "Aço Inox",
@@ -277,15 +200,15 @@
       "dataUltimaEntrada": "15/05/2025"
     },
     {
-      "codigo": "4347",
-      "descricao": "PULSEIRA 3 TREVOS TRABALHADOS INSPIRAÇÃO 17+6CM",
+      "codigo": "4345",
+      "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MANTO AZUL 41+5CM",
       "tipo": "Semijoia",
-      "imagem": "4347.jpg",
+      "imagem": "4345.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/05/2025"
+      "dataUltimaEntrada": "07/06/2025"
     },
     {
       "codigo": "4314",
@@ -317,17 +240,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "74,90",
       "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "4309",
-      "descricao": "COLAR ABENÇOADA 52+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4309.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/04/2025"
     },
@@ -420,28 +332,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4234",
-      "descricao": "PULSEIRA FITA 4MM",
-      "tipo": "Semijoia",
-      "imagem": "4234.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4233",
-      "descricao": "CHOKER FITA 4MM 37+10CM",
-      "tipo": "Semijoia",
-      "imagem": "4233.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "102,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4186",
       "descricao": "CHOKER CORAÇÕES COLORIDOS 41+5CM",
       "tipo": "Semijoia",
@@ -475,17 +365,6 @@
       "dataUltimaEntrada": "12/05/2025"
     },
     {
-      "codigo": "3462",
-      "descricao": "COLAR FIO DE NYLON CORACAO E NOSSA SENHORA 40+6CM",
-      "tipo": "Semijoia",
-      "imagem": "3462.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
       "codigo": "3285",
       "descricao": "PULSEIRA ABENÇOADA",
       "tipo": "Semijoia",
@@ -497,15 +376,15 @@
       "dataUltimaEntrada": "08/05/2025"
     },
     {
-      "codigo": "3216",
-      "descricao": "CHOKER MINI CORACOES CHAPINHAS 37+5CM",
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
       "tipo": "Semijoia",
-      "imagem": "3216.jpg",
+      "imagem": "3235.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "46,90",
-      "precoConsignado": "74,90",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
+      "dataUltimaEntrada": "30/04/2025"
     },
     {
       "codigo": "3207",
@@ -517,28 +396,6 @@
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/05/2025"
-    },
-    {
-      "codigo": "2124",
-      "descricao": "BRINCO TRIO CORACAO CRAVEJADO",
-      "tipo": "Semijoia",
-      "imagem": "2124.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "109,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
-    },
-    {
-      "codigo": "2004",
-      "descricao": "PINGENTE MENINA M 18MM COM CORAÇÃO ZIRCONIA VERMELHA",
-      "tipo": "Semijoia",
-      "imagem": "2004.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/06/2025"
     },
     {
       "codigo": "2003",
