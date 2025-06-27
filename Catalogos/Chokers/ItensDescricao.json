@@ -2,15 +2,15 @@
   "categoria": "CHOKER",
   "produtos": [
     {
-      "codigo": "4186",
-      "descricao": "CHOKER CORAÇÕES COLORIDOS 41+5CM",
+      "codigo": "4476",
+      "descricao": "CHOKER CORRENTE E CANUTILHOS 40+5CM",
       "tipo": "Semijoia",
-      "imagem": "4186.jpg",
+      "imagem": "4476.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
+      "preco": "62,90",
+      "precoConsignado": "96,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/06/2025"
+      "dataUltimaEntrada": "13/06/2025"
     },
     {
       "codigo": "4404",
@@ -53,17 +53,6 @@
       "pastaFotos": "Catalogos/Chokers/",
       "preco": "69,90",
       "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4132",
-      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
-      "tipo": "Semijoia",
-      "imagem": "4132.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/03/2025"
     },

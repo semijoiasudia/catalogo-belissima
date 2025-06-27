@@ -2,6 +2,17 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4480",
+      "descricao": "PULSEIRA DUPLA - BOLINHAS E ELOS",
+      "tipo": "Semijoia",
+      "imagem": "4480.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/06/2025"
+    },
+    {
       "codigo": "4450",
       "descricao": "PULSEIRA 1 TREVO VERDE 18CM",
       "tipo": "Semijoia",

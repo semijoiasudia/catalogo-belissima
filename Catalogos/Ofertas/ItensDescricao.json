@@ -2,6 +2,54 @@
   "categoria": "OFERTAS",
   "produtos": [
     {
+      "codigo": "4325",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS 3 CRUZES 18+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "4325.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "34,90",
+      "precoOferta": "19,90",
+      "precoConsignado": "52,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
+      "codigo": "4324",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS 2 CRUZES 18+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "4324.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "34,90",
+      "precoOferta": "19,90",
+      "precoConsignado": "52,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
+      "codigo": "4274",
+      "descricao": "INOX BRACELETE 2 TREVOS E QUADRADOS VERMELHO",
+      "tipo": "Aço Inox",
+      "imagem": "4274.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "42,90",
+      "precoOferta": "29,90",
+      "precoConsignado": "74,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "18/04/2025"
+    },
+    {
+      "codigo": "4273",
+      "descricao": "INOX BRACELETE TREVO VERDE E 2 CRISTAIS",
+      "tipo": "Aço Inox",
+      "imagem": "4273.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "42,90",
+      "precoOferta": "29,90",
+      "precoConsignado": "64,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "18/04/2025"
+    },
+    {
       "codigo": "4268",
       "descricao": "BIJUTERIA CHOCKER RIVIERA E CORACOES COLORS 37CM",
       "tipo": "Bijuteria",
@@ -14,13 +62,49 @@
       "dataUltimaEntrada": "16/04/2025"
     },
     {
+      "codigo": "4183",
+      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
+      "tipo": "Bijuteria",
+      "imagem": "4183.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "40,00",
+      "precoOferta": "19,90",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4181",
+      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
+      "tipo": "Bijuteria",
+      "imagem": "4181.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "40,00",
+      "precoOferta": "19,90",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4027",
+      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
+      "tipo": "Bijuteria",
+      "imagem": "4027.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "40,00",
+      "precoOferta": "19,90",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
       "codigo": "3948",
       "descricao": "BIJUTERIA BRACELETE INSPIRACAO CRAVEJADO",
       "tipo": "Bijuteria",
       "imagem": "3948.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "69,90",
-      "precoOferta": "39,90",
+      "precoOferta": "29,90",
       "precoConsignado": "109,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "24/01/2025"

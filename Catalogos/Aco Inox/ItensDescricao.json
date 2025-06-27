@@ -2,17 +2,6 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4441",
-      "descricao": "INOX BRACELETE BERLOQUES FIXOS ELEFANTE CHAVE CORAÇÃO",
-      "tipo": "Aço Inox",
-      "imagem": "4441.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "10/06/2025"
-    },
-    {
       "codigo": "4387",
       "descricao": "INOX CONJUNTO INFANTIL GATINHO 40CM",
       "tipo": "Aço Inox",
@@ -134,17 +123,6 @@
       "dataUltimaEntrada": "08/05/2025"
     },
     {
-      "codigo": "4340",
-      "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4340.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
       "codigo": "4339",
       "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
       "tipo": "Aço Inox",
@@ -244,15 +222,15 @@
       "dataUltimaEntrada": "06/05/2025"
     },
     {
-      "codigo": "4299",
-      "descricao": "INOX PULSEIRA BERLOQUES FIXOS CRUZ E CORACAO 19CM",
+      "codigo": "4324",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS 2 CRUZES 18+5CM",
       "tipo": "Aço Inox",
-      "imagem": "4299.jpg",
+      "imagem": "4324.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
-      "precoConsignado": "54,90",
+      "precoConsignado": "52,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "23/04/2025"
+      "dataUltimaEntrada": "06/05/2025"
     },
     {
       "codigo": "4289",
@@ -440,28 +418,6 @@
       "precoConsignado": "59,90",
       "banho": "INOX",
       "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "4012",
-      "descricao": "INOX PULSEIRA BERLOQUES FIXOS MÃO 18+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4012.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "52,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "4213",
-      "descricao": "INOX PULSEIRA BERLOQUES FIXOS ARVORES DA VIDA 18+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4213.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "52,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "09/04/2025"
     },
     {
       "codigo": "4208",

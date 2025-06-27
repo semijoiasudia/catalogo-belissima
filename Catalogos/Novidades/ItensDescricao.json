@@ -2,19 +2,8 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
-      "codigo": "4441",
-      "descricao": "INOX BRACELETE BERLOQUES FIXOS ELEFANTE CHAVE CORAÇÃO",
-      "tipo": "Aço Inox",
-      "imagem": "4441.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "10/06/2025"
-    },
-    {
       "codigo": "4432",
-      "descricao": "BRINCO TRIO ARGO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
+      "descricao": "BRINCO TRIO ARG CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
       "tipo": "Semijoia",
       "imagem": "4432.jpg",
       "pastaFotos": "Catalogos/Novidades/",
@@ -330,17 +319,6 @@
       "precoConsignado": "124,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4186",
-      "descricao": "CHOKER CORAÇÕES COLORIDOS 41+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4186.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/06/2025"
     },
     {
       "codigo": "3471",
