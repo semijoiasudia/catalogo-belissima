@@ -2,6 +2,39 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4495",
+      "descricao": "CONJUNTO INFANTIL BRANCA DE NEVE 40CM",
+      "tipo": "Semijoia",
+      "imagem": "4495.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4494",
+      "descricao": "CONJUNTO INFANTIL ESTRELA ROSA 36+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4494.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4493",
+      "descricao": "CONJUNTO INFANTIL CEREJA ESMALTADO 35CM",
+      "tipo": "Semijoia",
+      "imagem": "4493.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "62,90",
+      "precoConsignado": "99,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
       "codigo": "4484",
       "descricao": "CONJUNTO ORGÂNICO RESINA MADREPÉROLA 46+5CM",
       "tipo": "Semijoia",
@@ -66,17 +99,6 @@
       "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/06/2025"
-    },
-    {
-      "codigo": "4218",
-      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
-      "tipo": "Semijoia",
-      "imagem": "4218.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "72,90",
-      "precoConsignado": "112,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4429",

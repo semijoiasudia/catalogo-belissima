@@ -2,6 +2,61 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "4497",
+      "descricao": "BRINCO INFANTIL MORANGO ESMALTADO",
+      "tipo": "Semijoia",
+      "imagem": "4497.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4496",
+      "descricao": "PULSEIRA INFANTIL BRANCA DE NEVE 14+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4496.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4495",
+      "descricao": "CONJUNTO INFANTIL BRANCA DE NEVE 40CM",
+      "tipo": "Semijoia",
+      "imagem": "4495.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4494",
+      "descricao": "CONJUNTO INFANTIL ESTRELA ROSA 36+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4494.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4493",
+      "descricao": "CONJUNTO INFANTIL CEREJA ESMALTADO 35CM",
+      "tipo": "Semijoia",
+      "imagem": "4493.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "62,90",
+      "precoConsignado": "99,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
       "codigo": "4433",
       "descricao": "PULSEIRA INFANTIL BORBOLETA PINK",
       "tipo": "Semijoia",
@@ -87,28 +142,6 @@
       "preco": "89,90",
       "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "4218",
-      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
-      "tipo": "Semijoia",
-      "imagem": "4218.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "72,90",
-      "precoConsignado": "112,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
-    },
-    {
-      "codigo": "4216",
-      "descricao": "INOX CONJUNTO INFANTIL HELLO KITTY 40CM",
-      "tipo": "Aço Inox",
-      "imagem": "4216.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX",
       "dataUltimaEntrada": "10/04/2025"
     },
     {

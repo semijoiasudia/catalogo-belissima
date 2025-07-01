@@ -13,39 +13,6 @@
       "dataUltimaEntrada": "16/04/2025"
     },
     {
-      "codigo": "4183",
-      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4183.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
-      "codigo": "4181",
-      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4181.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
-      "codigo": "4027",
-      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4027.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
       "codigo": "4024",
       "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
       "tipo": "Bijuteria",
@@ -88,17 +55,6 @@
       "precoConsignado": "189,98",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "11/02/2025"
-    },
-    {
-      "codigo": "3948",
-      "descricao": "BIJUTERIA BRACELETE INSPIRACAO CRAVEJADO",
-      "tipo": "Bijuteria",
-      "imagem": "3948.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "24/01/2025"
     },
     {
       "codigo": "645",

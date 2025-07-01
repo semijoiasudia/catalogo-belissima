@@ -2,6 +2,17 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4496",
+      "descricao": "PULSEIRA INFANTIL BRANCA DE NEVE 14+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4496.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
       "codigo": "4480",
       "descricao": "PULSEIRA DUPLA - BOLINHAS E ELOS",
       "tipo": "Semijoia",

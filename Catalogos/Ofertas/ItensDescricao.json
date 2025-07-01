@@ -14,18 +14,6 @@
       "dataUltimaEntrada": "06/05/2025"
     },
     {
-      "codigo": "4324",
-      "descricao": "INOX PULSEIRA BERLOQUES FIXOS 2 CRUZES 18+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4324.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "34,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "52,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "06/05/2025"
-    },
-    {
       "codigo": "4274",
       "descricao": "INOX BRACELETE 2 TREVOS E QUADRADOS VERMELHO",
       "tipo": "Aço Inox",
@@ -60,66 +48,6 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "16/04/2025"
-    },
-    {
-      "codigo": "4183",
-      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4183.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "40,00",
-      "precoOferta": "19,90",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
-      "codigo": "4181",
-      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4181.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "40,00",
-      "precoOferta": "19,90",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
-      "codigo": "4027",
-      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4027.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "40,00",
-      "precoOferta": "19,90",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "3948",
-      "descricao": "BIJUTERIA BRACELETE INSPIRACAO CRAVEJADO",
-      "tipo": "Bijuteria",
-      "imagem": "3948.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "69,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "24/01/2025"
-    },
-    {
-      "codigo": "3498",
-      "descricao": "BRINCO TREVO ESMALTADO VERDE G",
-      "tipo": "Semijoia",
-      "imagem": "3498.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "42,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
     },
     {
       "codigo": "3480",
@@ -288,18 +216,6 @@
       "precoConsignado": "56,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/07/2024"
-    },
-    {
-      "codigo": "3300",
-      "descricao": "BRINCO EAR JACKET P. DE LUZ E CORACOES",
-      "tipo": "Semijoia",
-      "imagem": "3300.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "44,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/07/2024"
     },
     {
       "codigo": "3283",

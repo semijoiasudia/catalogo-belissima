@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4497",
+      "descricao": "BRINCO INFANTIL MORANGO ESMALTADO",
+      "tipo": "Semijoia",
+      "imagem": "4497.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
       "codigo": "4474",
       "descricao": "BRINCO GOTA ABAULADA P 15MM",
       "tipo": "Semijoia",
@@ -32,17 +43,6 @@
       "preco": "39,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/06/2025"
-    },
-    {
-      "codigo": "4471",
-      "descricao": "BRINCO TRIO QUADRADO ZIRCÔNIAS CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "4471.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
       "dataUltimaEntrada": "13/06/2025"
     },
     {
@@ -1025,17 +1025,6 @@
       "dataUltimaEntrada": "21/02/2025"
     },
     {
-      "codigo": "4075",
-      "descricao": "BRINCO 2 BORBOLETAS TEXTURIZADAS G",
-      "tipo": "Semijoia",
-      "imagem": "4075.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "21/02/2025"
-    },
-    {
       "codigo": "4074",
       "descricao": "BRINCO ARGOLINHA ESTRELA PP",
       "tipo": "Semijoia",
@@ -1608,17 +1597,6 @@
       "dataUltimaEntrada": "03/10/2024"
     },
     {
-      "codigo": "3498",
-      "descricao": "BRINCO TREVO ESMALTADO VERDE G",
-      "tipo": "Semijoia",
-      "imagem": "3498.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
-    },
-    {
       "codigo": "3480",
       "descricao": "BRINCO CORACAO TEXTURIZADO",
       "tipo": "Semijoia",
@@ -1881,17 +1859,6 @@
       "precoConsignado": "56,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/07/2024"
-    },
-    {
-      "codigo": "3300",
-      "descricao": "BRINCO EAR JACKET P. DE LUZ E CORACOES",
-      "tipo": "Semijoia",
-      "imagem": "3300.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "44,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/07/2024"
     },
     {
       "codigo": "3283",
