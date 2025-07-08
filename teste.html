@@ -857,6 +857,7 @@
 
         function criarBotoesSubcategorias(banhosNaCategoria) {
             const subcategoriesDiv = document.getElementById('subcategories');
+            const banhoLabelContainer = document.getElementById('banhoLabelContainer');
             subcategoriesDiv.innerHTML = '';
 
             let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
@@ -884,6 +885,7 @@
             });
 
             subcategoriesDiv.style.display = 'flex';
+            banhoLabelContainer.style.display = 'block';
         }
 
         function filterByBanho(banho) {
