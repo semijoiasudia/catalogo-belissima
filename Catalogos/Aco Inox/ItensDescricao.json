@@ -2,28 +2,6 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4499",
-      "descricao": "INOX CONJUNTO TREVO CRAVEJADO",
-      "tipo": "Aço Inox",
-      "imagem": "4499.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "27/06/2025"
-    },
-    {
-      "codigo": "4491",
-      "descricao": "INOX BRACELETE CIRCULOS CRISTAL E RESINA PRETO",
-      "tipo": "Aço Inox",
-      "imagem": "4491.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "26/06/2025"
-    },
-    {
       "codigo": "4490",
       "descricao": "INOX BRACELETE ELOS E CIRCULO PRETO",
       "tipo": "Aço Inox",
@@ -31,18 +9,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "64,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "26/06/2025"
-    },
-    {
-      "codigo": "4488",
-      "descricao": "INOX BRACELETE BORBOLETA PRETO E DIAMANTADA",
-      "tipo": "Aço Inox",
-      "imagem": "4488.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "INOX",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "26/06/2025"
     },
     {
@@ -53,7 +20,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "22/05/2025"
     },
     {
@@ -64,18 +31,18 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "62,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/05/2025"
     },
     {
-      "codigo": "4379",
-      "descricao": "INOX COLAR GATINHO GRAVEJADO 45+7CM",
+      "codigo": "4381",
+      "descricao": "INOX COLAR INSPIRAÇÃO 5 TREVOS 44+4CM",
       "tipo": "Aço Inox",
-      "imagem": "4379.jpg",
+      "imagem": "4381.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Inox",
       "dataUltimaEntrada": "21/05/2025"
     },
     {
@@ -86,7 +53,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
       "precoConsignado": "59,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "21/05/2025"
     },
     {
@@ -97,18 +64,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "13/05/2025"
-    },
-    {
-      "codigo": "4352",
-      "descricao": "INOX COLAR CORAÇÃO LOVE CRAVEJADO AO REDOR 44+8CM",
-      "tipo": "Aço Inox",
-      "imagem": "4352.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "13/05/2025"
     },
     {
@@ -119,7 +75,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "13/05/2025"
     },
     {
@@ -130,7 +86,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "13/05/2025"
     },
     {
@@ -141,7 +97,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "13/05/2025"
     },
     {
@@ -152,40 +108,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "32,90",
       "precoConsignado": "49,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
-      "codigo": "4339",
-      "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "4339.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
-      "codigo": "4338",
-      "descricao": "INOX BRINCO ARGOLA E TREVO PRETO",
-      "tipo": "Aço Inox",
-      "imagem": "4338.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "54,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
-      "codigo": "4337",
-      "descricao": "INOX BRINCO ARGOLA E TREVO BRANCO",
-      "tipo": "Aço Inox",
-      "imagem": "4337.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "54,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox",
       "dataUltimaEntrada": "08/05/2025"
     },
     {
@@ -196,7 +119,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "08/05/2025"
     },
     {
@@ -207,7 +130,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "36,90",
       "precoConsignado": "54,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "07/05/2025"
     },
     {
@@ -218,7 +141,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "36,90",
       "precoConsignado": "54,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "07/05/2025"
     },
     {
@@ -229,7 +152,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "64,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "07/05/2025"
     },
     {
@@ -240,7 +163,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "07/05/2025"
     },
     {
@@ -251,8 +174,41 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
       "precoConsignado": "52,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "06/05/2025"
+    },
+    {
+      "codigo": "4323",
+      "descricao": "INOX CONJUNTO TREVO BRANCO MADREPÉROLA 43+4CM",
+      "tipo": "Aço Inox",
+      "imagem": "4323.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
+      "codigo": "4322",
+      "descricao": "INOX CONJUNTO TREVO PRETO 46CM",
+      "tipo": "Aço Inox",
+      "imagem": "4322.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
+      "codigo": "4291",
+      "descricao": "INOX BRINCO TRIO BORBOLETA PRETO TREVO E PONTO LUZ",
+      "tipo": "Aço Inox",
+      "imagem": "4291.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/04/2025"
     },
     {
       "codigo": "4289",
@@ -262,7 +218,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "29,90",
       "precoConsignado": "42,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "22/04/2025"
     },
     {
@@ -273,7 +229,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
       "precoConsignado": "52,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "19/04/2025"
     },
     {
@@ -284,7 +240,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
       "precoConsignado": "54,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "19/04/2025"
     },
     {
@@ -295,7 +251,18 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "36,90",
       "precoConsignado": "54,90",
-      "banho": "INOX",
+      "banho": "Inox",
+      "dataUltimaEntrada": "19/04/2025"
+    },
+    {
+      "codigo": "4280",
+      "descricao": "INOX COLAR CRUZ ZIRCONIAS CRISTAL INOX 43+7CM",
+      "tipo": "Aço Inox",
+      "imagem": "4280.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "36,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
       "dataUltimaEntrada": "19/04/2025"
     },
     {
@@ -306,8 +273,30 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "36,90",
       "precoConsignado": "59,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "19/04/2025"
+    },
+    {
+      "codigo": "4277",
+      "descricao": "INOX BRACELETE TREVO VERMELHO E PONTO DE LUZ",
+      "tipo": "Aço Inox",
+      "imagem": "4277.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/04/2025"
+    },
+    {
+      "codigo": "4276",
+      "descricao": "INOX BRACELETE TREVO RESINA VERMELHO",
+      "tipo": "Aço Inox",
+      "imagem": "4276.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/04/2025"
     },
     {
       "codigo": "4274",
@@ -317,7 +306,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "42,90",
       "precoConsignado": "74,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "18/04/2025"
     },
     {
@@ -328,7 +317,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "42,90",
       "precoConsignado": "64,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "18/04/2025"
     },
     {
@@ -339,7 +328,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "62,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "18/04/2025"
     },
     {
@@ -350,19 +339,8 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "15/04/2025"
-    },
-    {
-      "codigo": "4255",
-      "descricao": "INOX BRACELETE 5 TREVOS PRETOS",
-      "tipo": "Aço Inox",
-      "imagem": "4255.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "14/04/2025"
     },
     {
       "codigo": "4254",
@@ -372,18 +350,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "64,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4253",
-      "descricao": "INOX BRACELETE INSP CIRCULOS PRETOS COM PEDRAS",
-      "tipo": "Aço Inox",
-      "imagem": "4253.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "14/04/2025"
     },
     {
@@ -394,7 +361,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "64,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "14/04/2025"
     },
     {
@@ -405,7 +372,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "19,90",
       "precoConsignado": "39,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "12/04/2025"
     },
     {
@@ -416,8 +383,19 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "22,90",
       "precoConsignado": "39,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "12/04/2025"
+    },
+    {
+      "codigo": "4215",
+      "descricao": "INOX CONJUNTO INFANTIL CEREJA 40CM",
+      "tipo": "Aço Inox",
+      "imagem": "4215.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "56,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "10/04/2025"
     },
     {
       "codigo": "4208",
@@ -427,7 +405,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "24,90",
       "precoConsignado": "39,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "09/04/2025"
     },
     {
@@ -438,7 +416,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "46,90",
       "precoConsignado": "74,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "08/04/2025"
     },
     {
@@ -449,7 +427,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "INOX DOURADO",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "08/04/2025"
     },
     {
@@ -460,7 +438,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "32,90",
       "precoConsignado": "49,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "01/04/2025"
     },
     {
@@ -471,7 +449,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "29,90",
       "precoConsignado": "49,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "01/04/2025"
     },
     {
@@ -482,7 +460,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "32,90",
       "precoConsignado": "54,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "19/02/2025"
     },
     {
@@ -493,7 +471,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "22,90",
       "precoConsignado": "42,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "19/02/2025"
     },
     {
@@ -504,7 +482,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "64,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "12/02/2025"
     },
     {
@@ -515,7 +493,7 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "64,90",
-      "banho": "INOX",
+      "banho": "Inox",
       "dataUltimaEntrada": "12/02/2025"
     }
   ]
