@@ -480,8 +480,8 @@
         <div class="filter-container">
             <label for="sortFilter">Ordenar por: </label>
             <select id="sortFilter" onchange="applySort()">
-                <option value="newest" selected>Mais Novos</option>
-                <option value="oldest">Mais Antigos</option>
+                <option value="newest">Mais Novos</option>
+                <option value="oldest" selected>Mais Antigos</option>
                 <option value="highestPrice">Maior Preço</option>
                 <option value="lowestPrice">Menor Preço</option>
             </select>
@@ -518,7 +518,7 @@
         let currentPage = 1;
         let allFiles = [];
         let currentBanho = 'todos';
-        let currentSort = 'newest';
+        let currentSort = 'oldest';
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
 
@@ -826,26 +826,121 @@
             const prevButton = document.createElement('button');
             prevButton.textContent = 'Anterior';
             prevButton.onclick = () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    displayPage(currentPage, new Set());
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
+                // if (currentPage > 1) {
+                //     currentPage--;
+                //     displayPage(currentPage, new Set());
+                //     window.scrollTo({ top: 0, behavior: 'smooth' });
+                // }
+                
+                // Criar modal simples
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    display: block;
+                    position: fixed;
+                    z-index: 1000;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                `;
+                
+                const modalContent = document.createElement('div');
+                modalContent.style.cssText = `
+                    background-color: white;
+                    margin: 20% auto;
+                    padding: 30px;
+                    border-radius: 10px;
+                    width: 300px;
+                    text-align: center;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    position: relative;
+                `;
+                
+                modalContent.innerHTML = `
+                    <span style="color: #aaa; position: absolute; top: 10px; right: 15px; font-size: 24px; font-weight: bold; cursor: pointer;">&times;</span>
+                    <h3 style="margin-top: 0; color: #333;">Versão de Apresentação</h3>
+                    <p style="margin: 15px 0; color: #666;">Esta é uma versão de demonstração do nosso catálogo não é possível ver todas as páginas de produtos.</p>
+                    <button style="background-color: #28a745; color: white; padding: 8px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">OK</button>
+                `;
+                
+                modal.appendChild(modalContent);
+                document.body.appendChild(modal);
+                
+                // Fechar modal
+                const fecharModal = () => document.body.removeChild(modal);
+                
+                // Eventos para fechar
+                modalContent.querySelector('span').onclick = fecharModal;
+                modalContent.querySelector('button').onclick = fecharModal;
+                modal.onclick = (e) => { if (e.target === modal) fecharModal(); };
             };
-            prevButton.disabled = currentPage === 1;
+            // prevButton.disabled = currentPage === 1;
             paginationDiv.appendChild(prevButton);
+            
 
             const nextButton = document.createElement('button');
             nextButton.textContent = 'Próxima';
             nextButton.onclick = () => {
-                if (currentPage < totalPages) {
-                    //currentPage++;
-                   // displayPage(currentPage, new Set());
-                   // window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
+                // if (currentPage < totalPages) {
+                //     currentPage++;
+                //     displayPage(currentPage, new Set());
+                //     window.scrollTo({ top: 0, behavior: 'smooth' });
+                // }
+                
+                // Criar modal simples
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    display: block;
+                    position: fixed;
+                    z-index: 1000;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                `;
+                
+                const modalContent = document.createElement('div');
+                modalContent.style.cssText = `
+                    background-color: white;
+                    margin: 20% auto;
+                    padding: 30px;
+                    border-radius: 10px;
+                    width: 300px;
+                    text-align: center;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    position: relative;
+                `;
+                
+                modalContent.innerHTML = `
+                    <span style="color: #aaa; position: absolute; top: 10px; right: 15px; font-size: 24px; font-weight: bold; cursor: pointer;">&times;</span>
+                    <h3 style="margin-top: 0; color: #333;">Versão de Apresentação</h3>
+                    <p style="margin: 15px 0; color: #666;">Esta é uma versão de demonstração do nosso catálogo não é possível ver todas as páginas de produtos.</p>
+                    <button style="background-color: #28a745; color: white; padding: 8px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">OK</button>
+                `;
+                
+                modal.appendChild(modalContent);
+                document.body.appendChild(modal);
+                
+                // Fechar modal
+                const fecharModal = () => document.body.removeChild(modal);
+                
+                // Eventos para fechar
+                modalContent.querySelector('span').onclick = fecharModal;
+                modalContent.querySelector('button').onclick = fecharModal;
+                modal.onclick = (e) => { if (e.target === modal) fecharModal(); };
             };
-            nextButton.disabled = currentPage === totalPages;
+            // nextButton.disabled = currentPage === totalPages;
             paginationDiv.appendChild(nextButton);
+
+
+
+
+
+
+            
+
         }
 
         function applySort() {
