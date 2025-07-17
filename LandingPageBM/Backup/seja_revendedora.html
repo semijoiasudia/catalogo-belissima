@@ -340,182 +340,43 @@
                                         <i class="fas fa-star text-amber-500 mr-2"></i> 
                                         <span>Ter responsabilidade em cuidar das peças disponibilizadas</span>
                                     </li>
-                                    <li class="flex items-start">
-                                        <i class="fas fa-star text-amber-500 mr-2"></i> 
-                                        <span><strong>Preencher o formulário abaixo:</strong></span>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                                 
-                <!-- Novo Formulário -->
-                <!-- https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec -->
-                <form id="candidaturaForm" class="space-y-6">
-                    <!-- Dados Pessoais -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Nome Completo</label>
-                            <input type="text" name="Nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Seu nome completo" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">WhatsApp</label>
-                            <input type="tel" name="WhatsApp" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="(00) 00000-0000" required>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Email</label>
-                        <input type="email" name="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="seuemail@exemplo.com">
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Instagram ou Facebook</label>
-                        <input type="text" name="RedeSocial" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="@seuperfil ou link do perfil">
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Endereço</label>
-                            <input type="text" name="Endereco" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Rua, número" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Bairro</label>
-                            <input type="text" name="Bairro" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Seu bairro" required>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Cidade e Estado</label>
-                        <input type="text" name="CidadeEstado" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Ex: Uberlândia, MG" required>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Profissão</label>
-                            <input type="text" name="Profissao" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Sua profissão atual" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Estado Civil</label>
-                            <select name="EstadoCivil" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                                <option value="">Selecione...</option>
-                                <option value="Solteira">Solteira</option>
-                                <option value="Casada">Casada</option>
-                                <option value="Divorciada">Divorciada</option>
-                                <option value="Viúva">Viúva</option>
-                                <option value="União Estável">União Estável</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Possui residência própria?</label>
-                        <div class="flex space-x-4">
-                            <label class="flex items-center">
-                                <input type="radio" name="ResidenciaPropria" value="Sim" class="mr-2" required>
-                                <span>Sim</span>
-                            </label>
-                            <label class="flex items-center">
-                                <input type="radio" name="ResidenciaPropria" value="Não" class="mr-2" required>
-                                <span>Não</span>
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Possui outro trabalho? Fale sobre:</label>
-                        <textarea name="OutroTrabalho" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" rows="3" placeholder="Descreva se possui outro trabalho ou digite 'Não' se não possui"></textarea>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">De 0 a 10, qual o seu nível de interesse em buscar uma renda extra com vendas?</label>
-                        <select name="NivelInteresse" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                            <option value="">Selecione...</option>
-                            <option value="0">0 - Nenhum interesse</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10 - Muito interessada</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Já trabalhou ou trabalha com vendas? O que já vende ou vendeu?</label>
-                        <textarea name="ExperienciaVendas" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" rows="3" placeholder="Descreva sua experiência com vendas ou digite 'Não' se nunca trabalhou com vendas" required></textarea>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Quais locais frequenta para vender?</label>
-                        <textarea name="LocaisVenda" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" rows="3" placeholder="Ex: Casa de amigas, trabalho, salão de beleza, etc."></textarea>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Se ainda não vende, quais locais frequentaria para vender?</label>
-                        <textarea name="LocaisFrequentaria" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" rows="3" placeholder="Ex: Academia, igreja, vizinhança, etc."></textarea>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Qual valor costuma vender no período de 30 dias?</label>
-                        <input type="text" name="ValorVenda30Dias" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Ex: R$ 500,00 ou 'Não vendo ainda'">
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Qual o preço médio dos produtos que vende?</label>
-                        <input type="text" name="PrecoMedioProdutos" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Exemplo: vendo produtos com um preço médio de 70,00">
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Tem restrição em seu CPF? (Sujeito a análise)</label>
-                        <div class="flex space-x-4">
-                            <label class="flex items-center">
-                                <input type="radio" name="RestricaoCPF" value="Sim" class="mr-2" required>
-                                <span>Sim</span>
-                            </label>
-                            <label class="flex items-center">
-                                <input type="radio" name="RestricaoCPF" value="Não" class="mr-2" required>
-                                <span>Não</span>
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Por que você quer ser uma revendedora Belíssima Mulher?</label>
-                        <textarea name="Motivacao" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" rows="4" placeholder="Conte um pouco sobre seus objetivos..." required></textarea>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-2">Para confirmar que você leu tudo com atenção, marque a opção abaixo:</label>
-                        <label class="flex items-center">
-                            <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" class="mr-2">
-                            <span>Li todas as informações!</span>
-                        </label>
-                    </div>
-                    
-                    <div class="text-center">
-                        <button type="submit" class="btn-primary py-4 px-16 rounded-full font-semibold text-xl inline-block">
-                            Enviar Candidatura
-                        </button>
-                    </div>
-                </form>
-                
-                <div class="mt-8 text-center">
-                    <p class="text-gray-600">
-                        Caso você seja selecionada, entraremos em contato em breve!
+                <div class="mt-6 text-center">
+                    <p class="text-gray-600 mb-6">
+                        Acesse nosso formulário de candidatura:
                     </p>
+                    <a href="SEU_LINK_DO_GOOGLE_FORMS_AQUI" 
+                       class="btn-secondary py-4 px-12 rounded-full font-semibold text-xl inline-block"
+                       target="_blank">
+                        Preencher Formulário de Candidatura
+                    </a>
                 </div>
-
-
             </div>
         </div>
     </section>
 
+    <!-- Seção WhatsApp -->
+    <!--
+    <section class="gradient-whatsapp py-16 text-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <i class="fab fa-whatsapp text-6xl mb-6"></i>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Tem Dúvidas? Fale Conosco!</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto text-indigo-100">
+                Estamos prontos para responder todas as suas perguntas e ajudar você a começar sua jornada como revendedora de semijoias.
+            </p>
+            <a href="https://wa.me/5534900000000?text=Ol%C3%A1%2C+quero+saber+mais+sobre+como+ser+uma+revendedora+Bel%C3%ADssima+Mulher+Semijoias." 
+               class="btn-secondary py-4 px-12 rounded-full font-semibold text-xl inline-block"
+               target="_blank">
+                <i class="fab fa-whatsapp mr-2"></i> Chamar no WhatsApp
+            </a>
+        </div>
+    </section>
+     -->
 
     <!-- Footer -->
     <footer class="bg-indigo-900 text-white py-10">
@@ -545,55 +406,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // URL do seu Google Apps Script (substitua pelo seu URL)
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
-        
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const form = this;
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalBtnText = submitBtn.innerHTML;
-            
-            // Alterar botão para estado de carregamento
-            submitBtn.innerHTML = 'Enviando...';
-            submitBtn.disabled = true;
-            
-            // Coletar dados do formulário
-            const formData = new FormData(form);
-            
-            // Enviar dados para o Google Sheets
-            fetch(scriptURL, { method: 'POST', body: formData })
-                .then(response => {
-                    if (response.ok) {
-                        return response.json();
-                    }
-                    throw new Error('Erro na resposta do servidor');
-                })
-                .then(data => {
-                    // Resetar botão
-                    submitBtn.innerHTML = originalBtnText;
-                    submitBtn.disabled = false;
-                    
-                    // Mostrar mensagem de sucesso
-                    alert('Candidatura enviada com sucesso! Entraremos em contato em breve pelo WhatsApp.');
-                    
-                    // Resetar formulário
-                    form.reset();
-                    
-                    // Scroll para o topo
-                    window.scrollTo({top: 0, behavior: 'smooth'});
-                })
-                .catch(error => {
-                    console.error('Error!', error.message);
-                    submitBtn.innerHTML = originalBtnText;
-                    submitBtn.disabled = false;
-                    alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente ou entre em contato pelo WhatsApp.');
-                });
-        });
-    </script>
-
 </body>
 </html>
