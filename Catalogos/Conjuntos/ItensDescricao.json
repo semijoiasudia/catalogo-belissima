@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4613",
+      "descricao": "CONJUNTO FLOR DE ZIRCÔNIAS NAVETE COLORS 45CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4613.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "174,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/07/2025"
+    },
+    {
       "codigo": "4530",
       "descricao": "CONJUNTO INFANTIL CORAÇÃO CRISTAL 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -123,26 +134,15 @@
       "dataUltimaEntrada": "05/06/2025"
     },
     {
-      "codigo": "3680",
-      "descricao": "CONJUNTO TREVO V&C VERDE BANDEIRA 39+5CM",
+      "codigo": "3793",
+      "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3680.jpg",
+      "imagem": "3793.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "129,90",
       "precoConsignado": "189,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/05/2025"
-    },
-    {
-      "codigo": "4346",
-      "descricao": "CONJUNTO 7 TREVOS INSPIRAÇÃO 45+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4346.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "169,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "09/05/2025"
     },
     {
       "codigo": "4315",
@@ -209,28 +209,6 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "3984",
-      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 6MM 41+9CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3984.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/02/2025"
-    },
-    {
-      "codigo": "3875",
-      "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3875.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/12/2024"
     },
     {
       "codigo": "3418",

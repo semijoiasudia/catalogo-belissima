@@ -2,6 +2,17 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "4606",
+      "descricao": "CHOKER CIGANINHA CORAÇÕES COLORIDOS 34+11CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4606.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "92,90",
+      "precoConsignado": "142,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2025"
+    },
+    {
       "codigo": "4132",
       "descricao": "CHOKER ELOS CART. 3MM 38+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -24,17 +35,6 @@
       "dataUltimaEntrada": "13/06/2025"
     },
     {
-      "codigo": "4186",
-      "descricao": "CHOKER CORAÇÕES COLORIDOS 41+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4186.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/06/2025"
-    },
-    {
       "codigo": "4404",
       "descricao": "CHOKER PINGENTES CORAÇÕES COLORS 40+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -44,28 +44,6 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/05/2025"
-    },
-    {
-      "codigo": "4355",
-      "descricao": "CHOKER ESFERA 38+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4355.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "62,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "15/05/2025"
-    },
-    {
-      "codigo": "4233",
-      "descricao": "CHOKER FITA 4MM 37+10CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4233.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "102,90",
-      "precoConsignado": "159,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/04/2025"
     },
     {
       "codigo": "4134",
@@ -134,17 +112,6 @@
       "dataUltimaEntrada": "27/01/2025"
     },
     {
-      "codigo": "3886",
-      "descricao": "CHOKER TREVO VAZADO 40+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3886.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "46,90",
-      "precoConsignado": "74,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "29/12/2024"
-    },
-    {
       "codigo": "3885",
       "descricao": "CHOKER TREVO VAZADO 40+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -176,17 +143,6 @@
       "precoConsignado": "189,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "26/11/2024"
-    },
-    {
-      "codigo": "3691",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3691.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "72,90",
-      "precoConsignado": "104,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "20/11/2024"
     },
     {
       "codigo": "3268",

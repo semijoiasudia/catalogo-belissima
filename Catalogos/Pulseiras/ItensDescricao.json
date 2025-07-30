@@ -2,6 +2,72 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4605",
+      "descricao": "PULSEIRA RIVIERA CRISTAL 2MM FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4605.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "64,90",
+      "precoConsignado": "102,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "23/07/2025"
+    },
+    {
+      "codigo": "4604",
+      "descricao": "PULSEIRA RIVIERA CRISTAL 2MM FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4604.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "62,90",
+      "precoConsignado": "98,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2025"
+    },
+    {
+      "codigo": "4603",
+      "descricao": "PULSEIRA CIGANINHA CORAÇÕES ZIRCONIAS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4603.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "64,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2025"
+    },
+    {
+      "codigo": "4602",
+      "descricao": "PULSEIRA 5 ESFERAS LISAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4602.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2025"
+    },
+    {
+      "codigo": "4601",
+      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA 18CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4601.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2025"
+    },
+    {
+      "codigo": "4580",
+      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4580.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
       "codigo": "4531",
       "descricao": "PULSEIRA INFANTIL CORAÇÃO CRISTAL 15,5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -11,17 +77,6 @@
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "04/07/2025"
-    },
-    {
-      "codigo": "4507",
-      "descricao": "PULSEIRA INFANTIL ESFERAS 14+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4507.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/07/2025"
     },
     {
       "codigo": "4496",
@@ -244,17 +299,6 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "3911",
-      "descricao": "PULSEIRA TELA 3MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3911.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/01/2025"
-    },
-    {
       "codigo": "3853",
       "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -288,24 +332,13 @@
       "dataUltimaEntrada": "18/09/2024"
     },
     {
-      "codigo": "3185",
-      "descricao": "PULSEIRA PINGENTE CORACAO TRABALHADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3185.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "72,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/06/2024"
-    },
-    {
       "codigo": "3026",
       "descricao": "PULSEIRA CORACAO ZIRCONIA/3CORACOES VAZADOS",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "3026.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
-      "precoConsignado": "89,90",
+      "precoConsignado": "74,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "04/05/2024"
     }

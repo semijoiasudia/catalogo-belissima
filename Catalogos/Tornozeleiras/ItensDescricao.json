@@ -2,14 +2,15 @@
   "categoria": "TORNOZELEIRA",
   "produtos": [
     {
-      "codigo": "3337",
-      "descricao": "TORNOZELEIRA RIVIERA BAGUETE CRISTAL",
-      "imagem": "3337.jpg",
+      "codigo": "4599",
+      "descricao": "TORNOZELEIRA FLOR COM MICROZIRCÔNIAS COLORS 22+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4599.jpg",
       "pastaFotos": "Catalogos/Tornozeleiras/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "24/07/2024"
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/07/2025"
     }
   ]
 }
