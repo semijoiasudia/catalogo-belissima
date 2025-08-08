@@ -112,28 +112,6 @@
       "dataUltimaEntrada": "21/07/2025"
     },
     {
-      "codigo": "4595",
-      "descricao": "ANEL REGULÁVEL FORMATO FOLHAS VAZADAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4595.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/07/2025"
-    },
-    {
-      "codigo": "4594",
-      "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO E ESFERA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4594.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/07/2025"
-    },
-    {
       "codigo": "4593",
       "descricao": "ANEL REGULÁVEL LISO / CRAVEJADO GRANDE",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -189,6 +167,17 @@
       "dataUltimaEntrada": "15/05/2025"
     },
     {
+      "codigo": "4093",
+      "descricao": "ANEL FOLHA ORGANICA - TAMANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4093.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "52,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/02/2025"
+    },
+    {
       "codigo": "4091",
       "descricao": "ANEL REGULAVEL FALANGE 2 BORBOLETAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -198,17 +187,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "26/02/2025"
-    },
-    {
-      "codigo": "3583",
-      "descricao": "ANEL 4 BORBOLETAS E PONTOS DE LUZ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3583.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "52,90",
-      "precoConsignado": "74,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2024"
     },
     {
       "codigo": "3403",

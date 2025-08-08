@@ -46,6 +46,17 @@
       "dataUltimaEntrada": "27/06/2025"
     },
     {
+      "codigo": "4494",
+      "descricao": "CONJUNTO INFANTIL ESTRELA ROSA 36+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4494.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
       "codigo": "4493",
       "descricao": "CONJUNTO INFANTIL CEREJA ESMALTADO 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -90,17 +101,6 @@
       "dataUltimaEntrada": "12/06/2025"
     },
     {
-      "codigo": "4446",
-      "descricao": "CONJUNTO 3 TREVOS - BRANCO PEROLADO CHOKER 41CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4446.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "139,90",
-      "precoConsignado": "198,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/06/2025"
-    },
-    {
       "codigo": "4445",
       "descricao": "CONJUNTO 3 TREVOS - PRETO CHOKER 41CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -110,17 +110,6 @@
       "precoConsignado": "198,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/06/2025"
-    },
-    {
-      "codigo": "4440",
-      "descricao": "CONJUNTO PONTO DE LUZ 8MM 46+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4440.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "09/06/2025"
     },
     {
       "codigo": "4429",
@@ -211,6 +200,17 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
+      "codigo": "3862",
+      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3862.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/12/2024"
+    },
+    {
       "codigo": "3418",
       "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -242,17 +242,6 @@
       "precoConsignado": "179,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/11/2024"
-    },
-    {
-      "codigo": "3610",
-      "descricao": "CONJUNTO CONJUNTO CORACAO VERDE ESMERALDA 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3610.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "86,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2024"
     }
   ]
 }

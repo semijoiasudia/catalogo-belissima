@@ -2,13 +2,24 @@
   "categoria": "BRACELETE",
   "produtos": [
     {
-      "codigo": "3619",
-      "descricao": "BRACELETE ORGANICO",
+      "codigo": "3864",
+      "descricao": "BRACELETE FIO TORCIDO",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3619.jpg",
+      "imagem": "3864.jpg",
       "pastaFotos": "Catalogos/Braceletes/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
+      "preco": "94,90",
+      "precoConsignado": "134,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/12/2024"
+    },
+    {
+      "codigo": "3613",
+      "descricao": "BRACELETE ONDULADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3613.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "79,90",
+      "precoConsignado": "112,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "26/10/2024"
     }

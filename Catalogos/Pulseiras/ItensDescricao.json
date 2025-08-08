@@ -2,6 +2,270 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4729",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 5MM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4729.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4728",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 5MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4728.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4709",
+      "descricao": "PULSEIRA ELOS H",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4709.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4708",
+      "descricao": "PULSEIRA ELOS H",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4708.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4707",
+      "descricao": "PULSEIRA DUPLA CORAÇÕES ENTRELAÇADOS E CANUTILHOS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4707.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4706",
+      "descricao": "PULSEIRA DUPLA CORAÇÕES ENTRELAÇADOS E CANUTILHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4706.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4705",
+      "descricao": "PULSEIRA ELOS CARTIER 3MM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4705.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "98,00",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4704",
+      "descricao": "PULSEIRA ELOS CARTIER 3MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4704.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "104,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4703",
+      "descricao": "PULSEIRA MINI ESFERAS FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4703.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4702",
+      "descricao": "PULSEIRA MINI ESFERAS FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4702.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,89",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4701",
+      "descricao": "PULSEIRA ELOS CARTIER E  PINGENTE SÃO BENTO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4701.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4700",
+      "descricao": "PULSEIRA ELOS CARTIER E  PINGENTE SÃO BENTO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4700.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4699",
+      "descricao": "PULSEIRA CORDÃO BAIANO 2MM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4699.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4698",
+      "descricao": "PULSEIRA TELA E 4 ESFERAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4698.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4697",
+      "descricao": "PULSEIRA TELA E 4 ESFERAS 16,5+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4697.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "124,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4696",
+      "descricao": "PULSEIRA CRUZ CURVA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4696.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "64,90",
+      "precoConsignado": "98,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4695",
+      "descricao": "PULSEIRA BOTÕES LISOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4695.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4694",
+      "descricao": "PULSEIRA PÉROLAS BRANCAS ESFÉRICAS E BARROCAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4694.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4693",
+      "descricao": "PULSEIRA ELOS E ESFERAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4693.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4692",
+      "descricao": "PULSEIRA ELOS E ESFERAS 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4692.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "62,90",
+      "precoConsignado": "98,00",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4691",
+      "descricao": "PULSEIRA DUPLA CORAÇÃO CRISTAL E 2 CRUZES",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4691.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4690",
+      "descricao": "PULSEIRA DUPLA CORAÇÃO CRISTAL E 2 CRUZES",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4690.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "884",
+      "descricao": "PULSEIRA CORDÃO BAIANO 2MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "884.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4656",
+      "descricao": "PULSEIRA INFANTIL ESTRELAS 15CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4656.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "72,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/08/2025"
+    },
+    {
       "codigo": "4605",
       "descricao": "PULSEIRA RIVIERA CRISTAL 2MM FECHO GRAVATA",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -79,6 +343,17 @@
       "dataUltimaEntrada": "04/07/2025"
     },
     {
+      "codigo": "4507",
+      "descricao": "PULSEIRA INFANTIL ESFERAS 14+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4507.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4496",
       "descricao": "PULSEIRA INFANTIL BRANCA DE NEVE 14+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -91,7 +366,7 @@
     },
     {
       "codigo": "4480",
-      "descricao": "PULSEIRA DUPLA - BOLINHAS E ELOS",
+      "descricao": "PULSEIRA DUPLA - BOLINHAS E ELOS 17CM+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4480.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
@@ -134,15 +409,15 @@
       "dataUltimaEntrada": "12/06/2025"
     },
     {
-      "codigo": "3809",
-      "descricao": "PULSEIRA TREVO V&C RESINA PRETA",
+      "codigo": "4433",
+      "descricao": "PULSEIRA INFANTIL BORBOLETA PINK",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3809.jpg",
+      "imagem": "4433.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/06/2025"
+      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4409",
@@ -189,6 +464,17 @@
       "dataUltimaEntrada": "12/05/2025"
     },
     {
+      "codigo": "4347",
+      "descricao": "PULSEIRA 3 TREVOS TRABALHADOS INSPIRAÇÃO 17+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4347.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/05/2025"
+    },
+    {
       "codigo": "3285",
       "descricao": "PULSEIRA ABENÇOADA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -222,6 +508,17 @@
       "dataUltimaEntrada": "30/04/2025"
     },
     {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
       "codigo": "4304",
       "descricao": "PULSEIRA INFANTIL CORAÇÃO E PONTO DE LUZ 15CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -242,17 +539,6 @@
       "precoConsignado": "76,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "24/04/2025"
-    },
-    {
-      "codigo": "4240",
-      "descricao": "PULSEIRA 3 CRISTAIS TRANSPARENTES E BOLINHAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4240.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/04/2025"
     },
     {
       "codigo": "4238",
@@ -288,48 +574,15 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "4126",
-      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
+      "codigo": "3834",
+      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4126.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "74,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
-      "codigo": "3853",
-      "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3853.jpg",
+      "imagem": "3834.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
       "precoConsignado": "86,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "16/12/2024"
-    },
-    {
-      "codigo": "3803",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3803.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "56,90",
-      "precoConsignado": "82,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "09/12/2024"
-    },
-    {
-      "codigo": "2574",
-      "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2574.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/09/2024"
+      "dataUltimaEntrada": "14/12/2024"
     },
     {
       "codigo": "3026",

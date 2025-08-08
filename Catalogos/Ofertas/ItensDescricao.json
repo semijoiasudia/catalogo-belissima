@@ -14,18 +14,6 @@
       "dataUltimaEntrada": "07/05/2025"
     },
     {
-      "codigo": "4208",
-      "descricao": "INOX BRINCO TREVO MADREPEROLA P",
-      "tipo": "Aço Inox",
-      "imagem": "4208.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "24,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "39,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/04/2025"
-    },
-    {
       "codigo": "4184",
       "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
       "tipo": "Bijuteria",
@@ -84,30 +72,6 @@
       "dataUltimaEntrada": "18/09/2024"
     },
     {
-      "codigo": "3477",
-      "descricao": "BRINCO BOTAO E ARGOLA M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3477.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3424",
-      "descricao": "BRINCO RIVIERA CRISTAL E BORBOLETA VAZADA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3424.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/08/2024"
-    },
-    {
       "codigo": "3403",
       "descricao": "ANEL CORACAO ORGANICO COM PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -118,42 +82,6 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/08/2024"
-    },
-    {
-      "codigo": "3325",
-      "descricao": "BRINCO ARGOLA CLICK GOTA CRAVEJADA M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3325.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "42,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/07/2024"
-    },
-    {
-      "codigo": "3311",
-      "descricao": "BRINCO MEIA ARGOLA LISA P 2CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3311.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "39,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "56,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/07/2024"
-    },
-    {
-      "codigo": "3283",
-      "descricao": "BRINCO PONTO DE LUZ 5MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3283.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "26,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "42,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/07/2024"
     },
     {
       "codigo": "3026",
