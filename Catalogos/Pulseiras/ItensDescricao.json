@@ -574,6 +574,28 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
+      "codigo": "4126",
+      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4126.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/03/2025"
+    },
+    {
+      "codigo": "4125",
+      "descricao": "PULSEIRA MOEDINHAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4125.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "76,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/03/2025"
+    },
+    {
       "codigo": "3834",
       "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
       "tipo": "Semijoia banhada a Ouro 18k",

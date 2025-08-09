@@ -90,13 +90,24 @@
       "dataUltimaEntrada": "02/06/2025"
     },
     {
-      "codigo": "4235",
-      "descricao": "CHOKER PEROLAS FORMATO CORACAO BRANCO 41+5CM",
+      "codigo": "4404",
+      "descricao": "CHOKER PINGENTES CORAÇÕES COLORS 40+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4235.jpg",
+      "imagem": "4404.jpg",
       "pastaFotos": "Catalogos/Chokers/",
       "preco": "79,90",
-      "precoConsignado": "124,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
+      "codigo": "4233",
+      "descricao": "CHOKER FITA 4MM 37+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4233.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "102,90",
+      "precoConsignado": "159,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/04/2025"
     },
@@ -154,17 +165,6 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/02/2025"
-    },
-    {
-      "codigo": "3961",
-      "descricao": "CHOKER BARRAS E FLORES VAZADAS 40+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3961.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/01/2025"
     },
     {
       "codigo": "3885",

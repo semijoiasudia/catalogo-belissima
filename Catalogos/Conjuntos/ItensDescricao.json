@@ -2,6 +2,39 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4752",
+      "descricao": "CONJUNTO NOSSA SENHORA MANTO AZUL 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4752.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4751",
+      "descricao": "CONJUNTO ARVORE DA VIDA CRAVEJADO COLORS 45CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4751.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4750",
+      "descricao": "CONJUNTO CORAÇÃO METADE CRAVEJADO METADE LISO 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4750.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "129,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
       "codigo": "4613",
       "descricao": "CONJUNTO FLOR DE ZIRCÔNIAS NAVETE COLORS 45CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -72,17 +105,6 @@
       "descricao": "CONJUNTO ORGÂNICO RESINA MADREPÉROLA 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4484.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/06/2025"
-    },
-    {
-      "codigo": "4483",
-      "descricao": "CONJUNTO ORGÂNICO RESINA PRETO 46+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4483.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "109,90",
       "precoConsignado": "149,90",
@@ -220,17 +242,6 @@
       "precoConsignado": "179,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/11/2024"
-    },
-    {
-      "codigo": "3421",
-      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3421.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/11/2024"
     },
     {
       "codigo": "3659",

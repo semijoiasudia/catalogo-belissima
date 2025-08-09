@@ -13,17 +13,6 @@
       "dataUltimaEntrada": "29/07/2025"
     },
     {
-      "codigo": "4387",
-      "descricao": "INOX CONJUNTO INFANTIL GATINHO 40CM",
-      "tipo": "Aço Inox",
-      "imagem": "4387.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/05/2025"
-    },
-    {
       "codigo": "4385",
       "descricao": "INOX COLAR TREVOS E PONTOS DE LUZ COLORS 46+5CM",
       "tipo": "Aço Inox",
@@ -178,6 +167,17 @@
       "dataUltimaEntrada": "18/04/2025"
     },
     {
+      "codigo": "4273",
+      "descricao": "INOX BRACELETE TREVO VERDE E 2 CRISTAIS",
+      "tipo": "Aço Inox",
+      "imagem": "4273.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/04/2025"
+    },
+    {
       "codigo": "4260",
       "descricao": "INOX CONJUNTO TREVO CINZA PEROLADO 46CM",
       "tipo": "Aço Inox",
@@ -187,6 +187,17 @@
       "precoConsignado": "79,90",
       "banho": "Inox",
       "dataUltimaEntrada": "15/04/2025"
+    },
+    {
+      "codigo": "4252",
+      "descricao": "INOX BRACELETE CIRCULO PRETO E ALGARISMOS INSP",
+      "tipo": "Aço Inox",
+      "imagem": "4252.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "14/04/2025"
     },
     {
       "codigo": "4231",
