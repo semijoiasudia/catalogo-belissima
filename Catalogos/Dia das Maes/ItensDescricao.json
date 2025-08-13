@@ -2,17 +2,6 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
-      "codigo": "4321",
-      "descricao": "BRINCO MEIA ARGOLA FORMATO CORAÇÃO GRANDE",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4321.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/05/2025"
-    },
-    {
       "codigo": "4316",
       "descricao": "BRINCO CORAÇÃO DESENHADO TAM M",
       "tipo": "Semijoia banhada a Ouro 18k",

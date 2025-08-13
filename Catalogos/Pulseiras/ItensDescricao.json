@@ -189,17 +189,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4694",
-      "descricao": "PULSEIRA PÉROLAS BRANCAS ESFÉRICAS E BARROCAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4694.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4693",
       "descricao": "PULSEIRA ELOS E ESFERAS",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -208,17 +197,6 @@
       "preco": "59,90",
       "precoConsignado": "89,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4692",
-      "descricao": "PULSEIRA ELOS E ESFERAS 17+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4692.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "62,90",
-      "precoConsignado": "98,00",
-      "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
     },
     {
@@ -295,28 +273,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "64,90",
       "precoConsignado": "102,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/07/2025"
-    },
-    {
-      "codigo": "4602",
-      "descricao": "PULSEIRA 5 ESFERAS LISAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4602.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/07/2025"
-    },
-    {
-      "codigo": "4601",
-      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA 18CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4601.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/07/2025"
     },
@@ -442,17 +398,6 @@
       "dataUltimaEntrada": "27/05/2025"
     },
     {
-      "codigo": "3812",
-      "descricao": "PULSEIRA TREVO V&C RESINA VERDE",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3812.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/05/2025"
-    },
-    {
       "codigo": "3811",
       "descricao": "PULSEIRA TREVO V&C RESINA OFF WHITE",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -462,17 +407,6 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/05/2025"
-    },
-    {
-      "codigo": "4347",
-      "descricao": "PULSEIRA 3 TREVOS TRABALHADOS INSPIRAÇÃO 17+6CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4347.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "09/05/2025"
     },
     {
       "codigo": "3285",
@@ -574,17 +508,6 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "4126",
-      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4126.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "74,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
       "codigo": "4125",
       "descricao": "PULSEIRA MOEDINHAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -605,6 +528,17 @@
       "precoConsignado": "86,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/12/2024"
+    },
+    {
+      "codigo": "2574",
+      "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2574.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/09/2024"
     },
     {
       "codigo": "3026",

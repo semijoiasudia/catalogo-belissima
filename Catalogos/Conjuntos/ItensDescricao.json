@@ -35,17 +35,6 @@
       "dataUltimaEntrada": "08/08/2025"
     },
     {
-      "codigo": "4613",
-      "descricao": "CONJUNTO FLOR DE ZIRCÔNIAS NAVETE COLORS 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4613.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "119,90",
-      "precoConsignado": "174,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/07/2025"
-    },
-    {
       "codigo": "4530",
       "descricao": "CONJUNTO INFANTIL CORAÇÃO CRISTAL 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -90,17 +79,6 @@
       "dataUltimaEntrada": "27/06/2025"
     },
     {
-      "codigo": "4493",
-      "descricao": "CONJUNTO INFANTIL CEREJA ESMALTADO 35CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4493.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "62,90",
-      "precoConsignado": "99,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/06/2025"
-    },
-    {
       "codigo": "4484",
       "descricao": "CONJUNTO ORGÂNICO RESINA MADREPÉROLA 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -132,6 +110,17 @@
       "precoConsignado": "198,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/06/2025"
+    },
+    {
+      "codigo": "4440",
+      "descricao": "CONJUNTO PONTO DE LUZ 8MM 46+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4440.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/06/2025"
     },
     {
       "codigo": "4429",

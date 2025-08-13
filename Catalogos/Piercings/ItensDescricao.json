@@ -2,17 +2,6 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "4638",
-      "descricao": "PIERCING FAKE 2 FIOS CRAVEJADOS COLORS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4638.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
       "codigo": "4637",
       "descricao": "PIERCING FAKE 2 FIOS CRAVEJADOS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,17 +11,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/07/2025"
-    },
-    {
-      "codigo": "3315",
-      "descricao": "PIERCING FAKE ZIRCONIAS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3315.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/05/2025"
     },
     {
       "codigo": "3314",
@@ -96,7 +74,7 @@
       "imagem": "4358.jpg",
       "pastaFotos": "Catalogos/Piercings/",
       "preco": "29,90",
-      "precoConsignado": "44,90",
+      "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
     },
@@ -167,17 +145,6 @@
       "dataUltimaEntrada": "03/12/2024"
     },
     {
-      "codigo": "3626",
-      "descricao": "PIERCING FAKE CORACAO COLORS LADO DIR",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3626.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/10/2024"
-    },
-    {
       "codigo": "3555",
       "descricao": "PIERCING FAKE ELOS CORRENTE",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -187,17 +154,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/10/2024"
-    },
-    {
-      "codigo": "3544",
-      "descricao": "PIERCING FAKE BORBOLETA LISA",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3544.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "06/10/2024"
     },
     {
       "codigo": "3543",
@@ -220,17 +176,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "04/05/2024"
-    },
-    {
-      "codigo": "2521",
-      "descricao": "PIERCING FAKE LISO PINGENTE PONTO DE LUZ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2521.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/02/2024"
     }
   ]
 }
