@@ -2,17 +2,6 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "4752",
-      "descricao": "CONJUNTO NOSSA SENHORA MANTO AZUL 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4752.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
-    },
-    {
       "codigo": "4751",
       "descricao": "CONJUNTO ARVORE DA VIDA CRAVEJADO COLORS 45CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -68,17 +57,6 @@
       "dataUltimaEntrada": "27/06/2025"
     },
     {
-      "codigo": "4494",
-      "descricao": "CONJUNTO INFANTIL ESTRELA ROSA 36+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4494.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/06/2025"
-    },
-    {
       "codigo": "4484",
       "descricao": "CONJUNTO ORGÂNICO RESINA MADREPÉROLA 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -112,15 +90,15 @@
       "dataUltimaEntrada": "12/06/2025"
     },
     {
-      "codigo": "4440",
-      "descricao": "CONJUNTO PONTO DE LUZ 8MM 46+4CM",
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4440.jpg",
+      "imagem": "4218.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "09/06/2025"
+      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4429",
@@ -171,17 +149,6 @@
       "descricao": "CONJUNTO GOTA LILÁS CRAVEJADA AO REDOR 44+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4313.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "119,90",
-      "precoConsignado": "179,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "4311",
-      "descricao": "CONJUNTO GOTA VERDE ESMERALDA CRAVEJADA AO REDOR 44+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4311.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "119,90",
       "precoConsignado": "179,90",

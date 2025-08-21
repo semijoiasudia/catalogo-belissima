@@ -24,17 +24,6 @@
       "dataUltimaEntrada": "21/05/2025"
     },
     {
-      "codigo": "4378",
-      "descricao": "INOX COLAR GOTA GRAVEJADA 45+7CM",
-      "tipo": "Aço Inox",
-      "imagem": "4378.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
       "codigo": "4351",
       "descricao": "INOX COLAR 2 CORAÇÕES CRAVEJADO AO REDOR 44+8CM",
       "tipo": "Aço Inox",
@@ -54,17 +43,6 @@
       "preco": "39,90",
       "precoConsignado": "59,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "13/05/2025"
-    },
-    {
-      "codigo": "4349",
-      "descricao": "INOX COLAR CORAÇÃO CRISTAL CRAVEJADO AO REDOR 44+8CM",
-      "tipo": "Aço Inox",
-      "imagem": "4349.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
       "dataUltimaEntrada": "13/05/2025"
     },
     {
@@ -134,17 +112,6 @@
       "dataUltimaEntrada": "15/04/2025"
     },
     {
-      "codigo": "4253",
-      "descricao": "INOX BRACELETE INSP CIRCULOS PRETOS COM PEDRAS",
-      "tipo": "Aço Inox",
-      "imagem": "4253.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4231",
       "descricao": "INOX ANEL TREVO PRETO INSP. - TAMANHOS",
       "tipo": "Aço Inox",
@@ -165,6 +132,17 @@
       "precoConsignado": "39,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "12/04/2025"
+    },
+    {
+      "codigo": "4044",
+      "descricao": "INOX COLAR INSP. JOANINHA/TREVO/CORACAO 44+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "4044.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "08/04/2025"
     },
     {
       "codigo": "4058",

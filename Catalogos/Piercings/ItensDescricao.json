@@ -2,17 +2,6 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "4637",
-      "descricao": "PIERCING FAKE 2 FIOS CRAVEJADOS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4637.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
       "codigo": "3314",
       "descricao": "PIERCING FAKE 3 BARRAS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",

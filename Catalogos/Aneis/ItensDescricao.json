@@ -2,28 +2,6 @@
   "categoria": "ANEL",
   "produtos": [
     {
-      "codigo": "4629",
-      "descricao": "ANEL REGULÁVEL 3 BORBOLETAS CRAVEJADAS CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4629.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
-      "codigo": "4628",
-      "descricao": "ANEL REGULÁVEL TREVOS INSPIRAÇÃO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4628.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "69,90",
-      "precoConsignado": "98,00",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
       "codigo": "4627",
       "descricao": "ANEL REGULÁVEL FOMATO GOTA - LISO/CRAVEJADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -46,13 +24,13 @@
       "dataUltimaEntrada": "28/07/2025"
     },
     {
-      "codigo": "4598",
-      "descricao": "ANEL REGULÁVEL PATINHA E CORAÇÃO VAZADO",
+      "codigo": "4595",
+      "descricao": "ANEL REGULÁVEL FORMATO FOLHAS VAZADAS",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4598.jpg",
+      "imagem": "4595.jpg",
       "pastaFotos": "Catalogos/Aneis/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/07/2025"
     },
@@ -112,17 +90,6 @@
       "dataUltimaEntrada": "30/05/2025"
     },
     {
-      "codigo": "2092",
-      "descricao": "ANEL REGULAVEL INSPIRAÇÃO CART.",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2092.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "16/05/2025"
-    },
-    {
       "codigo": "993",
       "descricao": "ANEL REGULAVEL CORACAO VAZADO LARGO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -134,15 +101,15 @@
       "dataUltimaEntrada": "15/05/2025"
     },
     {
-      "codigo": "4095",
-      "descricao": "ANEL REGULAVEL PATINHA E CORACAO VAZADOS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "4095.jpg",
+      "codigo": "4180",
+      "descricao": "ANEL SOLITARIO FIO TORCIDO E CORACAO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4180.jpg",
       "pastaFotos": "Catalogos/Aneis/",
-      "preco": "34,90",
-      "precoConsignado": "52,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "26/02/2025"
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/04/2025"
     },
     {
       "codigo": "4093",
@@ -152,6 +119,17 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "52,90",
       "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/02/2025"
+    },
+    {
+      "codigo": "4092",
+      "descricao": "ANEL REGULAVEL FALANGE 2 CORACOES DIAMANTADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4092.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "29,90",
+      "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "26/02/2025"
     },

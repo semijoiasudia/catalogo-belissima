@@ -2,6 +2,17 @@
   "categoria": "BRACELETE",
   "produtos": [
     {
+      "codigo": "3865",
+      "descricao": "BRACELETE FIO DUPLO ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3865.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/12/2024"
+    },
+    {
       "codigo": "3864",
       "descricao": "BRACELETE FIO TORCIDO",
       "tipo": "Semijoia banhada a Ouro 18k",

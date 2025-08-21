@@ -24,17 +24,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4709",
-      "descricao": "PULSEIRA ELOS H",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4709.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4708",
       "descricao": "PULSEIRA ELOS H",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -131,17 +120,6 @@
       "preco": "59,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4699",
-      "descricao": "PULSEIRA CORDÃO BAIANO 2MM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4699.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "03/08/2025"
     },
     {
@@ -244,17 +222,6 @@
       "dataUltimaEntrada": "01/08/2025"
     },
     {
-      "codigo": "4605",
-      "descricao": "PULSEIRA RIVIERA CRISTAL 2MM FECHO GRAVATA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4605.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "64,90",
-      "precoConsignado": "102,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "23/07/2025"
-    },
-    {
       "codigo": "4604",
       "descricao": "PULSEIRA RIVIERA CRISTAL 2MM FECHO GRAVATA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -262,17 +229,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "62,90",
       "precoConsignado": "98,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/07/2025"
-    },
-    {
-      "codigo": "4603",
-      "descricao": "PULSEIRA CIGANINHA CORAÇÕES ZIRCONIAS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4603.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "64,90",
-      "precoConsignado": "102,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/07/2025"
     },
@@ -376,17 +332,6 @@
       "dataUltimaEntrada": "06/06/2025"
     },
     {
-      "codigo": "4409",
-      "descricao": "PULSEIRA DUPLA BOLINHAS E PING DE CORAÇÃO 17+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4409.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/05/2025"
-    },
-    {
       "codigo": "4403",
       "descricao": "PULSEIRA 6 CORAÇÕES COLORS 18+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -407,6 +352,17 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/05/2025"
+    },
+    {
+      "codigo": "4347",
+      "descricao": "PULSEIRA 3 TREVOS TRABALHADOS INSPIRAÇÃO 17+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4347.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/05/2025"
     },
     {
       "codigo": "3285",

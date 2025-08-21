@@ -13,17 +13,6 @@
       "dataUltimaEntrada": "01/08/2025"
     },
     {
-      "codigo": "4651",
-      "descricao": "BRINCO ARGOLA CLICK LAÇO CRISTAL PP ADULTO/INFANTIL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4651.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/08/2025"
-    },
-    {
       "codigo": "4649",
       "descricao": "BRINCO CEREJA ESMALTADO ADULTO/INFANTIL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -101,17 +90,6 @@
       "dataUltimaEntrada": "27/06/2025"
     },
     {
-      "codigo": "4494",
-      "descricao": "CONJUNTO INFANTIL ESTRELA ROSA 36+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4494.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/06/2025"
-    },
-    {
       "codigo": "4433",
       "descricao": "PULSEIRA INFANTIL BORBOLETA PINK",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -176,6 +154,17 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4218.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4098",
