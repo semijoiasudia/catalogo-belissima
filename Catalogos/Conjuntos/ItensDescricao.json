@@ -2,17 +2,6 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "4751",
-      "descricao": "CONJUNTO ARVORE DA VIDA CRAVEJADO COLORS 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4751.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
-    },
-    {
       "codigo": "4750",
       "descricao": "CONJUNTO CORAÇÃO METADE CRAVEJADO METADE LISO 46CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,17 +11,6 @@
       "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/08/2025"
-    },
-    {
-      "codigo": "4530",
-      "descricao": "CONJUNTO INFANTIL CORAÇÃO CRISTAL 35CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4530.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "122,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/07/2025"
     },
     {
       "codigo": "4498",
@@ -77,28 +55,6 @@
       "precoConsignado": "198,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/06/2025"
-    },
-    {
-      "codigo": "4445",
-      "descricao": "CONJUNTO 3 TREVOS - PRETO CHOKER 41CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4445.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "139,90",
-      "precoConsignado": "198,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/06/2025"
-    },
-    {
-      "codigo": "4218",
-      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4218.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "72,90",
-      "precoConsignado": "112,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4429",
@@ -178,6 +134,17 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
+      "codigo": "3875",
+      "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3875.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/12/2024"
+    },
+    {
       "codigo": "3862",
       "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -198,6 +165,17 @@
       "precoConsignado": "179,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/11/2024"
+    },
+    {
+      "codigo": "3687",
+      "descricao": "CONJUNTO COSTELA DE ADAO 41+7CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3687.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "74,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/11/2024"
     },
     {
       "codigo": "3659",

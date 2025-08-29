@@ -35,17 +35,6 @@
       "dataUltimaEntrada": "04/07/2025"
     },
     {
-      "codigo": "4530",
-      "descricao": "CONJUNTO INFANTIL CORAÇÃO CRISTAL 35CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4530.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "79,90",
-      "precoConsignado": "122,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/07/2025"
-    },
-    {
       "codigo": "4507",
       "descricao": "PULSEIRA INFANTIL ESFERAS 14+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -64,6 +53,17 @@
       "pastaFotos": "Catalogos/Infantil/",
       "preco": "69,90",
       "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4497",
+      "descricao": "BRINCO INFANTIL MORANGO ESMALTADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4497.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/06/2025"
     },
@@ -154,17 +154,6 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "4218",
-      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 34CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4218.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "72,90",
-      "precoConsignado": "112,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4098",

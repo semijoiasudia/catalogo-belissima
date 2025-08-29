@@ -46,17 +46,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4706",
-      "descricao": "PULSEIRA DUPLA CORAÇÕES ENTRELAÇADOS E CANUTILHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4706.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4705",
       "descricao": "PULSEIRA ELOS CARTIER 3MM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -495,6 +484,17 @@
       "precoConsignado": "86,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3367",
+      "descricao": "PULSEIRA RIVIERA CRISTAL 2MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3367.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "56,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/08/2024"
     },
     {
       "codigo": "3026",

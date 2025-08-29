@@ -14,18 +14,6 @@
       "dataUltimaEntrada": "07/05/2025"
     },
     {
-      "codigo": "4184",
-      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4184.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "40,00",
-      "precoOferta": "19,90",
-      "precoConsignado": "66,00",
-      "banho": "2 Banhos",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
       "codigo": "4174",
       "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
       "tipo": "Bijuteria",
@@ -49,53 +37,6 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4140",
-      "descricao": "RELOGIO INSP. FUNDO VERMELHO PULSEIRA ELASTICA",
-      "imagem": "4140.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "64,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "89,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "3477",
-      "descricao": "BRINCO BOTAO E ARGOLA M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3477.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoOferta": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3381",
-      "descricao": "BRINCO ARGOLA LISA QUADRADA G",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3381.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "42,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "62,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2024"
-    },
-    {
-      "codigo": "3309",
-      "descricao": "BRINCO TREVO PINK",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3309.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "44,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "64,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "16/07/2024"
-    },
-    {
       "codigo": "3206",
       "descricao": "BRINCO TRIANGULO ORGANICO P",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -116,18 +57,6 @@
       "preco": "59,90",
       "precoOferta": "39,90",
       "precoConsignado": "74,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/05/2024"
-    },
-    {
-      "codigo": "3019",
-      "descricao": "PIERCING FLOR COM PONTO DE LUZ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3019.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "29,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "04/05/2024"
     }

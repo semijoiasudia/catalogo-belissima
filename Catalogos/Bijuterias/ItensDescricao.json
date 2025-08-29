@@ -2,17 +2,6 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "4184",
-      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
-      "tipo": "Bijuteria",
-      "imagem": "4184.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 Banhos",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
       "codigo": "4174",
       "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
       "tipo": "Bijuteria",

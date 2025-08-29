@@ -46,17 +46,6 @@
       "dataUltimaEntrada": "04/08/2025"
     },
     {
-      "codigo": "4735",
-      "descricao": "COLAR GOTA ALONGADA ABAULADA LISA 46+6CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "4735.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "04/08/2025"
-    },
-    {
       "codigo": "4734",
       "descricao": "COLAR GOTA ALONGADA ABAULADA LISA 46+6CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -222,6 +211,17 @@
       "dataUltimaEntrada": "07/07/2025"
     },
     {
+      "codigo": "4525",
+      "descricao": "COLAR ELOS CART. 3MM 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4525.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "79,90",
+      "precoConsignado": "124,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4479",
       "descricao": "COLAR BOLINHAS 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -352,6 +352,17 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/08/2024"
+    },
+    {
+      "codigo": "3317",
+      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3317.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "20/07/2024"
     },
     {
       "codigo": "3296",
