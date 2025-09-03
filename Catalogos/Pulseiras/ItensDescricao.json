@@ -2,17 +2,6 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "4729",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS 5MM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4729.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4728",
       "descricao": "PULSEIRA TIFFANYS COLORIDAS 5MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -32,17 +21,6 @@
       "preco": "52,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4707",
-      "descricao": "PULSEIRA DUPLA CORAÇÕES ENTRELAÇADOS E CANUTILHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4707.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "03/08/2025"
     },
     {
@@ -109,17 +87,6 @@
       "preco": "59,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4698",
-      "descricao": "PULSEIRA TELA E 4 ESFERAS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4698.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "03/08/2025"
     },
     {
@@ -220,17 +187,6 @@
       "precoConsignado": "98,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/07/2025"
-    },
-    {
-      "codigo": "4580",
-      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4580.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "17/07/2025"
     },
     {
       "codigo": "4531",

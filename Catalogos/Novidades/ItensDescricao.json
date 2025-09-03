@@ -2,6 +2,131 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4836",
+      "descricao": "ANEL REGULÁVEL LISO ORGÂNICO ONDULADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4836.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "92,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/09/2025"
+    },
+    {
+      "codigo": "4835",
+      "descricao": "ANEL REGULÁVEL 2 PONTAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4835.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/09/2025"
+    },
+    {
+      "codigo": "4834",
+      "descricao": "ANEL 2 FIOS E SÃO BENDO - TAMANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4834.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/09/2025"
+    },
+    {
+      "codigo": "4833",
+      "descricao": "ANEL 3 FIOS ONDULADOS - TAMANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4833.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/09/2025"
+    },
+    {
+      "codigo": "4832",
+      "descricao": "RELOGIO INSPIRAÇÃO FUNDO DOURADO PULSERIA AÇO - DHP",
+      "imagem": "4832.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "28/08/2025"
+    },
+    {
+      "codigo": "4831",
+      "descricao": "RELOGIO INSPIRAÇÃO FUNDO PRETO PULSERIA AÇO - DHP",
+      "imagem": "4831.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "28/08/2025"
+    },
+    {
+      "codigo": "4830",
+      "descricao": "RELOGIO INSPIRAÇÃO 2 CORES FUNDO BRANCO - DHP",
+      "imagem": "4830.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "28/08/2025"
+    },
+    {
+      "codigo": "4829",
+      "descricao": "RELOGIO REDONDO FUNDO PRETO MÉDIO - DHP",
+      "imagem": "4829.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
+      "codigo": "4828",
+      "descricao": "RELOGIO REDONDO FUNDO PRETO PEQUENO - DHP",
+      "imagem": "4828.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
+      "codigo": "4827",
+      "descricao": "RELOGIO REDONDO 2 CORES FUNDO BRANCO PEQUENO - DHP",
+      "imagem": "4827.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
+      "codigo": "4826",
+      "descricao": "RELOGIO REDONDO 2 CORES FUNDO BRANCO MÉDIO - DHP",
+      "imagem": "4826.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
+      "codigo": "4825",
+      "descricao": "ANEL TUBARÃO INSPIRAÇÃO - TAMANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4825.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "25/08/2025"
+    },
+    {
       "codigo": "4824",
       "descricao": "ANEL REGULÁVEL 2 CORAÇÕES VAZADOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -55,39 +180,6 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/08/2025"
-    },
-    {
-      "codigo": "4786",
-      "descricao": "BRINCO EAR HOOK 6 FIOS CRAVEJADOS CRISTAL E COLORS - LUXO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4786.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "119,90",
-      "precoConsignado": "189,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
-    },
-    {
-      "codigo": "4755",
-      "descricao": "COLAR CORAÇÃO CRAVEJADO COM ARVORE DA VIDA 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4755.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
-    },
-    {
-      "codigo": "4750",
-      "descricao": "CONJUNTO CORAÇÃO METADE CRAVEJADO METADE LISO 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4750.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "129,90",
-      "precoConsignado": "169,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
     },
     {
       "codigo": "4745",
@@ -153,17 +245,6 @@
       "preco": "59,90",
       "precoConsignado": "94,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4729",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS 5MM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4729.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "03/08/2025"
     },
     {
@@ -310,17 +391,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4707",
-      "descricao": "PULSEIRA DUPLA CORAÇÕES ENTRELAÇADOS E CANUTILHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4707.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4705",
       "descricao": "PULSEIRA ELOS CARTIER 3MM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -384,17 +454,6 @@
       "preco": "59,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4698",
-      "descricao": "PULSEIRA TELA E 4 ESFERAS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4698.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "03/08/2025"
     },
     {
@@ -535,7 +594,7 @@
       "tipo": "Semijoia banhada a Ródio Branco",
       "imagem": "4676.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "62,90",
+      "preco": "72,90",
       "precoConsignado": "94,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "02/08/2025"
@@ -557,7 +616,7 @@
       "tipo": "Semijoia banhada a Ródio Branco",
       "imagem": "4674.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "62,90",
+      "preco": "69,90",
       "precoConsignado": "99,00",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "02/08/2025"
@@ -629,17 +688,6 @@
       "dataUltimaEntrada": "01/08/2025"
     },
     {
-      "codigo": "4657",
-      "descricao": "BRINCO EAR HOOK X CRAVEJADO E CORAÇÃO LISO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4657.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/08/2025"
-    },
-    {
       "codigo": "4656",
       "descricao": "PULSEIRA INFANTIL ESTRELAS 15CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -695,28 +743,6 @@
       "dataUltimaEntrada": "28/07/2025"
     },
     {
-      "codigo": "4640",
-      "descricao": "BRINCO EAR HOOK FIO CRAVEJADO E CORAÇÃO CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4640.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "54,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
-      "codigo": "4639",
-      "descricao": "BRINCO CEREJA CRAVEJADA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4639.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "42,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
       "codigo": "4634",
       "descricao": "BRINCO FLOR 5 PÉTALAS CRAVEJADAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -724,28 +750,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
-      "codigo": "4627",
-      "descricao": "ANEL REGULÁVEL FOMATO GOTA - LISO/CRAVEJADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4627.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
-      "codigo": "4624",
-      "descricao": "ANEL CRUZADO CRAVEJADO CRISTAL - TAMANHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4624.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/07/2025"
     },
@@ -770,17 +774,6 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "25/07/2025"
-    },
-    {
-      "codigo": "4617",
-      "descricao": "BRINCO EAR CUFF BORBOLETAS CRAVEJADAS CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4617.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/07/2025"
     },
     {
       "codigo": "4616",
@@ -838,17 +831,6 @@
       "dataUltimaEntrada": "21/07/2025"
     },
     {
-      "codigo": "4593",
-      "descricao": "ANEL REGULÁVEL LISO / CRAVEJADO GRANDE",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4593.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "99,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/07/2025"
-    },
-    {
       "codigo": "4592",
       "descricao": "BRINCO EAR CUFF PATINHA COM ZIRCÔNIAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -871,6 +853,17 @@
       "dataUltimaEntrada": "19/07/2025"
     },
     {
+      "codigo": "4585",
+      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4585.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
       "codigo": "4583",
       "descricao": "BRINCO CASCATA PÉROLAS E CORAÇÃO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -879,17 +872,6 @@
       "preco": "59,90",
       "precoConsignado": "92,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/07/2025"
-    },
-    {
-      "codigo": "4580",
-      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4580.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "17/07/2025"
     },
     {
@@ -924,6 +906,28 @@
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/07/2025"
+    },
+    {
+      "codigo": "4554",
+      "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO E ESFERA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4554.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "07/07/2025"
+    },
+    {
+      "codigo": "4553",
+      "descricao": "ANEL REGULÁVEL PATINHA E CORAÇÃO VAZADO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4553.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "07/07/2025"
     },
     {
       "codigo": "4549",
@@ -1003,17 +1007,6 @@
       "dataUltimaEntrada": "04/07/2025"
     },
     {
-      "codigo": "4528",
-      "descricao": "ANEL FALANGE CORAÇÃO TRABALHADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4528.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/07/2025"
-    },
-    {
       "codigo": "4527",
       "descricao": "ANEL FALANGE REGULÁVEL CIRCULO VAZADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1078,17 +1071,6 @@
       "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "15/05/2025"
-    },
-    {
-      "codigo": "4235",
-      "descricao": "CHOKER PEROLAS FORMATO CORACAO BRANCO 41+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4235.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "124,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/04/2025"
     },
     {
       "codigo": "4233",

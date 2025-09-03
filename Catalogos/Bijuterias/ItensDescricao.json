@@ -2,17 +2,6 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "4174",
-      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
-      "tipo": "Bijuteria",
-      "imagem": "4174.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "01/04/2025"
-    },
-    {
       "codigo": "4024",
       "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
       "tipo": "Bijuteria",

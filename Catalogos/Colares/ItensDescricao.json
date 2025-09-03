@@ -24,28 +24,6 @@
       "dataUltimaEntrada": "09/08/2025"
     },
     {
-      "codigo": "4755",
-      "descricao": "COLAR CORAÇÃO CRAVEJADO COM ARVORE DA VIDA 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4755.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
-    },
-    {
-      "codigo": "4738",
-      "descricao": "COLAR RELICARIO CORAÇÃO M",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "4738.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "04/08/2025"
-    },
-    {
       "codigo": "4734",
       "descricao": "COLAR GOTA ALONGADA ABAULADA LISA 46+6CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -167,17 +145,6 @@
       "dataUltimaEntrada": "17/07/2025"
     },
     {
-      "codigo": "4568",
-      "descricao": "COLAR FIO DE NYLON CORACAO LISO GRANDE 40+6CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4568.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "13/07/2025"
-    },
-    {
       "codigo": "3386",
       "descricao": "COLAR FIO DE NYLON CORACAO LISO GRANDE 40+6CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -297,6 +264,17 @@
       "precoConsignado": "92,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "17/05/2025"
+    },
+    {
+      "codigo": "3463",
+      "descricao": "COLAR FIO DE NYLON PONTO DE LUZ 6MM 41+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3463.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/05/2025"
     },
     {
       "codigo": "4305",

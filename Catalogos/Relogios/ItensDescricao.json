@@ -2,6 +2,76 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "4832",
+      "descricao": "RELOGIO INSPIRAÇÃO FUNDO DOURADO PULSERIA AÇO - DHP",
+      "imagem": "4832.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "28/08/2025"
+    },
+    {
+      "codigo": "4831",
+      "descricao": "RELOGIO INSPIRAÇÃO FUNDO PRETO PULSERIA AÇO - DHP",
+      "imagem": "4831.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "28/08/2025"
+    },
+    {
+      "codigo": "4830",
+      "descricao": "RELOGIO INSPIRAÇÃO 2 CORES FUNDO BRANCO - DHP",
+      "imagem": "4830.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "28/08/2025"
+    },
+    {
+      "codigo": "4829",
+      "descricao": "RELOGIO REDONDO FUNDO PRETO MÉDIO - DHP",
+      "imagem": "4829.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
+      "codigo": "4828",
+      "descricao": "RELOGIO REDONDO FUNDO PRETO PEQUENO - DHP",
+      "imagem": "4828.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
+      "codigo": "4827",
+      "descricao": "RELOGIO REDONDO 2 CORES FUNDO BRANCO PEQUENO - DHP",
+      "imagem": "4827.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
+      "codigo": "4826",
+      "descricao": "RELOGIO REDONDO 2 CORES FUNDO BRANCO MÉDIO - DHP",
+      "imagem": "4826.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "79,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/08/2025"
+    },
+    {
       "codigo": "4396",
       "descricao": "RELOGIO PALLYJANE REDONDO GRANDE FUNDO DOURADO",
       "imagem": "4396.jpg",
@@ -20,16 +90,6 @@
       "precoConsignado": "99,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "25/05/2025"
-    },
-    {
-      "codigo": "4141",
-      "descricao": "RELOGIO INSP. CAFE PULSEIRA COURO SINTETICO",
-      "imagem": "4141.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "59,90",
-      "precoConsignado": "79,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/03/2025"
     }
   ]
 }

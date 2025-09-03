@@ -2,24 +2,13 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "4750",
-      "descricao": "CONJUNTO CORAÇÃO METADE CRAVEJADO METADE LISO 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4750.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "129,90",
-      "precoConsignado": "169,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
-    },
-    {
       "codigo": "4498",
       "descricao": "CONJUNTO ADULTO/INFANTIL CORAÇÃO VERDE ESMERALDA 40CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4498.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "69,90",
-      "precoConsignado": "109,90",
+      "precoConsignado": "104,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/06/2025"
     },
@@ -44,17 +33,6 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "25/06/2025"
-    },
-    {
-      "codigo": "4449",
-      "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4449.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "139,90",
-      "precoConsignado": "198,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/06/2025"
     },
     {
       "codigo": "4429",
@@ -143,17 +121,6 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "24/12/2024"
-    },
-    {
-      "codigo": "3862",
-      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3862.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/12/2024"
     },
     {
       "codigo": "3418",
