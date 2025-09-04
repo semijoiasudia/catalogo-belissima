@@ -25,7 +25,7 @@
     },
     {
       "codigo": "4834",
-      "descricao": "ANEL 2 FIOS E SÃO BENDO - TAMANHOS",
+      "descricao": "ANEL 2 FIOS E SÃO BENTO - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4834.jpg",
       "pastaFotos": "Catalogos/Novidades/",
@@ -180,6 +180,17 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/08/2025"
+    },
+    {
+      "codigo": "4757",
+      "descricao": "PULSEIRA CIGANINHA NAVETES COLORIDAS 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4757.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
     },
     {
       "codigo": "4745",
@@ -589,17 +600,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4676",
-      "descricao": "BRINCO 3 GOTAS DIAMANTADAS TRABALHADAS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4676.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "72,90",
-      "precoConsignado": "94,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "02/08/2025"
-    },
-    {
       "codigo": "4675",
       "descricao": "BRINCO 3 GOTAS DIAMANTADAS TRABALHADAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -655,17 +655,6 @@
       "dataUltimaEntrada": "02/08/2025"
     },
     {
-      "codigo": "4669",
-      "descricao": "BRINCO FLOR TRABALHADA 8 PÉTALAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4669.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "72,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/08/2025"
-    },
-    {
       "codigo": "4667",
       "descricao": "BRINCO CORACAO M LISO LEVE DOBRA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -673,6 +662,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "49,90",
       "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4666",
+      "descricao": "BRACELETE LISO TORCIDO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4666.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/08/2025"
     },
@@ -752,17 +752,6 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/07/2025"
-    },
-    {
-      "codigo": "4621",
-      "descricao": "BRINCO FOLHA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4621.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "42,90",
-      "precoConsignado": "64,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/07/2025"
     },
     {
       "codigo": "4618",
@@ -851,17 +840,6 @@
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/07/2025"
-    },
-    {
-      "codigo": "4585",
-      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4585.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "64,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/07/2025"
     },
     {
       "codigo": "4583",

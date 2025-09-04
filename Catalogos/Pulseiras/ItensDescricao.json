@@ -2,6 +2,17 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4757",
+      "descricao": "PULSEIRA CIGANINHA NAVETES COLORIDAS 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4757.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
       "codigo": "4728",
       "descricao": "PULSEIRA TIFFANYS COLORIDAS 5MM",
       "tipo": "Semijoia banhada a Ouro 18k",

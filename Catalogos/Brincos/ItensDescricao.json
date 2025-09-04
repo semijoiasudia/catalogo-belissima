@@ -134,17 +134,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4676",
-      "descricao": "BRINCO 3 GOTAS DIAMANTADAS TRABALHADAS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4676.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "72,90",
-      "precoConsignado": "94,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "02/08/2025"
-    },
-    {
       "codigo": "4675",
       "descricao": "BRINCO 3 GOTAS DIAMANTADAS TRABALHADAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -196,17 +185,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
       "precoConsignado": "74,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/08/2025"
-    },
-    {
-      "codigo": "4669",
-      "descricao": "BRINCO FLOR TRABALHADA 8 PÉTALAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4669.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "72,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/08/2025"
     },
@@ -288,17 +266,6 @@
       "dataUltimaEntrada": "28/07/2025"
     },
     {
-      "codigo": "4621",
-      "descricao": "BRINCO FOLHA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4621.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "64,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/07/2025"
-    },
-    {
       "codigo": "4618",
       "descricao": "BRINCO EAR CUFF 2 FLORES",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -363,17 +330,6 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/07/2025"
-    },
-    {
-      "codigo": "4585",
-      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4585.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "64,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/07/2025"
     },
     {
       "codigo": "4583",

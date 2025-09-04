@@ -2,18 +2,6 @@
   "categoria": "OFERTAS",
   "produtos": [
     {
-      "codigo": "4334",
-      "descricao": "INOX PULSEIRA BORBOLETAS COLORIDAS 18+3CM",
-      "tipo": "Aço Inox",
-      "imagem": "4334.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "36,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "54,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "07/05/2025"
-    },
-    {
       "codigo": "3206",
       "descricao": "BRINCO TRIANGULO ORGANICO P",
       "tipo": "Semijoia banhada a Ouro 18k",

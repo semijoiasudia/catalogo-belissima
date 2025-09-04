@@ -2,6 +2,28 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4644",
+      "descricao": "INOX PULSEIRA ESTEIRA COM 2 BERLOQUES",
+      "tipo": "Aço Inox",
+      "imagem": "4644.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2025"
+    },
+    {
+      "codigo": "4643",
+      "descricao": "INOX PULSEIRA ESTEIRA COM 3 BERLOQUES",
+      "tipo": "Aço Inox",
+      "imagem": "4643.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2025"
+    },
+    {
       "codigo": "4385",
       "descricao": "INOX COLAR TREVOS E PONTOS DE LUZ COLORS 46+5CM",
       "tipo": "Aço Inox",
@@ -44,17 +66,6 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "13/05/2025"
-    },
-    {
-      "codigo": "4334",
-      "descricao": "INOX PULSEIRA BORBOLETAS COLORIDAS 18+3CM",
-      "tipo": "Aço Inox",
-      "imagem": "4334.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "36,90",
-      "precoConsignado": "54,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "07/05/2025"
     },
     {
       "codigo": "4328",
