@@ -555,8 +555,11 @@
 
     <script>
         const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
-        const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/ItensDescricao.txt";
-        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/CategoriasAtivas.txt";
+        //Neste formato comentado a página estava fazendo requisições desnecessárias e dando erros de quantidade de requisições
+        //const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/ItensDescricao.txt";
+        //const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/CategoriasAtivas.txt";
+        const descricoesUrl = "ItensDescricao.txt";
+        const categoriasAtivasUrl = "CategoriasAtivas.txt";
         let descricoes = {};
         let categoriasAtivas = [];
         let currentFolder = '';
@@ -822,7 +825,8 @@
                 imgContainer.className = 'img-container';
         
                 const img = document.createElement('img');
-                img.src = file.download_url;
+                //img.src = file.download_url;
+                img.src = `https://semijoiasudia.github.io/CatalogoRenataSemijoias/Catalogos/${currentFolder}/${file.name}`;
                 img.alt = descricao || 'Imagem do produto';
                 img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
                 img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
@@ -974,7 +978,8 @@
             const file = currentVisibleFiles[currentModalIndex];
             if (!file) return;
             
-            const src = file.download_url;
+            //const src = file.download_url;
+            const src = `https://semijoiasudia.github.io/CatalogoRenataSemijoias/Catalogos/${currentFolder}/${file.name}`;
             codigo = file.name.split('.')[0];
             
             const { descricao, preco } = descricoes[codigo] || { 
@@ -1243,7 +1248,8 @@
 
         async function loadRodape() {
             try {
-                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt");
+                //const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/catalogo-belissima/main/rodape.txt");
+                const response = await fetch("rodape.txt");
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const text = await response.text();
                 const formattedText = text.replace(/\n/g, '<br>');
