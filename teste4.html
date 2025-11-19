@@ -46,7 +46,7 @@
         }
 
         h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif; /* Toque de Luxo */
+            font-family: 'Playfair Display', serif;
             color: var(--text-dark);
             line-height: 1.2;
         }
@@ -97,9 +97,9 @@
             transform: translateY(-3px);
         }
 
-        /* --- HEADER / HERO SECTION --- */
+        /* --- HEADER --- */
         header {
-            background: linear-gradient(to right, #1a1a1a, #2c2c2c); /* Fundo escuro para contraste com ouro */
+            background: linear-gradient(to right, #1a1a1a, #2c2c2c);
             padding: 80px 0;
             position: relative;
             overflow: hidden;
@@ -172,7 +172,7 @@
             margin: 15px auto 0;
         }
 
-        /* --- APRESENTAÇÃO / DIFERENCIAIS --- */
+        /* --- LAYOUT GRIDS --- */
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -205,7 +205,7 @@
             margin-top: 5px;
         }
 
-        /* Galeria Grid */
+        /* Galeria */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -229,7 +229,7 @@
             transform: scale(1.1);
         }
 
-        /* --- CARDS DE BENEFÍCIOS (Como funciona) --- */
+        /* --- CARDS DE BENEFÍCIOS --- */
         .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -264,7 +264,7 @@
             margin: 0 auto 20px;
         }
 
-        /* --- TABELA DE PREÇOS/MALETA --- */
+        /* --- TABELA DE PREÇOS --- */
         .pricing-container {
             background: var(--bg-white);
             padding: 40px;
@@ -331,7 +331,7 @@
             min-width: 80px;
         }
 
-        /* --- FORMULÁRIO --- */
+        /* --- FORMULÁRIO (ESTILO) --- */
         .form-section {
             background-color: #f4f4f4;
         }
@@ -439,9 +439,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Transforme sua Paixão em Lucro</h1>
-                <p class="hero-subtitle">Torne-se uma consultora de semijoias exclusivas e conquiste sua independência financeira com produtos de alta qualidade.</p>
-                
-                <a href="#candidatura" class="btn btn-primary">Quero me candidatar</a>
+                <p class="hero-subtitle">Torne-se uma consultora de semijoias banhadas a ouro 18k e ganhe uma renda extra vendendo o que você ama.</p>
 
                 <div class="hero-image-wrapper">
                     <img src="imagens/maleta2.jpg" alt="Maleta de Semijoias Luxuosa" class="hero-image">
@@ -457,14 +455,14 @@
             <div class="grid-2">
                 <div class="card-box">
                     <h3 style="color: var(--gold-dark); margin-bottom: 15px;">Seja bem-vinda!</h3>
-                    <p>Oferecemos não apenas semijoias, mas uma carreira. Nossas peças são banhadas a <strong>ouro 18k</strong>, <strong>prata</strong> ou <strong>ródio branco</strong>, todas com verniz hipoalergênico.</p>
+                    <p>Oferecemos não apenas semijoias de qualidade, mas uma oportunidade real para que mulheres como você possam ter uma renda extra, ou até mesmo sua renda principal. Nossas peças são banhadas a <strong>ouro 18k</strong>, <strong>prata</strong> ou <strong>ródio branco</strong>, com tratamento hipoalergênico (livre de níquel).</p>
                     
                     <ul class="check-list">
-                        <li><i class="fas fa-check-circle"></i> Alta qualidade com preço competitivo.</li>
+                        <li><i class="fas fa-check-circle "></i> Alta qualidade com preço competitivo.</li>
                         <li><i class="fas fa-check-circle"></i> Peças atuais que vendem fácil.</li>
                         <li><i class="fas fa-check-circle"></i> Fotos profissionais para divulgação.</li>
                         <li><i class="fas fa-check-circle"></i> Parcelamento em até 3x para suas clientes.</li>
-                        <li><i class="fas fa-check-circle"></i> <strong>Sem investimento inicial</strong> para começar.</li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Sem investimento inicial</strong> para começar.</span></li>
                         <li><i class="fas fa-check-circle"></i> Sede em Uberlândia, MG.</li>
                     </ul>
                 </div>
@@ -507,19 +505,19 @@
                 <h3 style="text-align: center; color: var(--gold-dark);">Investimento da Maleta</h3>
                 <div class="pricing-grid">
                     <div class="price-card highlight">
-                        <h4>Maleta Consignada</h4>
+                        <h4>Maleta Emprestada</h4>
                         <div class="price-value">R$ 0,00</div>
-                        <p>Emprestamos a maleta para você iniciar. <strong>Ideal para começar.</strong></p>
+                        <p>Caso você não tenha ou não consiga adquirir uma maleta nova ou seminova nós emprestamos uma maleta para você.</p>
                     </div>
                     <div class="price-card">
                         <h4>Maleta Luxo (Seminova)</h4>
                         <div class="price-value">R$ 100,00</div>
-                        <p>Caso queira comprar a maleta física para você.</p>
+                        <p>Ideal para quem está começando e quer testar o negócio.</p>
                     </div>
                     <div class="price-card">
                         <h4>Maleta Luxo (Nova)</h4>
                         <div class="price-value">R$ 180,00</div>
-                        <p>Para impressionar com material impecável.</p>
+                        <p>Para quem quer adquirir sua própria maleta e impressionar com material impecável.</p>
                     </div>
                 </div>
             </div>
@@ -541,11 +539,12 @@
                             </div>
                             <div class="step-item">
                                 <div class="step-percent">35%</div>
-                                <div>Vendas de R$ 1.000 até R$ 1.499</div>
+                                <div>Vendas de R$1.000,00 até R$1.499,99</div>
+                                
                             </div>
                             <div class="step-item">
                                 <div class="step-percent">40%</div>
-                                <div>Vendas acima de R$ 1.500,00</div>
+                                <div>Vendas acima de R$1.500,00</div>
                             </div>
                         </div>
                         <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
@@ -566,57 +565,68 @@
 
     <section id="candidatura" class="form-section">
         <div class="container">
-            <h2 class="section-title">Candidatura de Revenda</h2>
+            <h2 class="section-title">Seja uma Revendedora!</h2>
             
             <div class="form-wrapper">
                 <div style="margin-bottom: 30px; background: #fff3cd; padding: 20px; border-radius: 8px; border: 1px solid #ffeeba; color: #856404;">
-                    <strong>Pré-requisitos:</strong> Não ter restrição no CPF, ter responsabilidade com as peças e muita vontade de crescer!
+                    <strong>O que é preciso?</strong> 
+                    <li> Não ter restrição no CPF</li>
+                    <li> Ter interesse em fazer uma renda extra</li>
+                    <li> Ter responsabilidade em cuidar das peças disponibilizadas</li>
+                    <li> <strong>Preencher o formulário abaixo:</strong></li>
+                    
+
                 </div>
 
-                <form id="candidaturaForm">
+                <form id="candidaturaForm" class="space-y-6">
                     <div class="form-grid">
                         <div class="form-group">
-                            <label>Nome Completo</label>
+                            <label class="block text-gray-700 font-medium mb-2">Nome Completo</label>
                             <input type="text" name="Nome" placeholder="Seu nome completo" required>
                         </div>
                         <div class="form-group">
-                            <label>WhatsApp</label>
+                            <label class="block text-gray-700 font-medium mb-2">WhatsApp</label>
                             <input type="tel" name="WhatsApp" placeholder="(00) 00000-0000" required>
                         </div>
                     </div>
 
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label>CPF</label>
-                            <input type="text" name="CPF" placeholder="Digite seu CPF" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Tem restrição no CPF?</label>
-                            <div class="radio-group" style="margin-top: 10px;">
-                                <label class="radio-label"><input type="radio" name="RestricaoCPF" value="Sim" required> Sim</label>
-                                <label class="radio-label"><input type="radio" name="RestricaoCPF" value="Não" required> Não</label>
-                            </div>
+                    <div class="form-group">
+                        <label class="block text-gray-700 font-medium mb-2">CPF</label>
+                        <input type="text" name="CPF" placeholder="Informe corretamente seu CPF" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="block text-gray-700 font-medium mb-2">Tem restrição em seu CPF? (Sujeito a análise)</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="RestricaoCPF" value="Sim" required>
+                                <span>Sim</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="RestricaoCPF" value="Não" required>
+                                <span>Não</span>
+                            </label>
                         </div>
                     </div>
                     
                     <div class="form-grid">
                         <div class="form-group">
-                            <label>Endereço</label>
+                            <label class="block text-gray-700 font-medium mb-2">Endereço</label>
                             <input type="text" name="Endereco" placeholder="Rua, número" required>
                         </div>
                         <div class="form-group">
-                            <label>Bairro</label>
-                            <input type="text" name="Bairro" required>
+                            <label class="block text-gray-700 font-medium mb-2">Bairro</label>
+                            <input type="text" name="Bairro" placeholder="Seu bairro" required>
                         </div>
                     </div>
                     
                     <div class="form-grid">
                         <div class="form-group">
-                            <label>Profissão Atual</label>
-                            <input type="text" name="Profissao" required>
+                            <label class="block text-gray-700 font-medium mb-2">Profissão</label>
+                            <input type="text" name="Profissao" placeholder="Sua profissão atual" required>
                         </div>
                         <div class="form-group">
-                            <label>Estado Civil</label>
+                            <label class="block text-gray-700 font-medium mb-2">Estado Civil</label>
                             <select name="EstadoCivil" required>
                                 <option value="">Selecione...</option>
                                 <option value="Solteira">Solteira</option>
@@ -629,46 +639,59 @@
                     </div>
                     
                     <div class="form-group">
-                        <label>Possui residência própria?</label>
+                        <label class="block text-gray-700 font-medium mb-2">Possui residência própria?</label>
                         <div class="radio-group">
-                            <label class="radio-label"><input type="radio" name="ResidenciaPropria" value="Sim" required> Sim</label>
-                            <label class="radio-label"><input type="radio" name="ResidenciaPropria" value="Não" required> Não</label>
+                            <label class="radio-label">
+                                <input type="radio" name="ResidenciaPropria" value="Sim" required>
+                                <span>Sim</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="ResidenciaPropria" value="Não" required>
+                                <span>Não</span>
+                            </label>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label>Possui outro trabalho? Se sim, qual?</label>
-                        <textarea name="OutroTrabalho" rows="2" placeholder="Ex: Sim, sou recepcionista..."></textarea>
+                        <label class="block text-gray-700 font-medium mb-2">Possui outro trabalho? Fale sobre:</label>
+                        <textarea name="OutroTrabalho" rows="3" placeholder="Descreva se possui outro trabalho ou digite 'Não' se não possui"></textarea>
                     </div>
                     
                     <div class="form-group">
-                        <label>Nível de interesse (0 a 10)</label>
+                        <label class="block text-gray-700 font-medium mb-2">De 0 a 10, qual o seu nível de interesse em buscar uma renda extra com vendas?</label>
                         <select name="NivelInteresse" required>
-                            <option value="10">10 - Muito interessada</option>
-                            <option value="9">9</option>
-                            <option value="8">8</option>
+                            <option value="">Selecione...</option>
+                            <option value="0">0 - Nenhum interesse</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
                             <option value="7">7</option>
-                            <option value="5">5 - Médio</option>
-                            <option value="0">Pouco interesse</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10 - Muito interessada</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
-                        <label>Por que você quer ser uma revendedora?</label>
-                        <textarea name="Motivacao" rows="3" placeholder="Conte seus objetivos..." required></textarea>
+                        <label class="block text-gray-700 font-medium mb-2">Por que você quer ser uma revendedora?</label>
+                        <textarea name="Motivacao" rows="4" placeholder="Conte um pouco sobre seus objetivos..." required></textarea>
                     </div>
                     
                     <div class="form-group">
+                        <label class="block text-gray-700 font-medium mb-2">Para confirmar que você leu tudo com atenção, marque a opção abaixo:</label>
                         <label class="radio-label">
-                            <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" required>
-                            Li todas as informações e concordo.
+                            <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" style="margin-right: 8px;">
+                            <span>Li todas as informações!</span>
                         </label>
                     </div>
                     
                     <div style="text-align: center; margin-top: 30px;">
                         <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px; padding: 18px;">
                             Enviar Candidatura
-                        </button>
+                        </button>                        
                     </div>
                 </form>
             </div>
@@ -677,9 +700,9 @@
 
     <section style="text-align: center; padding: 40px 0;">
         <div class="container">
-            <p style="margin-bottom: 20px;">Ainda tem dúvidas? Fale com a gente.</p>
+            <p style="margin-bottom: 20px;"><strong>Ficou alguma dúvida? Pode nos chamar no WhatsApp...</strong></p>
             <a href="https://wa.me/5534988657026" target="_blank" class="btn btn-whatsapp">
-                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Chamar no WhatsApp
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Dúvida?
             </a>
         </div>
     </section>
@@ -693,6 +716,7 @@
     </footer>
 
     <script>
+        // URL do seu Google Apps Script (substitua pelo seu URL)
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
         
         document.querySelector('form').addEventListener('submit', function(e) {
@@ -702,30 +726,40 @@
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
             
+            // Alterar botão para estado de carregamento
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
             submitBtn.disabled = true;
             
+            // Coletar dados do formulário
             const formData = new FormData(form);
             
+            // Enviar dados para o Google Sheets
             fetch(scriptURL, { method: 'POST', body: formData })
                 .then(response => {
-                    if (response.ok) return response.json();
-                    throw new Error('Erro na resposta');
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Erro na resposta do servidor');
                 })
                 .then(data => {
-                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
-                    setTimeout(() => {
-                        submitBtn.innerHTML = originalBtnText;
-                        submitBtn.disabled = false;
-                    }, 3000);
-                    alert('Candidatura enviada com sucesso! Entraremos em contato em breve.');
+                    // Resetar botão
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    
+                    // Mostrar mensagem de sucesso
+                    alert('Candidatura enviada com sucesso! Entraremos em contato em breve caso o seu perfil seja selecionado.');
+                    
+                    // Resetar formulário
                     form.reset();
+                    
+                    // Scroll para o topo (opcional, removido comentário para funcionar melhor na UX)
+                    //window.scrollTo({top: 0, behavior: 'smooth'});
                 })
                 .catch(error => {
                     console.error('Error!', error.message);
                     submitBtn.innerHTML = originalBtnText;
                     submitBtn.disabled = false;
-                    alert('Ocorreu um erro. Tente novamente ou chame no WhatsApp.');
+                    alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente ou entre em contato pelo WhatsApp (34)98865-7026.');
                 });
         });
     </script>
