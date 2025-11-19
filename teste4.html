@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMQ73NNDDZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WMQ73NNDDZ');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Revendedora | Semijoias Exclusivas</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CONFIGURAÇÕES GERAIS (RESET E VARIÁVEIS) --- */
+        :root {
+            --gold-primary: #c5a059;
+            --gold-light: #e6c888;
+            --gold-dark: #997b3b;
+            --bg-off-white: #fcfbf9;
+            --bg-white: #ffffff;
+            --text-dark: #1a1a1a;
+            --text-gray: #555555;
+            --success-green: #27ae60;
+            --shadow-soft: 0 10px 30px rgba(197, 160, 89, 0.15);
+            --shadow-card: 0 4px 20px rgba(0,0,0,0.05);
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-off-white);
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif; /* Toque de Luxo */
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+
+        a { text-decoration: none; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- BOTÕES --- */
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(197, 160, 89, 0.4);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebc57;
+            transform: translateY(-3px);
+        }
+
+        /* --- HEADER / HERO SECTION --- */
+        header {
+            background: linear-gradient(to right, #1a1a1a, #2c2c2c); /* Fundo escuro para contraste com ouro */
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: radial-gradient(circle at top right, rgba(197, 160, 89, 0.2), transparent 60%);
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            color: var(--gold-light);
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 600px;
+        }
+
+        .hero-image-wrapper {
+            margin-top: 40px;
+            border-radius: var(--radius);
+            padding: 10px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            display: block;
+        }
+
+        /* --- SEÇÕES GERAIS --- */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            color: var(--gold-dark);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--gold-primary);
+            margin: 15px auto 0;
+        }
+
+        /* --- APRESENTAÇÃO / DIFERENCIAIS --- */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .card-box {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-card);
+            border-left: 4px solid var(--gold-primary);
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .check-list i {
+            color: var(--success-green);
+            margin-right: 12px;
+            margin-top: 5px;
+        }
+
+        /* Galeria Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 150px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* --- CARDS DE BENEFÍCIOS (Como funciona) --- */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-card);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #fff5d7, #fff);
+            border: 1px solid var(--gold-light);
+            color: var(--gold-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+        }
+
+        /* --- TABELA DE PREÇOS/MALETA --- */
+        .pricing-container {
+            background: var(--bg-white);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-card);
+            margin-top: 50px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .price-card {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .price-card.highlight {
+            border: 2px solid var(--gold-primary);
+            background-color: #fffdf5;
+        }
+
+        .price-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold-dark);
+            margin: 10px 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- COMISSÃO --- */
+        .commission-box {
+            background: linear-gradient(to bottom right, #fff, #fffbf0);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-card);
+        }
+
+        .commission-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid var(--gold-primary);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .step-percent {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--success-green);
+            min-width: 80px;
+        }
+
+        /* --- FORMULÁRIO --- */
+        .form-section {
+            background-color: #f4f4f4;
+        }
+
+        .form-wrapper {
+            background: var(--bg-white);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.1);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .radio-label {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .radio-label input {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #1a1a1a;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 4px solid var(--gold-dark);
+        }
+
+        .footer-copy {
+            font-size: 0.9rem;
+        }
+
+        .made-with-love {
+            color: var(--gold-primary);
+            margin-top: 10px;
+            font-size: 0.85rem;
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            .grid-2, .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforme sua Paixão em Lucro</h1>
+                <p class="hero-subtitle">Torne-se uma consultora de semijoias exclusivas e conquiste sua independência financeira com produtos de alta qualidade.</p>
+                
+                <a href="#candidatura" class="btn btn-primary">Quero me candidatar</a>
+
+                <div class="hero-image-wrapper">
+                    <img src="imagens/maleta2.jpg" alt="Maleta de Semijoias Luxuosa" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Conheça Nossa Oportunidade</h2>
+            
+            <div class="grid-2">
+                <div class="card-box">
+                    <h3 style="color: var(--gold-dark); margin-bottom: 15px;">Seja bem-vinda!</h3>
+                    <p>Oferecemos não apenas semijoias, mas uma carreira. Nossas peças são banhadas a <strong>ouro 18k</strong>, <strong>prata</strong> ou <strong>ródio branco</strong>, todas com verniz hipoalergênico.</p>
+                    
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> Alta qualidade com preço competitivo.</li>
+                        <li><i class="fas fa-check-circle"></i> Peças atuais que vendem fácil.</li>
+                        <li><i class="fas fa-check-circle"></i> Fotos profissionais para divulgação.</li>
+                        <li><i class="fas fa-check-circle"></i> Parcelamento em até 3x para suas clientes.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Sem investimento inicial</strong> para começar.</li>
+                        <li><i class="fas fa-check-circle"></i> Sede em Uberlândia, MG.</li>
+                    </ul>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="imagens/brinco.jpg" alt="Brinco"></div>
+                    <div class="gallery-item"><img src="imagens/colar.jpg" alt="Colar"></div>
+                    <div class="gallery-item"><img src="imagens/pulseira.jpg" alt="Pulseira"></div>
+                    <div class="gallery-item"><img src="imagens/anel.jpg" alt="Anel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #fdfbf7;">
+        <div class="container">
+            <h2 class="section-title">Como Funciona a Parceria?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon-circle"><i class="fas fa-box-open"></i></div>
+                    <h3>Comece sem investir</h3>
+                    <p>Receba uma maleta completa (60 a 70 peças) em consignação. Você só paga o que vender após o acerto.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="icon-circle"><i class="fas fa-camera"></i></div>
+                    <h3>Material de Apoio</h3>
+                    <p>Receba fotos profissionais, catálogo digital, sacolas e certificados de garantia para encantar suas clientes.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="icon-circle"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Renovação Mensal</h3>
+                    <p>Acerto a cada 30/40 dias. Quanto mais você vende, mais peças novas e exclusivas recebe na próxima maleta.</p>
+                </div>
+            </div>
+
+            <div class="pricing-container">
+                <h3 style="text-align: center; color: var(--gold-dark);">Investimento da Maleta</h3>
+                <div class="pricing-grid">
+                    <div class="price-card highlight">
+                        <h4>Maleta Consignada</h4>
+                        <div class="price-value">R$ 0,00</div>
+                        <p>Emprestamos a maleta para você iniciar. <strong>Ideal para começar.</strong></p>
+                    </div>
+                    <div class="price-card">
+                        <h4>Maleta Luxo (Seminova)</h4>
+                        <div class="price-value">R$ 100,00</div>
+                        <p>Caso queira comprar a maleta física para você.</p>
+                    </div>
+                    <div class="price-card">
+                        <h4>Maleta Luxo (Nova)</h4>
+                        <div class="price-value">R$ 180,00</div>
+                        <p>Para impressionar com material impecável.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Seus Ganhos</h2>
+            
+            <div class="grid-2">
+                <div>
+                    <div class="commission-box">
+                        <h3 style="margin-bottom: 20px; color: var(--gold-dark);">Comissão Progressiva</h3>
+                        <div class="commission-steps">
+                            <div class="step-item">
+                                <div class="step-percent">30%</div>
+                                <div>Para vendas até R$ 999,99</div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-percent">35%</div>
+                                <div>Vendas de R$ 1.000 até R$ 1.499</div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-percent">40%</div>
+                                <div>Vendas acima de R$ 1.500,00</div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+                            <i class="fas fa-info-circle"></i> Venda R$ 2.500,00/mês e lucre <strong>R$ 1.000,00</strong> livres.
+                        </p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div style="background: var(--gold-primary); color: white; padding: 40px; border-radius: var(--radius); text-align: center;">
+                        <i class="fas fa-gem fa-3x" style="margin-bottom: 20px; opacity: 0.8;"></i>
+                        <h3>Independência Financeira</h3>
+                        <p style="margin-top: 15px; font-size: 1.1rem;">O que um lucro extra faria por você hoje? Pagar as contas, uma viagem ou realizar um sonho?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="candidatura" class="form-section">
+        <div class="container">
+            <h2 class="section-title">Candidatura de Revenda</h2>
+            
+            <div class="form-wrapper">
+                <div style="margin-bottom: 30px; background: #fff3cd; padding: 20px; border-radius: 8px; border: 1px solid #ffeeba; color: #856404;">
+                    <strong>Pré-requisitos:</strong> Não ter restrição no CPF, ter responsabilidade com as peças e muita vontade de crescer!
+                </div>
+
+                <form id="candidaturaForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Nome Completo</label>
+                            <input type="text" name="Nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp</label>
+                            <input type="tel" name="WhatsApp" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>CPF</label>
+                            <input type="text" name="CPF" placeholder="Digite seu CPF" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Tem restrição no CPF?</label>
+                            <div class="radio-group" style="margin-top: 10px;">
+                                <label class="radio-label"><input type="radio" name="RestricaoCPF" value="Sim" required> Sim</label>
+                                <label class="radio-label"><input type="radio" name="RestricaoCPF" value="Não" required> Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Endereço</label>
+                            <input type="text" name="Endereco" placeholder="Rua, número" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Bairro</label>
+                            <input type="text" name="Bairro" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Profissão Atual</label>
+                            <input type="text" name="Profissao" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Estado Civil</label>
+                            <select name="EstadoCivil" required>
+                                <option value="">Selecione...</option>
+                                <option value="Solteira">Solteira</option>
+                                <option value="Casada">Casada</option>
+                                <option value="Divorciada">Divorciada</option>
+                                <option value="Viúva">Viúva</option>
+                                <option value="União Estável">União Estável</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Possui residência própria?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="ResidenciaPropria" value="Sim" required> Sim</label>
+                            <label class="radio-label"><input type="radio" name="ResidenciaPropria" value="Não" required> Não</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Possui outro trabalho? Se sim, qual?</label>
+                        <textarea name="OutroTrabalho" rows="2" placeholder="Ex: Sim, sou recepcionista..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Nível de interesse (0 a 10)</label>
+                        <select name="NivelInteresse" required>
+                            <option value="10">10 - Muito interessada</option>
+                            <option value="9">9</option>
+                            <option value="8">8</option>
+                            <option value="7">7</option>
+                            <option value="5">5 - Médio</option>
+                            <option value="0">Pouco interesse</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Por que você quer ser uma revendedora?</label>
+                        <textarea name="Motivacao" rows="3" placeholder="Conte seus objetivos..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="radio-label">
+                            <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" required>
+                            Li todas as informações e concordo.
+                        </label>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px; padding: 18px;">
+                            Enviar Candidatura
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center; padding: 40px 0;">
+        <div class="container">
+            <p style="margin-bottom: 20px;">Ainda tem dúvidas? Fale com a gente.</p>
+            <a href="https://wa.me/5534988657026" target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Chamar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Semijoias Udia</h3>
+            <p class="footer-copy">© 2025 Todos os direitos reservados.</p>
+            <p class="made-with-love">Feito com paixão em Uberlândia, MG</p>
+        </div>
+    </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
+        
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitBtn.disabled = true;
+            
+            const formData = new FormData(form);
+            
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(response => {
+                    if (response.ok) return response.json();
+                    throw new Error('Erro na resposta');
+                })
+                .then(data => {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalBtnText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                    alert('Candidatura enviada com sucesso! Entraremos em contato em breve.');
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    alert('Ocorreu um erro. Tente novamente ou chame no WhatsApp.');
+                });
+        });
+    </script>
+</body>
+</html>
