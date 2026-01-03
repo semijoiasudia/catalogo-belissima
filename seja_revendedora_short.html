@@ -10,7 +10,7 @@
 <body class="bg-gray-50 text-gray-800">
 
   <!-- HERO -->
-  <section class="bg-gradient-to-r from-rose-500 to-pink-600 text-white py-10">
+  <section class="bg-gradient-to-r from-rose-500 to-pink-600 text-white py-16">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h1 class="text-3xl md:text-4xl font-bold mb-4">
         Trabalhe no seu tempo e faça renda extra com semijoias
@@ -42,17 +42,13 @@
             Semijoias banhadas a <strong>ouro 18k</strong>, <strong>prata</strong> ou
             <strong>ródio branco</strong>, com tratamento hipoalergênico (livre de níquel).
           </p>
-          <p>
-            <br>
-           Trabalhamos também com peças em  <strong>aço inoxidável</strong> e <strong>relógios</strong> 
-          </p>
         </div>
 
         <div class="bg-white p-6 rounded-xl shadow">
           <h3 class="font-semibold mb-2">Peças que Vendem</h3>
           <p>
             Trabalhamos apenas com peças atuais e vendáveis.
-            Nada de ficar com estoque antigo e parado.
+            Nada de ficar com estoque antigo e encalhado.
           </p>
         </div>
 
@@ -84,6 +80,68 @@
       </ul>
     </div>
   </section>
+
+  <!-- CARROSSEL -->
+  <section class="relative">
+    <div class="relative overflow-hidden">
+      <div id="carrossel" class="flex transition-transform duration-500 ease-in-out">
+        <img src="imagens/maleta_completa1.jpg" alt="Maleta 1" class="w-full flex-shrink-0 block" />
+        <img src="imagens/maleta_completa2.jpg" alt="Maleta 2" class="w-full flex-shrink-0 block" />
+        <img src="imagens/maleta_completa3.jpg" alt="Maleta 3" class="w-full flex-shrink-0 block" />
+      </div>
+    </div>
+    
+    <!-- Setas de navegação -->
+    <button onclick="anterior()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+    <button onclick="proximo()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+    
+    <!-- Indicadores -->
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <button onclick="irPara(0)" class="indicador w-3 h-3 rounded-full bg-white shadow transition"></button>
+      <button onclick="irPara(1)" class="indicador w-3 h-3 rounded-full bg-white/50 shadow transition"></button>
+      <button onclick="irPara(2)" class="indicador w-3 h-3 rounded-full bg-white/50 shadow transition"></button>
+    </div>
+  </section>
+
+  <script>
+    let indiceAtual = 0;
+    const totalImagens = 3;
+    const carrossel = document.getElementById('carrossel');
+    const indicadores = document.querySelectorAll('.indicador');
+
+    function atualizarCarrossel() {
+      carrossel.style.transform = `translateX(-${indiceAtual * 100}%)`;
+      indicadores.forEach((ind, i) => {
+        ind.style.backgroundColor = i === indiceAtual ? 'white' : 'rgba(255, 255, 255, 0.5)';
+      });
+    }
+
+    function proximo() {
+      indiceAtual = (indiceAtual + 1) % totalImagens;
+      atualizarCarrossel();
+    }
+
+    function anterior() {
+      indiceAtual = (indiceAtual - 1 + totalImagens) % totalImagens;
+      atualizarCarrossel();
+    }
+
+    function irPara(indice) {
+      indiceAtual = indice;
+      atualizarCarrossel();
+    }
+
+    // Auto-play (opcional)
+    setInterval(proximo, 5000);
+  </script>
 
   <!-- COMO FUNCIONA -->
   <section class="py-16 bg-gray-50">
