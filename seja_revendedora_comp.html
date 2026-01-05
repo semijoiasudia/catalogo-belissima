@@ -187,6 +187,7 @@
       <h2 class="text-2xl font-bold text-center mb-6">O que é preciso para ser revendedora?</h2>
 
       <ul class="space-y-3 text-center">
+        <li>✔ Não ter restrição no CPF</li>
         <li>✔ Interesse em fazer renda extra</li>
         <li>✔ Comprometimento em mostrar as peças e gerar vendas</li>
         <li>✔ Responsabilidade no cuidado com as semijoias</li>
@@ -218,6 +219,19 @@
             <input type="text" name="CPF" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Informe corretamente seu CPF" required />
         </div>
 
+        <div>
+            <label class="block text-gray-700 font-medium mb-2 text-sm">Tem restrição em seu CPF? (Sujeito a análise)</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="RestricaoCPF" value="Sim" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Sim</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="RestricaoCPF" value="Não" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Não</span>
+                </label>
+            </div>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
