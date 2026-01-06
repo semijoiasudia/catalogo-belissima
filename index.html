@@ -787,7 +787,6 @@
                 const img = document.createElement('img');
                 //img.src = file.download_url;
                 img.src = `https://semijoiasudia.github.io/CatalogoRenataSemijoias/Catalogos/${currentFolder}/${file.name}`;
-                img.crossOrigin = "anonymous";
                 img.alt = descricao || 'Imagem do produto';
                 img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
                 img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
@@ -795,7 +794,6 @@
                 
                 const logo = document.createElement('img');
                 logo.src = 'imagens/logo.png';
-                logo.crossOrigin = "anonymous";
                 logo.className = 'logo-watermark';
                 logo.alt = 'Logo';
                 
@@ -962,12 +960,10 @@
             }
             
             document.getElementById('modalImg').src = src;
-            document.getElementById('modalImg').crossOrigin = "anonymous"; 
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
             
             const logo = document.createElement('img');
             logo.src = 'imagens/logo.png';
-            logo.crossOrigin = "anonymous";
             logo.className = 'logo-watermark';
             logo.alt = 'Logo';
             captureArea.appendChild(logo);
