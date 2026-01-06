@@ -1135,19 +1135,54 @@
         }
 
         function saveImage() {
-            html2canvas(document.querySelector("#captureArea"), {
-                useCORS: true,
-                allowTaint: true,
-                scale: 2
-            }).then(canvas => {
-                const link = document.createElement('a');
-                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            }).catch(error => {
-                console.error("Erro ao salvar imagem:", error);
-            });
+            // Primeiro, vamos garantir que as imagens estejam carregadas
+            const captureArea = document.querySelector("#captureArea");
+            const modalImg = document.getElementById('modalImg');
+            const logoImg = captureArea.querySelector('.logo-watermark');
+            
+            // Aguardar um momento para garantir que tudo está renderizado
+            setTimeout(() => {
+                html2canvas(captureArea, {
+                    useCORS: true,
+                    allowTaint: false,
+                    scale: 2,
+                    logging: false,
+                    backgroundColor: '#ffffff',
+                    imageTimeout: 0,
+                    onclone: function(clonedDoc) {
+                        // Garantir que as imagens clonadas estejam visíveis
+                        const clonedImg = clonedDoc.querySelector('#modalImg');
+                        const clonedLogo = clonedDoc.querySelector('.logo-watermark');
+                        if (clonedImg) clonedImg.style.display = 'block';
+                        if (clonedLogo) clonedLogo.style.display = 'block';
+                    }
+                }).then(canvas => {
+                    const link = document.createElement('a');
+                    link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+                }).catch(error => {
+                    console.error("Erro ao salvar imagem:", error);
+                    alert('Erro ao salvar a imagem. Tente fazer um print da tela.');
+                });
+            }, 100);
         }
+
+        // function saveImage() {
+        //     html2canvas(document.querySelector("#captureArea"), {
+        //         useCORS: true,
+        //         allowTaint: true,
+        //         scale: 2
+        //     }).then(canvas => {
+        //         const link = document.createElement('a');
+        //         link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+        //         link.href = canvas.toDataURL('image/png');
+        //         link.click();
+        //     }).catch(error => {
+        //         console.error("Erro ao salvar imagem:", error);
+        //     });
+        // }
+
 
         async function loadRodape() {
             try {
