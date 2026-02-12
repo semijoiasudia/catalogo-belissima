@@ -794,6 +794,7 @@
                 
                 const logo = document.createElement('img');
                 logo.src = 'imagens/logo.png';
+                logo.crossOrigin = "anonymous";
                 logo.className = 'logo-watermark';
                 logo.alt = 'Logo';
                 
@@ -964,6 +965,7 @@
             
             const logo = document.createElement('img');
             logo.src = 'imagens/logo.png';
+            logo.crossOrigin = "anonymous";
             logo.className = 'logo-watermark';
             logo.alt = 'Logo';
             captureArea.appendChild(logo);
@@ -1135,57 +1137,105 @@
         }
 
         async function saveImage() {
-            const captureArea = document.querySelector("#captureArea");
-            
             try {
-                // Converter imagens para data URLs antes de capturar
-                const images = captureArea.querySelectorAll('img');
-                const imagePromises = Array.from(images).map(img => {
-                    return new Promise((resolve) => {
-                        if (img.complete) {
-                            resolve();
-                        } else {
-                            img.onload = () => resolve();
-                            img.onerror = () => resolve();
-                        }
-                    });
+                const modalImg = document.getElementById('modalImg');
+                const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+                
+                // Pegar as dimensões EXIBIDAS no modal
+                const displayedWidth = modalImg.clientWidth;
+                const displayedHeight = modalImg.clientHeight;
+                
+                // Criar uma escala maior para melhor qualidade (2x)
+                const scale = 2;
+                const canvasWidth = displayedWidth * scale;
+                const canvasHeight = displayedHeight * scale;
+                
+                // Converter a imagem para base64 usando canvas
+                const imgElement = new Image();
+                imgElement.crossOrigin = "anonymous";
+                
+                const file = currentVisibleFiles[currentModalIndex];
+                imgElement.src = file.download_url;
+                
+                await new Promise((resolve, reject) => {
+                    imgElement.onload = resolve;
+                    imgElement.onerror = () => {
+                        imgElement.crossOrigin = null;
+                        imgElement.src = modalImg.src;
+                        imgElement.onload = resolve;
+                        imgElement.onerror = reject;
+                    };
                 });
                 
-                await Promise.all(imagePromises);
+                // Criar canvas com as dimensões do modal (escaladas)
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
                 
-                const canvas = await html2canvas(captureArea, {
-                    useCORS: false,
-                    allowTaint: true,
-                    scale: 2,
-                    logging: true,
-                    backgroundColor: '#ffffff'
+                canvas.width = canvasWidth;
+                canvas.height = canvasHeight;
+                
+                // Desenhar a imagem principal
+                ctx.drawImage(imgElement, 0, 0, canvasWidth, canvasHeight);
+                
+                // Desenhar o código (proporcionalmente ao tamanho do modal)
+                const fontSize = 14 * scale; // Proporcional ao scale
+                const paddingH = 16 * scale;
+                const paddingV = 8 * scale;
+                const borderRadius = 25 * scale;
+                const marginTop = 15 * scale;
+                const marginLeft = 15 * scale;
+                
+                ctx.font = `bold ${fontSize}px Arial`;
+                const textMetrics = ctx.measureText(`COD: ${codigo}`);
+                const textWidth = textMetrics.width;
+                const boxWidth = textWidth + (paddingH * 2);
+                const boxHeight = fontSize + (paddingV * 2);
+                
+                // Fundo do código
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                ctx.beginPath();
+                ctx.roundRect(marginLeft, marginTop, boxWidth, boxHeight, borderRadius);
+                ctx.fill();
+                
+                // Texto do código
+                ctx.fillStyle = 'white';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(`COD: ${codigo}`, marginLeft + paddingH, marginTop + boxHeight / 2);
+                
+                // Carregar e desenhar a logo (25% da largura, igual ao CSS)
+                const logo = new Image();
+                logo.crossOrigin = "anonymous";
+                logo.src = 'imagens/logo.png';
+                
+                await new Promise((resolve) => {
+                    logo.onload = resolve;
+                    logo.onerror = resolve;
                 });
                 
+                const logoWidthPercent = 0.25; // 25% da largura
+                const logoWidth = canvasWidth * logoWidthPercent;
+                const logoHeight = (logo.height / logo.width) * logoWidth;
+                const logoMargin = 10 * scale;
+                
+                ctx.drawImage(
+                    logo, 
+                    canvasWidth - logoWidth - logoMargin, 
+                    canvasHeight - logoHeight - logoMargin, 
+                    logoWidth, 
+                    logoHeight
+                );
+                
+                // Download
                 const link = document.createElement('a');
-                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                link.download = `peca-${codigo}.png`;
                 link.href = canvas.toDataURL('image/png');
                 link.click();
+                
             } catch (error) {
                 console.error("Erro ao salvar imagem:", error);
-                alert('Não foi possível salvar a imagem automaticamente. Você pode fazer um print da tela (screenshot) para salvar.');
+                alert("Erro ao salvar a imagem. Tente novamente.");
             }
         }
-
-        // function saveImage() {
-        //     html2canvas(document.querySelector("#captureArea"), {
-        //         useCORS: true,
-        //         allowTaint: true,
-        //         scale: 2
-        //     }).then(canvas => {
-        //         const link = document.createElement('a');
-        //         link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
-        //         link.href = canvas.toDataURL('image/png');
-        //         link.click();
-        //     }).catch(error => {
-        //         console.error("Erro ao salvar imagem:", error);
-        //     });
-        // }
-
 
         async function loadRodape() {
             try {
