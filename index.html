@@ -1178,10 +1178,10 @@
                 ctx.drawImage(imgElement, 0, 0, canvasWidth, canvasHeight);
                 
                 // Desenhar o código (proporcionalmente ao tamanho do modal)
-                const fontSize = 14 * scale; // Proporcional ao scale
+                const fontSize = 10 * scale; // Proporcional ao scale
                 const paddingH = 16 * scale;
                 const paddingV = 8 * scale;
-                const borderRadius = 25 * scale;
+                const borderRadius = 5 * scale;
                 const marginTop = 15 * scale;
                 const marginLeft = 15 * scale;
                 
@@ -1192,7 +1192,7 @@
                 const boxHeight = fontSize + (paddingV * 2);
                 
                 // Fundo do código
-                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
                 ctx.beginPath();
                 ctx.roundRect(marginLeft, marginTop, boxWidth, boxHeight, borderRadius);
                 ctx.fill();
